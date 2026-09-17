@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+        
+
+    <title>Agricdemy - Online Agribusiness Training Portal for learning about poultry farming business, catfish farming, greenhouse farming, vertical farming, snail farming, pig farming</title>
+    <meta name="description" content="Online Agribusiness Training Portal for learning about poultry farming business, catfish farming, greenhouse farming, vertical farming, snail farming, pig farming">
+    
+
+<meta name="viewport" content="initial-scale=1,user-scalable=no,maximum-scale=1">
+
+<link rel="stylesheet" href="https://agricdemy.com/content/themes/flix/assets/css/bootstrap.min.css" />
+<link rel="stylesheet" href="https://agricdemy.com/content/themes/flix/assets/css/noty.css" />
+<link rel="stylesheet" href="https://agricdemy.com/content/themes/flix/assets/css/font-awesome.min.css" />
+<link rel="stylesheet" href="https://agricdemy.com/content/themes/flix/assets/fonts/flix/styles.css" />
+<link rel="stylesheet" href="https://agricdemy.com/content/themes/flix/assets/css/prism.css" />
+<!--[if gte IE 9]>
+  <style type="text/css">
+    .gradient {
+       filter: none;
+    }
+  </style>
+<![endif]-->
+<link rel="stylesheet" href="https://agricdemy.com/content/themes/flix/assets/css/style.css" />
+<link rel="stylesheet" href="https://agricdemy.com/content/themes/flix/assets/css/rrssb.css" />
+<link rel="stylesheet" href="https://agricdemy.com/content/themes/flix/assets/css/animate.min.css" />
+<style type="text/css">.theme_color_background, #signup-form .panel-heading, .post .post-img h3, .block .block-contents p.date .label.label-success, .btn.btn-primary, .second-nav.navbar-default .navbar-nav li.active a, .second-nav.navbar-default .navbar-nav li a:hover, .vjs-default-skin .vjs-play-progress, .vjs-default-skin .vjs-volume-level{ background: #4caf50; }.btn.btn-primary, .form-control:focus, .second-nav.navbar-default .navbar-nav li:hover, .second-nav.navbar-default .navbar-nav li.active{ border-color:#4caf50; }.post .post-img h6{ background: #60c364; }.theme_color, a, .page a, footer ul li a, .home footer ul li a{ color:#4caf50; }footer ul li a:hover, .home footer ul li a:hover{ color:#60c364; }</style>
+<style type="text/css">.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+    color: #4CAF50 !important;
+}
+
+.navbar-default .navbar-nav > a:visited, .navbar-default .navbar-nav > li > a:focus, .navbar-default .navbar-nav > li > a:hover {
+    color: #4CAF50 !important;
+}
+
+.navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover {
+    color: #4CAF50 !important;
+}
+
+#subscribers_only button {
+    background: #4CAF50 !important;
+}
+.watching_highlight{
+    background: #CDDC39;
+    color: #066f08;
+}
+a.list-group-item.active .list-group-item-text, a.list-group-item.active:hover .list-group-item-text, a.list-group-item.active:focus .list-group-item-text {
+    color: #fff;
+}
+.navbar-brand img {
+    height: 40px !important;
+}
+.navbar-brand {
+    margin-top: 2px; 
+}
+
+#navbar-search-form form input {
+  border-left: 1px solid #ffffff;
+  border-right: 1px solid #ffffff;
+}
+
+a.list-group-item.active, a.list-group-item.active:hover, a.list-group-item.active:focus {
+    background-color: #4CAF50;
+    border-color: #4CAF50;
+}
+
+.sectionHeader {
+    background: #4CAF50;
+    color: #fff;
+}
+.sectionHeader .copy h1 {
+    color: #fff;
+}
+.sectionHeader i {
+    color: #fff;
+}
+
+#video_title {
+    background: #4CAF50;
+}
+#video_title h1 {
+    color: #fff;
+}
+#video_title #video_options {
+    color: #bfefc1;
+}
+#video_title #video_options .btn#movie_mode {
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+#video_title #video_options .btn {
+    border-right: 1px solid #4caf50;
+}
+
+
+.testimonials blockquote {
+  position: relative;
+  background: white;
+  min-height: 150px;
+  margin-top: 20px;
+  margin-bottom: 100px;
+  border: 1px solid #ecedf1;
+}
+.testimonials blockquote:before {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  margin-left: -10px;
+  border-top: 10px solid #ecedf1;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+}
+.testimonials blockquote:after {
+  content: '';
+  position: absolute;
+  bottom: -8px;
+  left: 50%;
+  margin-left: -9px;
+  border-top: 9px solid white;
+  border-left: 9px solid transparent;
+  border-right: 9px solid transparent;
+}
+
+.testimonials blockquote img {
+    height: 80px;
+    width: 80px;
+    position: absolute;
+    border: 1px solid #ecedf1;
+    background: white;
+    bottom: -90px;
+    left: 50%;
+    margin-left: -41px;
+}
+
+blockquote p.clients-words {
+    font-size: 14px;
+}
+span.clients-name {
+    color: #4caf50;
+  font-size: 14px;
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+}
+</style>
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,700' rel='stylesheet' type='text/css'>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script>if (!window.jQuery) { document.write('<script src="https://agricdemy.com/content/themes/flix/assets/js/jquery.min.js"><\/script>'); }</script>
+
+<link rel="icon" href="/content/uploads/settings/5d2ceb2ab6d37-favicon.png" type="image/x-icon">
+<link rel="shortcut icon" href="/content/uploads/settings/5d2ceb2ab6d37-favicon.png" type="image9sx-icon">
+
+<script type="text/javascript">var subscribersSiteId='10198b74-da7a-45d7-
+94c8-eab0a09231dc';</script><script type="text/javascript"
+src="https://cdn.subscribers.com/assets/subscribers.js"></script>    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-26HFXRFWTV"></script>
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'G-26HFXRFWTV');
+</script>
+
+<!-- Twitter universal website tag code -->
+<script>
+!function(e,t,n,s,u,a){e.twq||(s=e.twq=function(){s.exe?s.exe.apply(s,arguments):s.queue.push(arguments);
+},s.version='1.1',s.queue=[],u=t.createElement(n),u.async=!0,u.src='//static.ads-twitter.com/uwt.js',
+a=t.getElementsByTagName(n)[0],a.parentNode.insertBefore(u,a))}(window,document,'script');
+// Insert Twitter Pixel ID and Standard Event data below
+twq('init','o7y7g');
+twq('track','PageView');
+</script>
+<!-- End Twitter universal website tag code -->
+<meta name="publication-media-verification"content="715973c8ca9a45579d05e58fd22a26b1">
+
+</head>
+<body >
+
+
+
+<nav class="navbar navbar-default navbar-static-top" role="navigation">
+      <div class="container">
+        
+            <div class="navbar-header">
+              <a id="nav-toggle" href="#"><span></span></a>
+
+                              <a href="/" class="navbar-brand">
+                                            <img src="/content/uploads/settings/agric.png"/>
+                                    </a>
+            </div>
+
+
+            <div class="collapse navbar-collapse right" id="bs-example-navbar-collapse-1">
+
+                <ul class="nav navbar-nav navbar-left">
+
+	</li><li><a href="/">Home</a></li><li class="dropdown"><a href="/posts" class="dropdown-toggle">Blog</a><ul class="dropdown-menu multi-level" role="menu"></li><li><a href="/posts/category/pig-farming">Pig Farming</a></li><li><a href="/posts/category/poultry-farming">Poultry Farming</a></li><li><a href="/posts/category/fish-farming">Fish Farming</a></li><li><a href="/posts/category/greenhouse-farming">Greenhouse Farming</a></li><li><a href="/posts/category/general">General</a></li><li><a href="/posts/category/vegetable-farming">Vegetable Farming</a></li><li><a href="/posts/category/entrepreneurship">Entrepreneurship</a></li><li><a href="/posts/category/agricultural-equipment">Agricultural Equipment</a></li><li><a href="/posts/category/snail-farming">Snail Farming</a></li><li><a href="/posts/category/agribusiness-grants">Agribusiness Grants</a></li><li><a href="/posts/category/cassava-farming">Cassava Farming</a></li><li><a href="/posts/category/livestock-farming">Livestock Farming</a></li><li><a href="/posts/category/agriculture-career">Agriculture Career</a></li><li><a href="/posts/category/finance-investing">Finance & Investing</a></li></ul></li></li><li class="dropdown"><a href="/videos" class="dropdown-toggle">Courses</a><ul class="dropdown-menu multi-level" role="menu"></li><li><a href="/videos/category/catfish-farming">Catfish Farming</a></li><li><a href="/videos/category/poultry-farming">Poultry Farming</a></li><li><a href="/videos/category/poultry-processing">Poultry Processing</a></li><li><a href="/videos/category/charcoal-exporting">Charcoal Exporting</a></li><li><a href="/videos/category/greenhouse ">Greenhouse and Hydroponics Farming</a></li><li><a href="/videos/category/pig-farming">Pig Farming</a></li><li><a href="/videos/category/vegetable-farming">Vegetable Farming</a></li><li><a href="/videos/category/snail-farming">Snail Farming</a></li><li><a href="/videos/category/cassava-processing">Cassava Processing</a></li><li><a href="/videos/category/agricultural-equipment">Agricultural Equipment</a></li><li><a href="/videos/category/livestock-farming">Livestock Farming</a></li><li><a href="/videos/category/coconut-processing">Coconut Processing</a></li><li><a href="/videos/category/grasscutter-farming">Grasscutter Farming</a></li><li><a href="/videos/category/pork-processing">Pork Processing</a></li><li><a href="/videos/category/agricdemy-account-guide">Agricdemy Account Guide</a></li></ul></li></li><li><a href="/page/reviews">Reviews</a></li><li><a href="/page/agribusiness-plan">Agribusiness Plan</a></li><li><a href="/contact">Contact</a></li><li><a href="/page/consultation">Farm Setup Consultation</a></li></ul>
+</ul>
+            
+
+                <ul class="nav navbar-nav navbar-right">
+                                    <li>
+                        <div id="navbar-search-form">
+                            <form role="search" action="/search" method="GET">
+                                <i class="fa fa-search"></i>
+                                <input type="text" id="value" name="value" placeholder="Search...">
+
+                               
+                            </form>
+                        </div>
+                    </li>
+                                
+                                            
+                        <li class="login-desktop"><a href="/login"><i class="fa fa-lock"></i> Login</a></li>
+                        <li class="signup-desktop"><a href="/signup"><i class="dojo-user-circle"></i> Signup</a></li>
+                    
+                                    </ul>
+
+            </div>
+
+         </div>
+
+      </div>
+    </nav>
+    
+    <div class="clear"></div>
+<div class="container">
+
+		<div class="row">
+
+			<div class="col-md-12 page">
+
+				<h2>(404) Page not found</h2>
+				<div class="heading-divider"></div>
+
+				<div class="page-body">
+				<center>
+						Sorry, the page you are looking for does not exist.<br/><br/>
+						<a href="https://agricdemy.com">Click here to visit the homepage</a>
+				</center>
+				<br/><br/>
+				</div>
+
+			</div>
+
+		</div>
+    
+
+</div> 
+
+
+	<div class="bottom_bar">
+	    <div class="container">
+	        <div class="notification">
+	            <h1>Online Agribusiness Training Portal</h1>
+	        </div>
+	        <div class="social">
+	            <h3>Follow us on: </h3>
+	            <a href="http://facebook.com/agricdemy" target="_blank" class="share"><i class="fa fa-facebook"></i></a>
+	            <a href="http://twitter.com/Agridemy" target="_blank" class="share"><i class="fa fa-twitter"></i></a>
+	            <a href="http://plus.google.com/agricdemy" target="_blank" class="share"><i class="fa fa-google-plus"></i></a>
+	            <a href="http://youtube.com/@AgricdemyNg" target="_blank" class="share"><i class="fa fa-youtube"></i></a>
+	            <a href="http://instagram.com/agricdemy" target="_blank" class="share"><i class="fa fa-instagram"></i></a>
+	        </div>
+	    </div>
+	</div>
+
+	<footer>
+		<div class="container">
+
+			<div class="row">
+				<div class="col-md-4">
+					              		<a href="/" class="logo"><img src="/content/uploads/settings/agric.png" /></a>
+					<p>Agricdemy is an online platform filled with videos and resources for learning about agriculture, agribusiness and farming. It is an online agribusiness training center where students enroll to watch practical tutorial videos that will teach and explain different aspects of agriculture, agribusiness and farming. Students also receive extensive support and counselling that will help them start their own farming businesses.
+                                              </p>
+					<a href="http://facebook.com/agricdemy" class="facebook social-link"><i class="fa fa-facebook"></i></a>
+					<a href="http://twitter.com/Agridemy" class="twitter social-link"><i class="fa fa-twitter"></i></a>
+					<a href="http://plus.google.com/agricdemy" class="google social-link"><i class="fa fa-google-plus"></i></a>
+					<a href="http://youtube.com/@AgricdemyNg" class="youtube social-link"><i class="fa fa-youtube"></i></a>
+					<a href="http://instagram.com/agricdemy" class="instagram social-link"><i class="fa fa-instagram"></i></a>
+					<div class="clear"></div>
+				</div>
+				<div class="col-md-3">
+					<h4>Video Lessons</h3>
+					<ul>
+													<li><a href="https://agricdemy.com/videos/category/catfish-farming">Catfish Farming</a></li>
+													<li><a href="https://agricdemy.com/videos/category/poultry-processing">Poultry Processing</a></li>
+													<li><a href="https://agricdemy.com/videos/category/charcoal-exporting">Charcoal Exporting</a></li>
+													<li><a href="https://agricdemy.com/videos/category/pig-farming">Pig Farming</a></li>
+													<li><a href="https://agricdemy.com/videos/category/poultry-farming">Poultry Farming</a></li>
+													<li><a href="https://agricdemy.com/videos/category/greenhouse ">Greenhouse and Hydroponics Farming</a></li>
+													<li><a href="https://agricdemy.com/videos/category/vegetable-farming">Vegetable Farming</a></li>
+													<li><a href="https://agricdemy.com/videos/category/snail-farming">Snail Farming</a></li>
+													<li><a href="https://agricdemy.com/videos/category/cassava-processing">Cassava Processing</a></li>
+													<li><a href="https://agricdemy.com/videos/category/agricultural-equipment">Agricultural Equipment</a></li>
+													<li><a href="https://agricdemy.com/videos/category/livestock-farming">Livestock Farming</a></li>
+													<li><a href="https://agricdemy.com/videos/category/coconut-processing">Coconut Processing</a></li>
+													<li><a href="https://agricdemy.com/videos/category/grasscutter-farming">Grasscutter Farming</a></li>
+													<li><a href="https://agricdemy.com/videos/category/pork-processing">Pork Processing</a></li>
+													<li><a href="https://agricdemy.com/videos/category/agricdemy-account-guide">Agricdemy Account Guide</a></li>
+											</ul>
+				</div>
+				<div class="col-md-3">
+					<h4>Articles</h3>
+					<ul>
+													<li><a href="https://agricdemy.com/posts/category/pig-farming">Pig Farming</a></li>
+													<li><a href="https://agricdemy.com/posts/category/poultry-farming">Poultry Farming</a></li>
+													<li><a href="https://agricdemy.com/posts/category/fish-farming">Fish Farming</a></li>
+													<li><a href="https://agricdemy.com/posts/category/greenhouse-farming">Greenhouse Farming</a></li>
+													<li><a href="https://agricdemy.com/posts/category/general">General</a></li>
+													<li><a href="https://agricdemy.com/posts/category/vegetable-farming">Vegetable Farming</a></li>
+													<li><a href="https://agricdemy.com/posts/category/entrepreneurship">Entrepreneurship</a></li>
+													<li><a href="https://agricdemy.com/posts/category/agricultural-equipment">Agricultural Equipment</a></li>
+													<li><a href="https://agricdemy.com/posts/category/snail-farming">Snail Farming</a></li>
+													<li><a href="https://agricdemy.com/posts/category/agribusiness-grants">Agribusiness Grants</a></li>
+													<li><a href="https://agricdemy.com/posts/category/cassava-farming">Cassava Farming</a></li>
+													<li><a href="https://agricdemy.com/posts/category/livestock-farming">Livestock Farming</a></li>
+													<li><a href="https://agricdemy.com/posts/category/agriculture-career">Agriculture Career</a></li>
+													<li><a href="https://agricdemy.com/posts/category/finance-investing">Finance & Investing</a></li>
+											</ul>
+				</div>
+				<div class="col-md-2">
+					<h4>Useful Links</h3>
+					<ul>
+													<li><a href="https://agricdemy.com/page/reviews">Reviews</a></li>
+													<li><a href="https://agricdemy.com/page/privacy-policy">Privacy Policy</a></li>
+													<li><a href="https://agricdemy.com/page/terms">Terms of Use</a></li>
+													<li><a href="https://agricdemy.com/page/agribusiness-plan">Agribusiness Plan</a></li>
+													<li><a href="https://agricdemy.com/page/consultation">Farm Setup Consultation</a></li>
+													<li><a href="https://agricdemy.com/page/about">About Us</a></li>
+													<li><a href="https://agricdemy.com/page/advertise">Advertise with Us</a></li>
+												<li><a href="/calculator">Financial Calculator</a></li>
+						<li><a href="/login">Login</a></li>
+						<li><a href="/signup">Signup</a></li>
+					</ul>
+				</div>
+			</div>
+
+			<hr />
+			<p class="copyright">Copyright &copy; 2026 Agricdemy</p>
+
+		</div>
+	</footer>
+	<script src="https://agricdemy.com/content/themes/flix/assets/js/headroom.min.js"></script>
+    <script src="https://agricdemy.com/content/themes/flix/assets/js/bootstrap.min.js"></script>
+    <script src="https://agricdemy.com/content/themes/flix/assets/js/moment.min.js"></script>
+	<script type="text/javascript" src="https://agricdemy.com/content/themes/flix/assets/js/noty/jquery.noty.js"></script>
+	<script type="text/javascript" src="https://agricdemy.com/content/themes/flix/assets/js/noty/themes/default.js"></script>
+	<script type="text/javascript" src="https://agricdemy.com/content/themes/flix/assets/js/noty/layouts/top.js"></script>
+
+	<script type="text/javascript">
+
+	//********** Headroom js functionality **********/
+		// grab an element
+		var myElement = document.querySelector(".navbar");
+		// construct an instance of Headroom, passing the element
+		var headroom  = new Headroom(myElement, { offset: 65 });
+		// initialise
+		headroom.init();
+
+
+	  $('document').ready(function(){
+
+
+		    $('.dropdown').hover(function(){
+		        $(this).addClass('open');
+		    }, function(){
+		        $(this).removeClass('open');
+		    });
+
+	    
+	    $('#nav-toggle').click(function(){
+	    	$(this).toggleClass('active');
+	    	$('.navbar-collapse').toggle();
+	    	$('body').toggleClass('nav-open');
+	    });
+
+	    $('#mobile-subnav').click(function(){
+	    	if($('.second-nav .navbar-left').css('display') == 'block'){
+	    		$('.second-nav .navbar-left').slideUp(function(){
+	    			$(this).addClass('not-visible');
+	    		});
+	    		$(this).html('<i class="fa fa-bars"></i> Open Submenu');
+	    	} else {
+	    		$('.second-nav .navbar-left').slideDown(function(){
+	    			$(this).removeClass('not-visible');
+	    		});
+	    		$(this).html('<i class="fa fa-close"></i> Close Submenu');
+	    	}
+
+	    });
+
+	  });
+
+
+	  /********** LOGIN MODAL FUNCTIONALITY **********/
+
+	  var loginSignupModal = $('<div class="modal fade animated bounceInDown" id="loginSignupModal" tabindex="-1" role="dialog" aria-hidden="true"><div class="modal-dialog"><div class="modal-content"><div class="modal-header"><button type="button" class="close" data-dismiss="modal"><i class="dojo-close-delete"></i><span class="sr-only">Close</span></button><h4 class="modal-title" id="myModalLabel">Login Below</h4></div><div class="modal-body"></div></div></div></div>');
+
+		$(document).ready(function(){
+
+			// Load the Modal Window for login signup when they are clicked
+			$('.login-desktop a').click(function(e){
+				e.preventDefault();
+				$('body').prepend(loginSignupModal);
+				$('#loginSignupModal .modal-body').load($(this).attr('href') + '?redirect=' + document.URL + ' .form-signin', function(){
+					$('#loginSignupModal').show(200, function(){
+						setTimeout(function() { $('#email').focus() }, 300);
+
+
+					});
+					$('#loginSignupModal').modal();
+
+				});
+
+				// Be sure to remove the modal from the DOM after it is closed
+				$('#loginSignupModal').on('hidden.bs.modal', function (e) {
+			    	$('#loginSignupModal').remove();
+				});
+
+			});
+
+
+
+
+		});
+
+		/********** END LOGIN MODAL FUNCTIONALITY **********/
+
+	</script>
+
+		  <script>
+	    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+	    ga('create', 'UA-37300810-2', 'auto');
+	    ga('send', 'pageview');
+	  </script>
+	
+	<script>var $zoho=$zoho || {};$zoho.salesiq = $zoho.salesiq || {widgetcode:"1b1208b171f579c8e8847549d8178db6c3da9bfa5ce8830acece747fddad722e3a631fb55171b6e5d03df9806ba0d9e4dee9cb30bdacda06e557d85f5b1eaed9", values:{},ready:function(){}};var d=document;s=d.createElement("script");s.type="text/javascript";s.id="zsiqscript";s.defer=true;s.src="https://salesiq.zoho.com/widget";t=d.getElementsByTagName("script")[0];t.parentNode.insertBefore(s,t);d.write("<div id='zsiqwidget'></div>");</script>
+
+<script type="text/javascript">var subscribersSiteId='10198b74-da7a-45d7-94c8-eab0a09231dc';</script><script type="text/javascript" src="https://cdn.subscribers.com/assets/subscribers.js"></script>
+</body>
+</html>
