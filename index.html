@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="mobile-web-app-capable" content="yes">
-<meta name="theme-color" content="#064e34">
+<meta name="theme-color" content="#0c4a6e">
 <meta name="color-scheme" content="light">
 <title>AgriConnect | World's Largest Digital Agricultural Ecosystem</title>
 <meta name="description" content="Global digital agricultural marketplace connecting farmers, buyers, suppliers, processors, investors, and veterinarians across 25+ agricultural sectors. Available in 20+ languages.">
@@ -38,10 +38,10 @@
 <link rel="manifest" href="manifest.json">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Noto+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;0,9..40,800;1,9..40,400&family=Instrument+Sans:wght@400;500;600;700&family=Noto+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 <style>
-:root{--bg:#f8faf9;--surface:#fff;--surface-alt:#f1f5f3;--border:#e2e8e5;--border-l:#f0f4f2;--text:#0f1a15;--t2:#374640;--t3:#5f736c;--t4:#8a9e95;--g9:#064e34;--g8:#065f46;--g7:#047857;--g6:#059669;--g5:#10b981;--g1:#d1fae5;--g0:#ecfdf5;--a6:#d97706;--a1:#fef3c7;--a0:#fffbeb;--r6:#dc2626;--r1:#fee2e2;--b6:#2563eb;--b1:#dbeafe;--br7:#92400e;--br1:#fef7ed;--ov:rgba(15,26,21,0.55);--sh-s:0 1px 2px rgba(0,0,0,.04);--sh-m:0 8px 24px rgba(0,0,0,.08);--sh-l:0 16px 48px rgba(0,0,0,.1);--sh-xl:0 24px 64px rgba(0,0,0,.14);--r-xs:6px;--r-sm:10px;--r-md:14px;--r-lg:20px;--r-full:9999px;--ease:cubic-bezier(.4,0,.2,1);--ease-b:cubic-bezier(.34,1.56,.64,1);--fd:'Plus Jakarta Sans','Noto Sans',-apple-system,sans-serif;--fb:'Inter','Noto Sans',-apple-system,sans-serif}
+:root{--bg:#f0f7fc;--surface:#fff;--surface-alt:#e8f1fa;--border:#c8ddf0;--border-l:#e0ecf7;--text:#0a1628;--t2:#1e3a5f;--t3:#4a6fa5;--t4:#8aa4c4;--g9:#0c2d48;--g8:#0c4a6e;--g7:#0369a1;--g6:#0284c7;--g5:#38bdf8;--g1:#bae6fd;--g0:#e0f2fe;--a6:#0891b2;--a1:#cffafe;--a0:#ecfeff;--r6:#dc2626;--r1:#fee2e2;--b6:#2563eb;--b1:#dbeafe;--br7:#1e40af;--br1:#eff6ff;--ov:rgba(10,22,40,0.55);--sh-s:0 1px 2px rgba(12,74,110,.06);--sh-m:0 8px 24px rgba(12,74,110,.1);--sh-l:0 16px 48px rgba(12,74,110,.12);--sh-xl:0 24px 64px rgba(12,74,110,.16);--r-xs:8px;--r-sm:12px;--r-md:16px;--r-lg:24px;--r-full:9999px;--ease:cubic-bezier(.4,0,.2,1);--ease-b:cubic-bezier(.34,1.56,.64,1);--fd:'DM Sans','Noto Sans',-apple-system,sans-serif;--fb:'Instrument Sans','Noto Sans',-apple-system,sans-serif}
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
 body{font-family:var(--fb);background:var(--bg);color:var(--text);line-height:1.6;overflow-x:hidden;-webkit-font-smoothing:antialiased;padding-bottom:72px}
@@ -57,7 +57,7 @@ input,select{font-family:inherit}
 @keyframes fadeIn{from{opacity:0}to{opacity:1}}
 @keyframes slideUp{from{transform:translateY(100%)}to{transform:none}}
 @keyframes spin{to{transform:rotate(360deg)}}
-@keyframes pulse{0%,100%{box-shadow:0 0 0 0 rgba(16,185,129,.3)}50%{box-shadow:0 0 0 10px rgba(16,185,129,0)}}
+@keyframes pulse{0%,100%{box-shadow:0 0 0 0 rgba(56,189,248,.3)}50%{box-shadow:0 0 0 10px rgba(56,189,248,0)}}
 @keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-4px)}}
 @keyframes marquee{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
 @keyframes shimmer{0%{background-position:-200% 0}100%{background-position:200% 0}}
@@ -68,7 +68,7 @@ input,select{font-family:inherit}
 .reveal-sc{opacity:0;transform:scale(.92);transition:opacity .5s var(--ease),transform .45s var(--ease-b)}
 .reveal-sc.vis{opacity:1;transform:none}
 .stagger>*{transition-delay:calc(var(--i,0)*50ms)}
-.loader{position:fixed;inset:0;z-index:99999;background:var(--g9);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:20px;transition:opacity .4s,visibility .4s}
+.loader{position:fixed;inset:0;z-index:99999;background:linear-gradient(135deg,var(--g9),#0e3b5a);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:20px;transition:opacity .4s,visibility .4s}
 .loader.done{opacity:0;visibility:hidden;pointer-events:none}
 .loader-brand{font-family:var(--fd);font-size:1.6rem;font-weight:800;color:#fff;letter-spacing:-.5px}
 .loader-brand em{font-style:normal;color:var(--g5)}
@@ -132,7 +132,7 @@ input,select{font-family:inherit}
 .search-mobile{display:none;padding:12px 16px;background:var(--surface-alt);border-bottom:1px solid var(--border-l)}
 @media(max-width:768px){.search-mobile{display:block}}
 .search-mobile .search-input{background:#fff}
-.hero{position:relative;overflow:hidden;min-height:520px;display:flex;align-items:center;background:var(--g9)}
+.hero{position:relative;overflow:hidden;min-height:520px;display:flex;align-items:center;background:linear-gradient(135deg,#0a1e35,#0c4a6e,#0e5f8a)}
 @media(max-width:768px){.hero{min-height:440px}}
 .hero-bg{position:absolute;inset:0}
 .hero-bg img{width:100%;height:100%;object-fit:cover;opacity:.35}
@@ -144,8 +144,8 @@ input,select{font-family:inherit}
 .hero p{font-size:15px;color:rgba(255,255,255,.8);max-width:520px;line-height:1.7;margin-bottom:24px;animation:fadeInUp .5s var(--ease) .35s both}
 .hero-btns{display:flex;gap:10px;flex-wrap:wrap;animation:fadeInUp .5s var(--ease) .45s both}
 .btn-h{padding:12px 24px;border-radius:var(--r-sm);font-weight:700;font-size:13px;display:inline-flex;align-items:center;gap:7px;transition:all .2s var(--ease);text-transform:uppercase;letter-spacing:.4px}
-.btn-h-g{background:var(--a6);color:#fff;box-shadow:0 4px 12px rgba(217,119,6,.3)}
-.btn-h-g:hover{transform:translateY(-2px);box-shadow:0 6px 20px rgba(217,119,6,.4)}
+.btn-h-g{background:linear-gradient(135deg,var(--g7),var(--g6));color:#fff;box-shadow:0 4px 12px rgba(3,105,161,.35)}
+.btn-h-g:hover{transform:translateY(-2px);box-shadow:0 6px 20px rgba(3,105,161,.45)}
 .btn-h-ghost{background:transparent;color:#fff;border:1.5px solid rgba(255,255,255,.3)}
 .btn-h-ghost:hover{background:rgba(255,255,255,.08);border-color:rgba(255,255,255,.5)}
 .hero-stats{display:flex;gap:28px;margin-top:36px;animation:fadeInUp .5s var(--ease) .55s both}
@@ -155,9 +155,9 @@ input,select{font-family:inherit}
 .h-stat-val{font-family:var(--fd);font-size:26px;font-weight:800;color:#fff;letter-spacing:-.5px}
 @media(max-width:600px){.h-stat-val{font-size:20px}}
 .h-stat-lbl{font-size:11px;color:rgba(255,255,255,.55);font-weight:500;margin-top:1px}
-.ticker{overflow:hidden;background:var(--a0);border-bottom:1px solid #f0e6c4;padding:9px 0}
+.ticker{overflow:hidden;background:linear-gradient(90deg,var(--g0),var(--a0),var(--g0));border-bottom:1px solid var(--border-l);padding:9px 0}
 .ticker-track{display:flex;gap:40px;animation:marquee 40s linear infinite;white-space:nowrap;width:max-content}
-.ticker-item{font-size:12px;font-weight:600;color:#92710c;display:flex;align-items:center;gap:5px}
+.ticker-item{font-size:12px;font-weight:600;color:var(--g8);display:flex;align-items:center;gap:5px}
 .wrap{max-width:1320px;margin:0 auto;padding:0 20px}
 .sec-head{text-align:center;padding:48px 20px 24px}
 .sec-pill{display:inline-flex;align-items:center;gap:5px;font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:2px;color:var(--g7);background:var(--g0);padding:5px 12px;border-radius:var(--r-full);margin-bottom:12px}
@@ -215,7 +215,7 @@ input,select{font-family:inherit}
 .btn-add-n{background:#1e3a5f;color:#fff}.btn-add-n:hover{background:#172e4a}
 .btn-add:active{transform:scale(.97)}
 @media(max-width:600px){.btn-add{padding:7px;font-size:10px}}
-.biz-promo{background:linear-gradient(135deg,var(--g9),#0a1628);padding:56px 20px;text-align:center;color:#fff;position:relative;overflow:hidden}
+.biz-promo{background:linear-gradient(135deg,#0a1e35,#0c4a6e);padding:56px 20px;text-align:center;color:#fff;position:relative;overflow:hidden}
 .biz-promo::before{content:'';position:absolute;top:-30%;right:-10%;width:350px;height:350px;background:rgba(255,255,255,.02);border-radius:50%}
 .biz-promo h2{font-family:var(--fd);font-size:clamp(1.5rem,4vw,2.2rem);font-weight:800;letter-spacing:-.5px;margin-bottom:10px}
 .biz-promo p{opacity:.8;margin-bottom:24px;font-size:14px;max-width:500px;margin-left:auto;margin-right:auto}
@@ -246,16 +246,16 @@ input,select{font-family:inherit}
 .test-info{display:flex;flex-direction:column}
 .test-name{font-weight:600;font-size:12px;color:var(--text)}
 .test-role{font-size:10px;color:var(--t4)}
-.cta{background:linear-gradient(135deg,var(--g9),#0a1628);padding:48px 20px;text-align:center;color:#fff}
+.cta{background:linear-gradient(135deg,#0a1e35,#0c4a6e);padding:48px 20px;text-align:center;color:#fff}
 .cta h2{font-family:var(--fd);font-size:clamp(1.4rem,3.5vw,2rem);font-weight:800;letter-spacing:-.4px;margin-bottom:10px}
 .cta p{opacity:.8;margin-bottom:18px;font-size:14px}
-.cta-phone{font-family:var(--fd);font-size:clamp(1.8rem,4.5vw,2.5rem);font-weight:800;color:var(--a6);display:block;margin-bottom:20px;letter-spacing:-1px}
+.cta-phone{font-family:var(--fd);font-size:clamp(1.8rem,4.5vw,2.5rem);font-weight:800;color:var(--g5);display:block;margin-bottom:20px;letter-spacing:-1px}
 .cta-btns{display:flex;gap:10px;justify-content:center;flex-wrap:wrap}
 .btn-cta{padding:12px 24px;border-radius:var(--r-full);font-weight:700;font-size:13px;display:inline-flex;align-items:center;gap:7px;transition:all .2s var(--ease);box-shadow:0 3px 12px rgba(0,0,0,.2)}
 .btn-cta:hover{transform:translateY(-2px);box-shadow:0 6px 20px rgba(0,0,0,.3)}
-.btn-cta-g{background:var(--a6);color:#fff}
+.btn-cta-g{background:linear-gradient(135deg,var(--g7),var(--g6));color:#fff}
 .btn-cta-w{background:#25D366;color:#fff}
-.footer{background:#0a1628;color:rgba(255,255,255,.6);padding:48px 20px 100px}
+.footer{background:#0a1e35;color:rgba(255,255,255,.6);padding:48px 20px 100px}
 @media(min-width:1024px){.footer{padding-bottom:48px}}
 .footer-grid{max-width:1320px;margin:0 auto;display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:24px}
 .footer-col h4{font-family:var(--fd);color:#fff;font-size:13px;font-weight:700;margin-bottom:14px}
@@ -313,6 +313,49 @@ input,select{font-family:inherit}
 .toast i{color:var(--g5)}
 ::-webkit-scrollbar{width:4px}::-webkit-scrollbar-track{background:transparent}::-webkit-scrollbar-thumb{background:#d1d5db;border-radius:2px}
 @media print{.hdr,.bnav,.fab,.btt,.cart-pnl,.cart-ov,.nav-draw,.nav-ov,.toast{display:none!important}body{padding-bottom:0}}
+
+/* ═══ FRAMER-STYLE PRODUCT CAROUSEL ═══ */
+.carousel-section{padding:48px 0 36px;overflow:hidden;background:linear-gradient(180deg,var(--bg) 0%,var(--surface) 100%)}
+.carousel-header{max-width:1320px;margin:0 auto;padding:0 20px 24px;display:flex;align-items:flex-end;justify-content:space-between;flex-wrap:wrap;gap:12px}
+.carousel-header h2{font-family:var(--fd);font-size:clamp(1.4rem,3vw,2rem);font-weight:800;color:var(--text);letter-spacing:-.5px}
+.carousel-header p{font-size:14px;color:var(--t3);max-width:400px}
+.carousel-controls{display:flex;gap:8px}
+.carousel-btn{width:40px;height:40px;border-radius:50%;background:var(--surface);border:1.5px solid var(--border);display:grid;place-items:center;font-size:14px;color:var(--t2);transition:all .2s var(--ease);cursor:pointer}
+.carousel-btn:hover{background:var(--g7);color:#fff;border-color:var(--g7);transform:scale(1.05)}
+.carousel-btn:active{transform:scale(.95)}
+.carousel-track-wrap{position:relative;overflow:hidden}
+.carousel-track{display:flex;gap:16px;padding:0 20px;transition:transform .5s cubic-bezier(.25,.46,.45,.94);cursor:grab;will-change:transform}
+.carousel-track.dragging{transition:none;cursor:grabbing}
+.carousel-card{flex:0 0 280px;background:var(--surface);border-radius:var(--r-lg);overflow:hidden;border:1px solid var(--border-l);transition:all .3s var(--ease);position:relative;box-shadow:var(--sh-s)}
+.carousel-card:hover{transform:translateY(-6px) scale(1.02);box-shadow:var(--sh-l);border-color:var(--g5)}
+.carousel-card-img{position:relative;aspect-ratio:16/10;overflow:hidden;background:var(--surface-alt)}
+.carousel-card-img img{width:100%;height:100%;object-fit:cover;transition:transform .6s var(--ease)}
+.carousel-card:hover .carousel-card-img img{transform:scale(1.08)}
+.carousel-card-overlay{position:absolute;inset:0;background:linear-gradient(0deg,rgba(12,45,72,.7) 0%,transparent 50%);opacity:0;transition:opacity .3s var(--ease)}
+.carousel-card:hover .carousel-card-overlay{opacity:1}
+.carousel-card-badge{position:absolute;top:12px;left:12px;padding:4px 10px;border-radius:var(--r-full);font-size:10px;font-weight:700;backdrop-filter:blur(8px);letter-spacing:.5px}
+.badge-hot{background:rgba(220,38,38,.9);color:#fff}
+.badge-new{background:rgba(3,105,161,.9);color:#fff}
+.badge-trending{background:rgba(8,145,178,.9);color:#fff}
+.badge-premium{background:rgba(30,64,175,.9);color:#fff}
+.carousel-card-body{padding:16px}
+.carousel-card-cat{font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:1.2px;color:var(--g7);margin-bottom:6px}
+.carousel-card-title{font-family:var(--fd);font-size:14px;font-weight:700;color:var(--text);line-height:1.35;margin-bottom:8px}
+.carousel-card-meta{display:flex;align-items:center;gap:8px;margin-bottom:10px}
+.carousel-card-price{font-family:var(--fd);font-weight:800;font-size:18px;color:var(--g8)}
+.carousel-card-unit{font-size:11px;color:var(--t4);font-weight:500}
+.carousel-card-seller{display:flex;align-items:center;gap:6px;font-size:11px;color:var(--t3)}
+.carousel-card-seller-avatar{width:22px;height:22px;border-radius:50%;background:linear-gradient(135deg,var(--g1),var(--g0));display:grid;place-items:center;font-size:9px;font-weight:800;color:var(--g7)}
+.carousel-card-cta{display:flex;gap:8px;margin-top:12px}
+.carousel-card-cta button{flex:1;padding:9px;border-radius:var(--r-sm);font-weight:700;font-size:11px;display:flex;align-items:center;justify-content:center;gap:5px;transition:all .15s var(--ease);text-transform:uppercase;letter-spacing:.3px}
+.carousel-btn-primary{background:linear-gradient(135deg,var(--g7),var(--g8));color:#fff;box-shadow:0 2px 8px rgba(3,105,161,.25)}
+.carousel-btn-primary:hover{box-shadow:0 4px 16px rgba(3,105,161,.35);transform:translateY(-1px)}
+.carousel-btn-outline{background:transparent;color:var(--g7);border:1.5px solid var(--border)}
+.carousel-btn-outline:hover{background:var(--g0);border-color:var(--g6)}
+@media(max-width:600px){.carousel-card{flex:0 0 240px}.carousel-card-body{padding:12px}.carousel-card-title{font-size:13px}.carousel-card-price{font-size:16px}}
+.carousel-dots{display:flex;justify-content:center;gap:6px;padding-top:20px}
+.carousel-dot{width:8px;height:8px;border-radius:50%;background:var(--border);transition:all .3s var(--ease);cursor:pointer}
+.carousel-dot.active{background:var(--g7);width:24px;border-radius:4px}
 </style>
 </head>
 <body>
@@ -382,6 +425,24 @@ input,select{font-family:inherit}
       <div class="h-stat"><div class="h-stat-val" id="hRating">0</div><div class="h-stat-lbl" data-i18n="stat_rating">Satisfaction</div></div>
     </div>
   </div>
+</section>
+
+<!-- ═══ FRAMER-STYLE PRODUCT CAROUSEL ═══ -->
+<section class="carousel-section reveal">
+  <div class="carousel-header">
+    <div>
+      <h2>Featured <em style="font-style:normal;color:var(--g7)">Products</em></h2>
+      <p>Handpicked from top-rated sellers across all agricultural sectors.</p>
+    </div>
+    <div class="carousel-controls">
+      <button class="carousel-btn" id="carouselPrev" aria-label="Previous"><i class="fas fa-chevron-left"></i></button>
+      <button class="carousel-btn" id="carouselNext" aria-label="Next"><i class="fas fa-chevron-right"></i></button>
+    </div>
+  </div>
+  <div class="carousel-track-wrap">
+    <div class="carousel-track" id="carouselTrack"></div>
+  </div>
+  <div class="carousel-dots" id="carouselDots"></div>
 </section>
 
 <div class="ticker"><div class="ticker-track" aria-hidden="true" id="tickerTrack"></div></div>
@@ -1099,6 +1160,110 @@ var AC = (function() {
     container.innerHTML = h;
   }
 
+  /* ── CAROUSEL ── */
+  function buildCarousel() {
+    var featured = [
+      {n:'Super Active Catfish Juveniles',p:180,u:'/pc',c:'Fish & Aquaculture',img:'fish1.jpg',badge:'hot',badgeLabel:'Bestseller',seller:'Daily Drop Farm',sv:'D'},
+      {n:'Day-Old Broiler Chicks (Cobb)',p:450,u:'/chick',c:'Poultry',img:'poultry1.jpg',badge:'trending',badgeLabel:'Trending',seller:'Sunrise Hatchery',sv:'S'},
+      {n:'White Fulani Cattle Bull',p:450000,u:'/head',c:'Livestock',img:'img/livestock2.jpg',badge:'premium',badgeLabel:'Premium',seller:'Kano Cattle Ranch',sv:'K'},
+      {n:'Fresh Pasteurized Cow Milk',p:3500,u:'/5L',c:'Dairy',img:'img/dairy1.jpg',badge:'new',badgeLabel:'New',seller:'FreshDairy NG',sv:'F'},
+      {n:'Pure Raw Honey (1 Litre)',p:5500,u:'',c:'Apiculture',img:'img/honey1.jpg',badge:'trending',badgeLabel:'Trending',seller:'BeeFarm Nigeria',sv:'B'},
+      {n:'Massey Ferguson 375 (75HP)',p:12500000,u:'',c:'Farm Equipment',img:'img/equipment1.jpg',badge:'premium',badgeLabel:'Premium',seller:'Tractors.com.ng',sv:'T'},
+      {n:'Premium Yellow Maize 100kg',p:42000,u:'',c:'Seeds & Crops',img:'img/crops1.jpg',badge:'hot',badgeLabel:'Bestseller',seller:'Benue Grains Co.',sv:'B'},
+      {n:'Fermented Cocoa Beans Grade I',p:12000000,u:'/ton',c:'Cocoa & Palm',img:'img/cocoa1.jpg',badge:'premium',badgeLabel:'Export',seller:'CocoaExport NG',sv:'C'},
+      {n:'Walk-In Tunnel Greenhouse',p:1800000,u:'',c:'Greenhouse',img:'img/greenhouse1.jpg',badge:'new',badgeLabel:'Modern',seller:'GreenGrow NG',sv:'G'},
+      {n:'Agri-Spraying Drone 16L',p:4500000,u:'',c:'Agri-Drones',img:'img/drone1.jpg',badge:'trending',badgeLabel:'Precision',seller:'DroneAg NG',sv:'D'},
+      {n:'Solar Water Pump System',p:650000,u:'',c:'Solar Energy',img:'img/solar1.jpg',badge:'new',badgeLabel:'Eco',seller:'SolarFarm NG',sv:'S'},
+      {n:'Refrigerated Truck Service',p:180000,u:'',c:'Logistics',img:'img/logistics1.jpg',badge:'hot',badgeLabel:'Popular',seller:'ColdChain NG',sv:'C'},
+      {n:'Giant African Snails 50pk',p:25000,u:'',c:'Snail Farming',img:'img/snail1.jpg',badge:'new',badgeLabel:'Profitable',seller:'SnailFarm NG',sv:'S'},
+      {n:'Oyster Mushrooms 1kg',p:3500,u:'',c:'Mushroom',img:'img/mushroom1.jpg',badge:'trending',badgeLabel:'Organic',seller:'MushFarm NG',sv:'M'}
+    ];
+
+    var track = document.getElementById('carouselTrack');
+    var dots = document.getElementById('carouselDots');
+    var h = '';
+    featured.forEach(function(p) {
+      h += '<div class="carousel-card">';
+      h += '<div class="carousel-card-img"><img src="' + p.img + '" alt="' + p.n + '" loading="lazy">';
+      h += '<div class="carousel-card-overlay"></div>';
+      h += '<span class="carousel-card-badge badge-' + p.badge + '">' + p.badgeLabel + '</span></div>';
+      h += '<div class="carousel-card-body">';
+      h += '<div class="carousel-card-cat">' + p.c + '</div>';
+      h += '<div class="carousel-card-title">' + p.n + '</div>';
+      h += '<div class="carousel-card-meta"><span class="carousel-card-price">₦' + p.p.toLocaleString() + '</span>';
+      if (p.u) h += '<span class="carousel-card-unit">' + p.u + '</span>';
+      h += '</div>';
+      h += '<div class="carousel-card-seller"><span class="carousel-card-seller-avatar">' + p.sv + '</span>' + p.seller + '</div>';
+      h += '<div class="carousel-card-cta">';
+      h += '<button class="carousel-btn-primary" onclick="AC.addToCart(\'' + p.n.replace(/'/g, "\\'") + '\',' + p.p + ',this)"><i class="fas fa-cart-plus"></i> Add</button>';
+      h += '<button class="carousel-btn-outline" onclick="AC.toast(\'' + t('viewing') + ' ' + p.seller.replace(/'/g, "\\'") + '\')"><i class="fas fa-eye"></i> View</button>';
+      h += '</div></div></div>';
+    });
+    track.innerHTML = h;
+
+    // Carousel logic
+    var pos = 0, cardW = 296, isDragging = false, startX = 0, scrollStart = 0;
+    var maxPos = Math.max(0, (featured.length * cardW) - track.parentElement.offsetWidth);
+
+    function updatePos(animate) {
+      if (!animate) track.classList.add('dragging');
+      else track.classList.remove('dragging');
+      track.style.transform = 'translateX(' + (-pos) + 'px)';
+      // Update dots
+      var page = Math.round(pos / (track.parentElement.offsetWidth * 0.8));
+      var total = Math.ceil(featured.length / Math.max(1, Math.floor(track.parentElement.offsetWidth / cardW)));
+      document.querySelectorAll('.carousel-dot').forEach(function(d, i) { d.classList.toggle('active', i === page); });
+    }
+
+    document.getElementById('carouselPrev').addEventListener('click', function() {
+      pos = Math.max(0, pos - cardW * 2);
+      updatePos(true);
+    });
+    document.getElementById('carouselNext').addEventListener('click', function() {
+      pos = Math.min(maxPos, pos + cardW * 2);
+      updatePos(true);
+    });
+
+    // Drag/swipe
+    track.addEventListener('mousedown', function(e) { isDragging = true; startX = e.clientX; scrollStart = pos; track.classList.add('dragging'); });
+    track.addEventListener('touchstart', function(e) { isDragging = true; startX = e.touches[0].clientX; scrollStart = pos; track.classList.add('dragging'); }, {passive: true});
+    window.addEventListener('mousemove', function(e) { if (!isDragging) return; var d = startX - e.clientX; pos = Math.max(0, Math.min(maxPos, scrollStart + d)); updatePos(false); });
+    window.addEventListener('touchmove', function(e) { if (!isDragging) return; var d = startX - e.touches[0].clientX; pos = Math.max(0, Math.min(maxPos, scrollStart + d)); updatePos(false); }, {passive: true});
+    window.addEventListener('mouseup', function() { if (isDragging) { isDragging = false; snapToNearest(); } });
+    window.addEventListener('touchend', function() { if (isDragging) { isDragging = false; snapToNearest(); } });
+
+    function snapToNearest() {
+      pos = Math.round(pos / cardW) * cardW;
+      pos = Math.max(0, Math.min(maxPos, pos));
+      updatePos(true);
+    }
+
+    // Auto-scroll
+    var autoTimer = setInterval(function() {
+      if (isDragging) return;
+      pos += cardW;
+      if (pos > maxPos) pos = 0;
+      updatePos(true);
+    }, 4000);
+    track.addEventListener('mouseenter', function() { clearInterval(autoTimer); });
+    track.addEventListener('mouseleave', function() {
+      autoTimer = setInterval(function() {
+        if (isDragging) return;
+        pos += cardW;
+        if (pos > maxPos) pos = 0;
+        updatePos(true);
+      }, 4000);
+    });
+
+    // Build dots
+    var dotCount = Math.ceil(featured.length / Math.max(1, Math.floor(track.parentElement.offsetWidth / cardW)));
+    var dh = '';
+    for (var i = 0; i < Math.min(dotCount, 8); i++) {
+      dh += '<div class="carousel-dot' + (i === 0 ? ' active' : '') + '" onclick="document.getElementById(\'carouselTrack\').style.transform=\'translateX(-\' + (' + i + ' * ' + (track.parentElement.offsetWidth * 0.8) + ') + \')px\'"></div>';
+    }
+    dots.innerHTML = dh;
+  }
+
   /* ── TICKER ── */
   function buildTicker() {
     var items = [
@@ -1172,6 +1337,7 @@ var AC = (function() {
     buildSectors();
     buildProducts();
     buildTicker();
+    buildCarousel();
 
     // Metrics
     initMetrics();
