@@ -1,0 +1,26 @@
+{
+  "name": "Daily Drop Agri-Solutions",
+  "short_name": "Daily Drop",
+  "description": "Buy live catfish, poultry chicks & fish feed. Direct from farm. Lagos delivery.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#f5f7fa",
+  "theme_color": "#0a3c6e",
+  "orientation": "portrait",
+  "scope": "/",
+  "icons": [
+    {
+      "src": "og-image.jpg",
+      "sizes": "192x192",
+      "type": "image/jpeg"
+    },
+    {
+      "src": "og-image.jpg",
+      "sizes": "512x512",
+      "type": "image/jpeg"
+    }
+  ],
+  "categories": ["shopping", "business"],
+  "lang": "en-NG",
+  "dir": "ltr"
+}

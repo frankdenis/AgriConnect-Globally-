@@ -1,0 +1,49 @@
+# Dependencies
+node_modules/
+.pnp
+.pnp.js
+
+# Build
+dist/
+build/
+out/
+.next/
+.nuxt/
+.output/
+
+# Environment
+.env
+.env.local
+.env.production.local
+.env.development.local
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Logs
+*.log
+npm-debug.log*
+
+# Cache
+.cache/
+.parcel-cache/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+
+# Arena
+.arena/
+
+# Temporary
+*.tmp
+*.bak
+*.backup
