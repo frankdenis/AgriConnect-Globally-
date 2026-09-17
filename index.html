@@ -402,6 +402,8 @@ input,select{font-family:inherit}
     <a class="nav-l" onclick="AC.scrollToId('logistics');AC.toggleNav()"><i class="fas fa-truck"></i> <span data-i18n="nav_logistics">Logistics</span></a>
     <a class="nav-l" onclick="AC.scrollToId('drones');AC.toggleNav()"><i class="fas fa-helicopter"></i> <span data-i18n="nav_drones">Agri-Drones</span></a>
     <a class="nav-l" onclick="AC.scrollToId('solar');AC.toggleNav()"><i class="fas fa-solar-panel"></i> <span data-i18n="nav_solar">Solar Energy</span></a>
+    <a class="nav-l" onclick="AC.scrollToId('export');AC.toggleNav()"><i class="fas fa-ship"></i> Agricultural Export</a>
+    <a class="nav-l" onclick="AC.scrollToId('finance');AC.toggleNav()"><i class="fas fa-chart-line"></i> Agri Finance</a>
     <a class="nav-l" onclick="AC.scrollToId('biz');AC.toggleNav()"><i class="fas fa-building"></i> <span data-i18n="nav_biz">Business Account</span></a>
     <a class="nav-l" onclick="AC.scrollToId('reviews');AC.toggleNav()"><i class="fas fa-star"></i> <span data-i18n="nav_reviews">Reviews</span></a>
     <a class="nav-l" onclick="AC.scrollToId('contact');AC.toggleNav()"><i class="fas fa-phone-alt"></i> <span data-i18n="nav_contact">Contact</span></a>
@@ -500,6 +502,7 @@ input,select{font-family:inherit}
   <div class="footer-col"><h4 data-i18n="footer_market">Marketplace</h4><a onclick="AC.scrollToId('fish')" data-i18n="nav_fish">Fish & Aquaculture</a><a onclick="AC.scrollToId('poultry')" data-i18n="nav_poultry">Poultry & Chicks</a><a onclick="AC.scrollToId('livestock')" data-i18n="nav_livestock">Livestock & Cattle</a><a onclick="AC.scrollToId('dairy')" data-i18n="nav_dairy">Dairy & Milk</a><a onclick="AC.scrollToId('pigs')" data-i18n="nav_piggery">Piggery</a><a onclick="AC.scrollToId('crops')" data-i18n="nav_crops">Seeds & Crops</a></div>
   <div class="footer-col"><h4 data-i18n="footer_more">More Sectors</h4><a onclick="AC.scrollToId('apiculture')" data-i18n="nav_honey">Apiculture & Honey</a><a onclick="AC.scrollToId('forestry')" data-i18n="nav_forestry">Forestry & Timber</a><a onclick="AC.scrollToId('mushroom')" data-i18n="nav_mushroom">Mushroom</a><a onclick="AC.scrollToId('spices')" data-i18n="nav_spices">Spices & Herbs</a><a onclick="AC.scrollToId('cocoa')" data-i18n="nav_cocoa">Cocoa & Palm</a><a onclick="AC.scrollToId('equipment')" data-i18n="nav_equip">Farm Equipment</a></div>
   <div class="footer-col"><h4 data-i18n="footer_services">Services</h4><a onclick="AC.scrollToId('vet')" data-i18n="nav_vet">Veterinary</a><a onclick="AC.scrollToId('agrochem')" data-i18n="nav_agro">Agrochemicals</a><a onclick="AC.scrollToId('logistics')" data-i18n="nav_logistics">Logistics</a><a onclick="AC.scrollToId('drones')" data-i18n="nav_drones">Agri-Drones</a><a onclick="AC.scrollToId('solar')" data-i18n="nav_solar">Solar Energy</a><a onclick="AC.scrollToId('processing')" data-i18n="nav_process">Food Processing</a></div>
+  <div class="footer-col"><h4>More</h4><a onclick="AC.scrollToId('export')">Agricultural Export</a><a onclick="AC.scrollToId('finance')">Agri Finance</a><a onclick="AC.scrollToId('greenhouse')">Greenhouse</a><a onclick="AC.scrollToId('mushroom')">Mushroom</a><a onclick="AC.scrollToId('forestry')">Forestry</a><a onclick="AC.scrollToId('biz')">Business Account</a></div>
   <div class="footer-col"><h4 data-i18n="footer_support">Support</h4><a onclick="AC.scrollToId('biz')" data-i18n="nav_biz">Business Account</a><a href="tel:+2349126480004">📞 09126480004</a><a href="https://wa.me/2349126480004">💬 WhatsApp</a><a href="mailto:support@agriconnect.ng">📧 Email</a></div>
 </div>
 <div class="footer-bottom">
@@ -889,7 +892,9 @@ var AC = (function() {
     {id:null,icon:'fa-handshake',cls:'g',name:'Supplier Connections',base:5200},
     {id:null,icon:'fa-chart-pie',cls:'a',name:'Investment & Advisory',base:400},
     {id:null,icon:'fa-graduation-cap',cls:'b',name:'Training & Education',base:280},
-    {id:null,icon:'fa-map-marked-alt',cls:'br',name:'Farm Land & Real Estate',base:1100}
+    {id:null,icon:'fa-map-marked-alt',cls:'br',name:'Farm Land & Real Estate',base:1100},
+    {id:'export',icon:'fa-ship',cls:'b',name:'Agricultural Export',base:1800},
+    {id:'finance',icon:'fa-chart-line',cls:'a',name:'Agri Finance & Insurance',base:650}
   ];
 
   var products = [
@@ -932,7 +937,15 @@ var AC = (function() {
     {n:'Refrigerated Truck',p:180000,u:'',c:'Logistics',img:'img/logistics1.jpg',sec:'logistics',tag:'new',specs:['Temp Controlled','Same Day'],seller:'ColdChain NG',sv:'C'},
     {n:'Cold Storage Rental',p:350000,u:'/mo',c:'Logistics',img:'img/logistics1.jpg',sec:'logistics',tag:null,specs:['-18°C','50 Tons'],seller:'FreshStore Lagos',sv:'F'},
     {n:'Agri-Spraying Drone 16L',p:4500000,u:'',c:'Agri-Drones',img:'img/drone1.jpg',sec:'drones',tag:'new',specs:['GPS','Auto-Pilot'],seller:'DroneAg NG',sv:'D'},
-    {n:'Solar Water Pump 1HP',p:650000,u:'',c:'Solar Energy',img:'img/solar1.jpg',sec:'solar',tag:'sale',specs:['Off-Grid','Borehole'],seller:'SolarFarm NG',sv:'S'}
+    {n:'Solar Water Pump 1HP',p:650000,u:'',c:'Solar Energy',img:'img/solar1.jpg',sec:'solar',tag:'sale',specs:['Off-Grid','Borehole'],seller:'SolarFarm NG',sv:'S'},
+    {n:'Portable Irrigation Pump',p:285000,u:'',c:'Farm Equipment',img:'img/irrigation1.jpg',sec:'equipment',tag:'new',specs:['Diesel','High Flow'],seller:'IrrigateNG',sv:'I'},
+    {n:'Agricultural Export Consultation',p:150000,u:'',c:'Export Services',img:'img/export1.jpg',sec:'export',tag:'ver',specs:['Documentation','EU/US'],seller:'AgriExport NG',sv:'A'},
+    {n:'Cocoa Export Processing',p:500000,u:'',c:'Export Services',img:'img/export1.jpg',sec:'export',tag:'premium',specs:['Grade A','Certified'],seller:'AgriExport NG',sv:'A'},
+    {n:'Farm Financial Advisory',p:75000,u:'',c:'Agri Finance',img:'img/finance1.jpg',sec:'finance',tag:'new',specs:['Loans','Insurance'],seller:'AgriFinance NG',sv:'A'},
+    {n:'Crop Insurance Package',p:45000,u:'/season',c:'Agri Finance',img:'img/finance1.jpg',sec:'finance',tag:'ver',specs:['All Crops','Payout'],seller:'AgriFinance NG',sv:'A'},
+    {n:'Cold Warehouse Storage',p:420000,u:'/mo',c:'Logistics',img:'img/warehouse1.jpg',sec:'logistics',tag:'new',specs:['-20°C','100 Tons'],seller:'FreshStore Lagos',sv:'F'},
+    {n:'Farm-to-Port Shipping',p:350000,u:'',c:'Export Services',img:'img/export1.jpg',sec:'export',tag:'hot',specs:['Container','Door-Port'],seller:'AgriExport NG',sv:'A'},
+    {n:'Agri Dashboard Pro License',p:120000,u:'/yr',c:'Agri Finance',img:'img/finance1.jpg',sec:'finance',tag:'premium',specs:['Analytics','Reports'],seller:'AgriFinance NG',sv:'A'}
   ];
 
   /* ── CART ── */
@@ -1118,7 +1131,9 @@ var AC = (function() {
       processing:{icon:'fa-industry',title:'Processing Equipment & Machinery',desc:''},
       logistics:{icon:'fa-truck',title:'Transport, Storage & Distribution',desc:''},
       drones:{icon:'fa-helicopter',title:'Precision Agriculture & Smart Farming',desc:''},
-      solar:{icon:'fa-solar-panel',title:'Solar Pumps, Panels & Farm Power',desc:''}
+      solar:{icon:'fa-solar-panel',title:'Solar Pumps, Panels & Farm Power',desc:''},
+      export:{icon:'fa-ship',title:'Agricultural Export & Shipping',desc:'Export documentation, container shipping, and global market access.'},
+      finance:{icon:'fa-chart-line',title:'Agri Finance & Insurance',desc:'Farm loans, crop insurance, financial dashboards, and advisory.'}
     };
 
     var h = '';
@@ -1176,7 +1191,11 @@ var AC = (function() {
       {n:'Solar Water Pump System',p:650000,u:'',c:'Solar Energy',img:'img/solar1.jpg',badge:'new',badgeLabel:'Eco',seller:'SolarFarm NG',sv:'S'},
       {n:'Refrigerated Truck Service',p:180000,u:'',c:'Logistics',img:'img/logistics1.jpg',badge:'hot',badgeLabel:'Popular',seller:'ColdChain NG',sv:'C'},
       {n:'Giant African Snails 50pk',p:25000,u:'',c:'Snail Farming',img:'img/snail1.jpg',badge:'new',badgeLabel:'Profitable',seller:'SnailFarm NG',sv:'S'},
-      {n:'Oyster Mushrooms 1kg',p:3500,u:'',c:'Mushroom',img:'img/mushroom1.jpg',badge:'trending',badgeLabel:'Organic',seller:'MushFarm NG',sv:'M'}
+      {n:'Oyster Mushrooms 1kg',p:3500,u:'',c:'Mushroom',img:'img/mushroom1.jpg',badge:'trending',badgeLabel:'Organic',seller:'MushFarm NG',sv:'M'},
+      {n:'Farm Export Consultation',p:150000,u:'',c:'Export Services',img:'img/export1.jpg',badge:'new',badgeLabel:'Global',seller:'AgriExport NG',sv:'A'},
+      {n:'Farm Financial Dashboard',p:120000,u:'/yr',c:'Agri Finance',img:'img/finance1.jpg',badge:'premium',badgeLabel:'Analytics',seller:'AgriFinance NG',sv:'A'},
+      {n:'Cold Warehouse Storage',p:420000,u:'/mo',c:'Logistics',img:'img/warehouse1.jpg',badge:'hot',badgeLabel:'Storage',seller:'FreshStore Lagos',sv:'F'},
+      {n:'Drip Irrigation Pump',p:285000,u:'',c:'Farm Equipment',img:'img/irrigation1.jpg',badge:'new',badgeLabel:'Smart',seller:'IrrigateNG',sv:'I'}
     ];
 
     var track = document.getElementById('carouselTrack');
