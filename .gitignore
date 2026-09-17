@@ -1,49 +1,32 @@
-# Dependencies
-node_modules/
-.pnp
-.pnp.js
+# OS
+.DS_Store
+Thumbs.db
+Desktop.ini
 
-# Build
-dist/
-build/
-out/
-.next/
-.nuxt/
-.output/
-
-# Environment
-.env
-.env.local
-.env.production.local
-.env.development.local
-
-# IDE
+# Editor
 .vscode/
 .idea/
 *.swp
 *.swo
 *~
 
-# OS
-.DS_Store
-Thumbs.db
-desktop.ini
-
 # Logs
 *.log
 npm-debug.log*
 
-# Cache
+# Dependencies (not used but good practice)
+node_modules/
+package-lock.json
+
+# Build
+dist/
+build/
 .cache/
-.parcel-cache/
-.pytest_cache/
-.ruff_cache/
-.mypy_cache/
 
-# Arena
+# Environment
+.env
+.env.local
+.env.production
+
+# Arena sandbox
 .arena/
-
-# Temporary
-*.tmp
-*.bak
-*.backup

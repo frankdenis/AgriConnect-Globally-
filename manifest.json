@@ -1,17 +1,17 @@
 {
-  "name": "AgriConnect Nigeria",
+  "name": "AgriConnect - Digital Agricultural Ecosystem",
   "short_name": "AgriConnect",
-  "description": "Africa's largest digital agricultural ecosystem connecting farmers, buyers, suppliers, processors, investors, transporters, and veterinarians.",
+  "description": "World's largest digital agricultural marketplace connecting farmers, buyers, suppliers, and agribusinesses across 25+ sectors. Available in 20+ languages.",
   "start_url": "/",
   "display": "standalone",
-  "background_color": "#f8faf9",
-  "theme_color": "#0a1628",
-  "orientation": "portrait",
+  "background_color": "#064e34",
+  "theme_color": "#064e34",
+  "orientation": "portrait-primary",
   "scope": "/",
+  "lang": "en",
+  "categories": ["business", "shopping", "food"],
   "icons": [
-    { "src": "og-image.jpg", "sizes": "192x192", "type": "image/jpeg" },
-    { "src": "og-image.jpg", "sizes": "512x512", "type": "image/jpeg" }
-  ],
-  "categories": ["shopping", "business", "agriculture"],
-  "lang": "en-NG"
+    { "src": "hero-banner.jpg", "sizes": "192x192", "type": "image/jpeg" },
+    { "src": "hero-banner.jpg", "sizes": "512x512", "type": "image/jpeg" }
+  ]
 }
