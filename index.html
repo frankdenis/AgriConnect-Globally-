@@ -9,8 +9,8 @@
 <meta name="color-scheme" content="light">
 
 <title>AgriConnect Nigeria | Africa's Largest Digital Agricultural Ecosystem</title>
-<meta name="description" content="Nigeria's comprehensive digital agricultural marketplace connecting farmers, buyers, suppliers, processors, investors, transporters, and veterinarians across poultry, livestock, crops, equipment, agrochemicals, veterinary products, logistics, and advisory services.">
-<meta name="keywords" content="agriculture Nigeria, farm marketplace, livestock, poultry, crops, seeds, agrochemicals, veterinary, farm equipment, agricultural logistics, agri-business, farm advisory, supplier marketplace, agricultural investment, Nigeria farming, AgriConnect">
+<meta name="description" content="Nigeria's comprehensive digital agricultural marketplace connecting farmers, buyers, suppliers, processors, investors, transporters, and veterinarians across poultry, livestock, crops, equipment, agrochemicals, veterinary products, logistics, dairy, apiculture, forestry, aquaculture, and advisory services.">
+<meta name="keywords" content="agriculture Nigeria, farm marketplace, livestock, poultry, crops, seeds, agrochemicals, veterinary, farm equipment, agricultural logistics, dairy farming, beekeeping, forestry, aquaculture, pig farming, snail farming, mushroom farming, cocoa, palm oil, greenhouse, hydroponics, agricultural drones, solar farming, AgriConnect">
 <meta name="author" content="AgriConnect Nigeria">
 <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
 <link rel="canonical" href="https://agriconnect.ng/">
@@ -29,7 +29,7 @@
 <meta name="twitter:image" content="https://agriconnect.ng/og-image.jpg">
 
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"WebSite","name":"AgriConnect Nigeria","url":"https://agriconnect.ng","description":"Africa's largest digital agricultural ecosystem connecting farmers, buyers, suppliers, processors, investors, transporters, and veterinarians.","potentialAction":{"@type":"SearchAction","target":"https://agriconnect.ng/search?q={search_term_string}","query-input":"required name=search_term_string"}}
+{"@context":"https://schema.org","@type":"WebSite","name":"AgriConnect Nigeria","url":"https://agriconnect.ng","description":"Africa's largest digital agricultural ecosystem.","potentialAction":{"@type":"SearchAction","target":"https://agriconnect.ng/search?q={search_term_string}","query-input":"required name=search_term_string"}}
 </script>
 
 <link rel="manifest" href="manifest.json">
@@ -39,584 +39,572 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
 <style>
-/* ═══════════════════════════════════════
-   AGRICONNECT DESIGN SYSTEM
-   ═══════════════════════════════════════ */
-:root {
-  --bg: #f8faf9;
-  --surface: #ffffff;
-  --surface-alt: #f1f5f3;
-  --border: #e2e8e5;
-  --border-light: #f0f4f2;
-  --text: #0f1a15;
-  --text-2: #374640;
-  --text-3: #5f736c;
-  --text-4: #8a9e95;
-  --green-900: #064e34;
-  --green-800: #065f46;
-  --green-700: #047857;
-  --green-600: #059669;
-  --green-500: #10b981;
-  --green-100: #d1fae5;
-  --green-50: #ecfdf5;
-  --amber-600: #d97706;
-  --amber-100: #fef3c7;
-  --amber-50: #fffbeb;
-  --red-600: #dc2626;
-  --red-100: #fee2e2;
-  --blue-600: #2563eb;
-  --blue-100: #dbeafe;
-  --brown-700: #92400e;
-  --brown-100: #fef7ed;
-  --overlay: rgba(15,26,21,0.55);
-  --shadow-xs: 0 1px 2px rgba(0,0,0,0.04);
-  --shadow-sm: 0 2px 8px rgba(0,0,0,0.06);
-  --shadow-md: 0 8px 24px rgba(0,0,0,0.08);
-  --shadow-lg: 0 16px 48px rgba(0,0,0,0.1);
-  --shadow-xl: 0 24px 64px rgba(0,0,0,0.14);
-  --r-xs: 6px; --r-sm: 10px; --r-md: 14px; --r-lg: 20px; --r-xl: 28px; --r-full: 9999px;
-  --ease: cubic-bezier(0.4,0,0.2,1);
-  --ease-bounce: cubic-bezier(0.34,1.56,0.64,1);
-  --font-display: 'Plus Jakarta Sans', -apple-system, sans-serif;
-  --font-body: 'Inter', -apple-system, sans-serif;
-}
-
+:root{--bg:#f8faf9;--surface:#fff;--surface-alt:#f1f5f3;--border:#e2e8e5;--border-l:#f0f4f2;--text:#0f1a15;--t2:#374640;--t3:#5f736c;--t4:#8a9e95;--g9:#064e34;--g8:#065f46;--g7:#047857;--g6:#059669;--g5:#10b981;--g1:#d1fae5;--g0:#ecfdf5;--a6:#d97706;--a1:#fef3c7;--a0:#fffbeb;--r6:#dc2626;--r1:#fee2e2;--b6:#2563eb;--b1:#dbeafe;--br7:#92400e;--br1:#fef7ed;--ov:rgba(15,26,21,0.55);--sh-s:0 1px 2px rgba(0,0,0,.04);--sh-m:0 8px 24px rgba(0,0,0,.08);--sh-l:0 16px 48px rgba(0,0,0,.1);--sh-xl:0 24px 64px rgba(0,0,0,.14);--r-xs:6px;--r-sm:10px;--r-md:14px;--r-lg:20px;--r-full:9999px;--ease:cubic-bezier(.4,0,.2,1);--ease-b:cubic-bezier(.34,1.56,.64,1);--fd:'Plus Jakarta Sans',-apple-system,sans-serif;--fb:'Inter',-apple-system,sans-serif}
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
-body{font-family:var(--font-body);background:var(--bg);color:var(--text);line-height:1.6;overflow-x:hidden;-webkit-font-smoothing:antialiased;padding-bottom:72px}
+body{font-family:var(--fb);background:var(--bg);color:var(--text);line-height:1.6;overflow-x:hidden;-webkit-font-smoothing:antialiased;padding-bottom:72px}
 @media(min-width:1024px){body{padding-bottom:0}}
 img{max-width:100%;height:auto;display:block}
 a{text-decoration:none;color:inherit}
 button{cursor:pointer;border:none;outline:none;font-family:inherit;background:none}
 ul,ol{list-style:none}
-input,select,textarea{font-family:inherit}
-:focus-visible{outline:2px solid var(--green-600);outline-offset:2px;border-radius:4px}
+input{font-family:inherit}
+:focus-visible{outline:2px solid var(--g6);outline-offset:2px;border-radius:4px}
 
-/* ═══ ANIMATIONS ═══ */
 @keyframes fadeInUp{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:none}}
 @keyframes fadeIn{from{opacity:0}to{opacity:1}}
-@keyframes scaleIn{from{opacity:0;transform:scale(0.92)}to{opacity:1;transform:none}}
 @keyframes slideUp{from{transform:translateY(100%)}to{transform:none}}
 @keyframes spin{to{transform:rotate(360deg)}}
-@keyframes pulse{0%,100%{box-shadow:0 0 0 0 rgba(16,185,129,0.3)}50%{box-shadow:0 0 0 10px rgba(16,185,129,0)}}
+@keyframes pulse{0%,100%{box-shadow:0 0 0 0 rgba(16,185,129,.3)}50%{box-shadow:0 0 0 10px rgba(16,185,129,0)}}
 @keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-4px)}}
 @keyframes marquee{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
 @keyframes shimmer{0%{background-position:-200% 0}100%{background-position:200% 0}}
 @keyframes ripple{to{transform:scale(4);opacity:0}}
 @keyframes bounceIn{0%{transform:scale(0)}50%{transform:scale(1.1)}100%{transform:scale(1)}}
 
-.reveal{opacity:0;transform:translateY(24px);transition:opacity 0.6s var(--ease),transform 0.6s var(--ease)}
+.reveal{opacity:0;transform:translateY(24px);transition:opacity .6s var(--ease),transform .6s var(--ease)}
 .reveal.vis{opacity:1;transform:none}
-.reveal-sc{opacity:0;transform:scale(0.92);transition:opacity 0.5s var(--ease),transform 0.45s var(--ease-bounce)}
+.reveal-sc{opacity:0;transform:scale(.92);transition:opacity .5s var(--ease),transform .45s var(--ease-b)}
 .reveal-sc.vis{opacity:1;transform:none}
-.stagger>*{transition-delay:calc(var(--i,0)*60ms)}
+.stagger>*{transition-delay:calc(var(--i,0)*50ms)}
 
-/* ═══ LOADER ═══ */
-.loader{position:fixed;inset:0;z-index:99999;background:var(--green-900);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:20px;transition:opacity 0.4s,visibility 0.4s}
+.loader{position:fixed;inset:0;z-index:99999;background:var(--g9);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:20px;transition:opacity .4s,visibility .4s}
 .loader.done{opacity:0;visibility:hidden;pointer-events:none}
-.loader-brand{font-family:var(--font-display);font-size:1.6rem;font-weight:800;color:#fff;letter-spacing:-0.5px}
-.loader-brand em{font-style:normal;color:var(--green-500)}
-.loader-bar{width:100px;height:3px;background:rgba(255,255,255,0.15);border-radius:3px;overflow:hidden}
-.loader-bar span{display:block;width:40%;height:100%;background:var(--green-500);border-radius:3px;animation:shimmer 1.2s ease infinite}
+.loader-brand{font-family:var(--fd);font-size:1.6rem;font-weight:800;color:#fff;letter-spacing:-.5px}
+.loader-brand em{font-style:normal;color:var(--g5)}
+.loader-bar{width:100px;height:3px;background:rgba(255,255,255,.15);border-radius:3px;overflow:hidden}
+.loader-bar span{display:block;width:40%;height:100%;background:var(--g5);border-radius:3px;animation:shimmer 1.2s ease infinite}
 
-/* ═══ HEADER ═══ */
-.hdr{position:sticky;top:0;z-index:1000;background:rgba(255,255,255,0.94);backdrop-filter:blur(14px) saturate(180%);-webkit-backdrop-filter:blur(14px) saturate(180%);border-bottom:1px solid var(--border)}
+.hdr{position:sticky;top:0;z-index:1000;background:rgba(255,255,255,.94);backdrop-filter:blur(14px) saturate(180%);-webkit-backdrop-filter:blur(14px) saturate(180%);border-bottom:1px solid var(--border)}
 .hdr-inner{max-width:1320px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;padding:0 20px;height:60px}
 .hdr-brand{display:flex;align-items:center;gap:10px}
-.brand-icon{width:36px;height:36px;background:linear-gradient(135deg,var(--green-700),var(--green-900));border-radius:var(--r-sm);display:grid;place-items:center;color:#fff;font-size:16px;box-shadow:0 2px 8px rgba(6,78,52,0.25)}
+.brand-icon{width:36px;height:36px;background:linear-gradient(135deg,var(--g7),var(--g9));border-radius:var(--r-sm);display:grid;place-items:center;color:#fff;font-size:16px;box-shadow:0 2px 8px rgba(6,78,52,.25)}
 .brand-txt{display:flex;flex-direction:column}
-.brand-name{font-family:var(--font-display);font-size:15px;font-weight:800;color:var(--green-900);letter-spacing:-0.3px;line-height:1.1}
-.brand-sub{font-size:9px;font-weight:600;color:var(--text-4);letter-spacing:1.5px;text-transform:uppercase}
-
-/* Search */
+.brand-name{font-family:var(--fd);font-size:15px;font-weight:800;color:var(--g9);letter-spacing:-.3px;line-height:1.1}
+.brand-sub{font-size:9px;font-weight:600;color:var(--t4);letter-spacing:1.5px;text-transform:uppercase}
 .hdr-search{flex:1;max-width:480px;margin:0 24px;position:relative}
 @media(max-width:768px){.hdr-search{display:none}}
-.search-input{width:100%;padding:9px 14px 9px 38px;border:1.5px solid var(--border);border-radius:var(--r-full);font-size:13px;background:var(--surface-alt);transition:all 0.2s var(--ease);color:var(--text)}
-.search-input:focus{border-color:var(--green-600);background:#fff;box-shadow:0 0 0 3px rgba(5,150,105,0.1)}
-.search-input::placeholder{color:var(--text-4)}
-.search-icon{position:absolute;left:12px;top:50%;transform:translateY(-50%);color:var(--text-4);font-size:14px}
-.search-results{position:absolute;top:calc(100% + 8px);left:0;right:0;background:var(--surface);border:1px solid var(--border);border-radius:var(--r-md);box-shadow:var(--shadow-lg);max-height:400px;overflow-y:auto;display:none;z-index:100}
+.search-input{width:100%;padding:9px 14px 9px 38px;border:1.5px solid var(--border);border-radius:var(--r-full);font-size:13px;background:var(--surface-alt);transition:all .2s var(--ease);color:var(--text)}
+.search-input:focus{border-color:var(--g6);background:#fff;box-shadow:0 0 0 3px rgba(5,150,105,.1)}
+.search-input::placeholder{color:var(--t4)}
+.search-icon{position:absolute;left:12px;top:50%;transform:translateY(-50%);color:var(--t4);font-size:14px}
+.search-results{position:absolute;top:calc(100% + 8px);left:0;right:0;background:var(--surface);border:1px solid var(--border);border-radius:var(--r-md);box-shadow:var(--sh-l);max-height:400px;overflow-y:auto;display:none;z-index:100}
 .search-results.show{display:block}
-.search-cat{padding:10px 14px;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:1px;color:var(--text-4);background:var(--surface-alt);border-bottom:1px solid var(--border-light)}
-.search-item{display:flex;align-items:center;gap:12px;padding:10px 14px;cursor:pointer;transition:background 0.15s}
-.search-item:hover{background:var(--green-50)}
+.search-cat{padding:10px 14px;font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:1px;color:var(--t4);background:var(--surface-alt);border-bottom:1px solid var(--border-l)}
+.search-item{display:flex;align-items:center;gap:12px;padding:10px 14px;cursor:pointer;transition:background .15s}
+.search-item:hover{background:var(--g0)}
 .search-item img{width:36px;height:36px;border-radius:var(--r-xs);object-fit:cover}
 .search-item-info{flex:1}
 .search-item-name{font-weight:600;font-size:13px;color:var(--text)}
-.search-item-cat{font-size:11px;color:var(--text-4)}
-.search-item-price{font-family:var(--font-display);font-weight:700;font-size:13px;color:var(--green-800)}
-
+.search-item-cat{font-size:11px;color:var(--t4)}
+.search-item-price{font-family:var(--fd);font-weight:700;font-size:13px;color:var(--g8)}
 .hdr-actions{display:flex;align-items:center;gap:6px}
-.btn-cart{display:flex;align-items:center;gap:7px;padding:8px 14px;background:var(--green-700);color:#fff;border-radius:var(--r-full);font-weight:600;font-size:12px;transition:all 0.2s var(--ease);box-shadow:0 2px 6px rgba(4,120,87,0.2);position:relative}
-.btn-cart:hover{background:var(--green-800);transform:translateY(-1px)}
-.btn-cart:active{transform:scale(0.97)}
-.cart-badge{position:absolute;top:-3px;right:-3px;min-width:16px;height:16px;background:var(--red-600);color:#fff;font-size:9px;font-weight:700;border-radius:var(--r-full);display:grid;place-items:center;border:2px solid #fff;animation:bounceIn 0.3s var(--ease-bounce)}
+.btn-cart{display:flex;align-items:center;gap:7px;padding:8px 14px;background:var(--g7);color:#fff;border-radius:var(--r-full);font-weight:600;font-size:12px;transition:all .2s var(--ease);box-shadow:0 2px 6px rgba(4,120,87,.2);position:relative}
+.btn-cart:hover{background:var(--g8);transform:translateY(-1px)}
+.cart-badge{position:absolute;top:-3px;right:-3px;min-width:16px;height:16px;background:var(--r6);color:#fff;font-size:9px;font-weight:700;border-radius:var(--r-full);display:grid;place-items:center;border:2px solid #fff;animation:bounceIn .3s var(--ease-b)}
 .btn-menu{width:38px;height:38px;display:none;flex-direction:column;align-items:center;justify-content:center;gap:4px;border-radius:var(--r-sm)}
-.btn-menu span{width:18px;height:2px;background:var(--text);border-radius:2px;transition:all 0.25s var(--ease)}
+.btn-menu span{width:18px;height:2px;background:var(--text);border-radius:2px;transition:all .25s var(--ease)}
 .btn-menu.open span:nth-child(1){transform:rotate(45deg) translate(4px,4px)}
 .btn-menu.open span:nth-child(2){opacity:0}
 .btn-menu.open span:nth-child(3){transform:rotate(-45deg) translate(4px,-4px)}
 @media(max-width:768px){.btn-menu{display:flex}}
 
-/* ═══ MOBILE NAV ═══ */
-.nav-ov{position:fixed;inset:0;background:var(--overlay);z-index:1500;opacity:0;visibility:hidden;transition:all 0.25s var(--ease);backdrop-filter:blur(3px)}
+.nav-ov{position:fixed;inset:0;background:var(--ov);z-index:1500;opacity:0;visibility:hidden;transition:all .25s var(--ease);backdrop-filter:blur(3px)}
 .nav-ov.open{opacity:1;visibility:visible}
-.nav-draw{position:fixed;top:0;left:0;bottom:0;width:280px;background:var(--surface);z-index:1600;transform:translateX(-100%);transition:transform 0.3s var(--ease);box-shadow:var(--shadow-xl);display:flex;flex-direction:column;overflow-y:auto}
+.nav-draw{position:fixed;top:0;left:0;bottom:0;width:280px;background:var(--surface);z-index:1600;transform:translateX(-100%);transition:transform .3s var(--ease);box-shadow:var(--sh-xl);display:flex;flex-direction:column;overflow-y:auto}
 .nav-draw.open{transform:none}
-.nav-head{padding:20px;background:linear-gradient(135deg,var(--green-700),var(--green-900));color:#fff}
-.nav-head h3{font-family:var(--font-display);font-size:16px;font-weight:800}
-.nav-head p{font-size:11px;opacity:0.7;margin-top:3px}
+.nav-head{padding:20px;background:linear-gradient(135deg,var(--g7),var(--g9));color:#fff}
+.nav-head h3{font-family:var(--fd);font-size:16px;font-weight:800}
+.nav-head p{font-size:11px;opacity:.7;margin-top:3px}
 .nav-links{padding:6px 0}
-.nav-l{display:flex;align-items:center;gap:12px;padding:12px 18px;font-weight:500;font-size:13px;color:var(--text-2);transition:all 0.15s var(--ease)}
-.nav-l:hover{background:var(--green-50);color:var(--green-800);padding-left:22px}
-.nav-l i{width:18px;text-align:center;color:var(--green-700);font-size:14px}
-.nav-l .badge{margin-left:auto;font-size:9px;font-weight:700;padding:2px 7px;border-radius:var(--r-full);background:var(--green-100);color:var(--green-800)}
-
-/* Mobile Search */
-.search-mobile{display:none;padding:12px 16px;background:var(--surface-alt);border-bottom:1px solid var(--border-light)}
+.nav-l{display:flex;align-items:center;gap:12px;padding:11px 18px;font-weight:500;font-size:13px;color:var(--t2);transition:all .15s var(--ease);cursor:pointer}
+.nav-l:hover{background:var(--g0);color:var(--g8);padding-left:22px}
+.nav-l i{width:18px;text-align:center;color:var(--g7);font-size:14px}
+.nav-l .badge{margin-left:auto;font-size:9px;font-weight:700;padding:2px 7px;border-radius:var(--r-full);background:var(--g1);color:var(--g8)}
+.search-mobile{display:none;padding:12px 16px;background:var(--surface-alt);border-bottom:1px solid var(--border-l)}
 @media(max-width:768px){.search-mobile{display:block}}
 .search-mobile .search-input{background:#fff}
 
-/* ═══ HERO ═══ */
-.hero{position:relative;overflow:hidden;min-height:520px;display:flex;align-items:center;background:var(--green-900)}
+.hero{position:relative;overflow:hidden;min-height:520px;display:flex;align-items:center;background:var(--g9)}
 @media(max-width:768px){.hero{min-height:440px}}
 .hero-bg{position:absolute;inset:0}
-.hero-bg img{width:100%;height:100%;object-fit:cover;opacity:0.35}
+.hero-bg img{width:100%;height:100%;object-fit:cover;opacity:.35}
 .hero-inner{position:relative;z-index:2;max-width:1320px;margin:0 auto;padding:60px 24px;width:100%}
 @media(max-width:768px){.hero-inner{padding:40px 16px}}
-.hero-pill{display:inline-flex;align-items:center;gap:6px;background:rgba(255,255,255,0.1);backdrop-filter:blur(8px);padding:5px 14px;border-radius:var(--r-full);font-size:11px;font-weight:600;color:var(--green-500);margin-bottom:18px;animation:fadeInUp 0.5s var(--ease) 0.15s both}
-.hero h1{font-family:var(--font-display);font-size:clamp(2rem,5vw,3.5rem);font-weight:900;color:#fff;line-height:1.08;letter-spacing:-1.5px;max-width:700px;margin-bottom:14px;animation:fadeInUp 0.5s var(--ease) 0.25s both}
-.hero h1 em{font-style:normal;color:var(--green-500)}
-.hero p{font-size:15px;color:rgba(255,255,255,0.8);max-width:520px;line-height:1.7;margin-bottom:24px;animation:fadeInUp 0.5s var(--ease) 0.35s both}
-.hero-btns{display:flex;gap:10px;flex-wrap:wrap;animation:fadeInUp 0.5s var(--ease) 0.45s both}
-.btn-h{padding:12px 24px;border-radius:var(--r-sm);font-weight:700;font-size:13px;display:inline-flex;align-items:center;gap:7px;transition:all 0.2s var(--ease);text-transform:uppercase;letter-spacing:0.4px}
-.btn-h-gold{background:var(--amber-600);color:#fff;box-shadow:0 4px 12px rgba(217,119,6,0.3)}
-.btn-h-gold:hover{transform:translateY(-2px);box-shadow:0 6px 20px rgba(217,119,6,0.4)}
-.btn-h-gold:active{transform:scale(0.97)}
-.btn-h-ghost{background:transparent;color:#fff;border:1.5px solid rgba(255,255,255,0.3)}
-.btn-h-ghost:hover{background:rgba(255,255,255,0.08);border-color:rgba(255,255,255,0.5)}
-
-.hero-stats{display:flex;gap:28px;margin-top:36px;animation:fadeInUp 0.5s var(--ease) 0.55s both}
-@media(max-width:600px){.hero-stats{gap:16px;margin-top:24px}}
+.hero-pill{display:inline-flex;align-items:center;gap:6px;background:rgba(255,255,255,.1);backdrop-filter:blur(8px);padding:5px 14px;border-radius:var(--r-full);font-size:11px;font-weight:600;color:var(--g5);margin-bottom:18px;animation:fadeInUp .5s var(--ease) .15s both}
+.hero h1{font-family:var(--fd);font-size:clamp(2rem,5vw,3.5rem);font-weight:900;color:#fff;line-height:1.08;letter-spacing:-1.5px;max-width:700px;margin-bottom:14px;animation:fadeInUp .5s var(--ease) .25s both}
+.hero h1 em{font-style:normal;color:var(--g5)}
+.hero p{font-size:15px;color:rgba(255,255,255,.8);max-width:520px;line-height:1.7;margin-bottom:24px;animation:fadeInUp .5s var(--ease) .35s both}
+.hero-btns{display:flex;gap:10px;flex-wrap:wrap;animation:fadeInUp .5s var(--ease) .45s both}
+.btn-h{padding:12px 24px;border-radius:var(--r-sm);font-weight:700;font-size:13px;display:inline-flex;align-items:center;gap:7px;transition:all .2s var(--ease);text-transform:uppercase;letter-spacing:.4px}
+.btn-h-g{background:var(--a6);color:#fff;box-shadow:0 4px 12px rgba(217,119,6,.3)}
+.btn-h-g:hover{transform:translateY(-2px);box-shadow:0 6px 20px rgba(217,119,6,.4)}
+.btn-h-ghost{background:transparent;color:#fff;border:1.5px solid rgba(255,255,255,.3)}
+.btn-h-ghost:hover{background:rgba(255,255,255,.08);border-color:rgba(255,255,255,.5)}
+.hero-stats{display:flex;gap:28px;margin-top:36px;animation:fadeInUp .5s var(--ease) .55s both}
+@media(max-width:600px){.hero-stats{gap:16px;margin-top:24px;flex-wrap:wrap}}
 .h-stat{text-align:left}
-.h-stat-val{font-family:var(--font-display);font-size:26px;font-weight:800;color:#fff;letter-spacing:-0.5px}
+.h-stat-val{font-family:var(--fd);font-size:26px;font-weight:800;color:#fff;letter-spacing:-.5px}
 @media(max-width:600px){.h-stat-val{font-size:20px}}
-.h-stat-lbl{font-size:11px;color:rgba(255,255,255,0.55);font-weight:500;margin-top:1px}
+.h-stat-lbl{font-size:11px;color:rgba(255,255,255,.55);font-weight:500;margin-top:1px}
 
-/* ═══ TICKER ═══ */
-.ticker{overflow:hidden;background:var(--amber-50);border-bottom:1px solid #f0e6c4;padding:9px 0}
+.ticker{overflow:hidden;background:var(--a0);border-bottom:1px solid #f0e6c4;padding:9px 0}
 .ticker-track{display:flex;gap:40px;animation:marquee 40s linear infinite;white-space:nowrap;width:max-content}
 .ticker-item{font-size:12px;font-weight:600;color:#92710c;display:flex;align-items:center;gap:5px}
 
-/* ═══ CONTAINER ═══ */
 .wrap{max-width:1320px;margin:0 auto;padding:0 20px}
-
-/* ═══ SECTION HEADS ═══ */
 .sec-head{text-align:center;padding:48px 20px 24px}
-.sec-pill{display:inline-flex;align-items:center;gap:5px;font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:2px;color:var(--green-700);background:var(--green-50);padding:5px 12px;border-radius:var(--r-full);margin-bottom:12px}
-.sec-title{font-family:var(--font-display);font-size:clamp(1.5rem,3.5vw,2.2rem);font-weight:800;color:var(--text);letter-spacing:-0.7px;line-height:1.15;margin-bottom:8px}
-.sec-desc{font-size:14px;color:var(--text-3);max-width:480px;margin:0 auto;line-height:1.7}
+.sec-pill{display:inline-flex;align-items:center;gap:5px;font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:2px;color:var(--g7);background:var(--g0);padding:5px 12px;border-radius:var(--r-full);margin-bottom:12px}
+.sec-title{font-family:var(--fd);font-size:clamp(1.5rem,3.5vw,2.2rem);font-weight:800;color:var(--text);letter-spacing:-.7px;line-height:1.15;margin-bottom:8px}
+.sec-desc{font-size:14px;color:var(--t3);max-width:480px;margin:0 auto;line-height:1.7}
 
-/* ═══ CATEGORY SECTORS (Real Icons, No Emojis) ═══ */
-.sectors{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:12px;padding:0 20px 32px;max-width:1320px;margin:0 auto}
-@media(max-width:600px){.sectors{grid-template-columns:repeat(3,1fr);gap:8px}}
-.sector{background:var(--surface);border:1px solid var(--border-light);border-radius:var(--r-md);padding:18px 12px;text-align:center;cursor:pointer;transition:all 0.25s var(--ease)}
-.sector:hover{transform:translateY(-3px);box-shadow:var(--shadow-md);border-color:var(--green-600)}
-.sector:active{transform:scale(0.97)}
-.sector-icon{width:44px;height:44px;margin:0 auto 10px;border-radius:var(--r-sm);display:grid;place-items:center;font-size:18px}
-.sector-icon.green{background:var(--green-100);color:var(--green-700)}
-.sector-icon.amber{background:var(--amber-100);color:var(--amber-600)}
-.sector-icon.blue{background:var(--blue-100);color:var(--blue-600)}
-.sector-icon.brown{background:var(--brown-100);color:var(--brown-700)}
-.sector-icon.red{background:var(--red-100);color:var(--red-600)}
-.sector-name{font-family:var(--font-display);font-size:12px;font-weight:700;color:var(--text);line-height:1.3}
-.sector-count{font-size:10px;color:var(--text-4);margin-top:3px}
+.sectors{display:grid;grid-template-columns:repeat(auto-fill,minmax(140px,1fr));gap:10px;padding:0 20px 32px;max-width:1320px;margin:0 auto}
+@media(max-width:600px){.sectors{grid-template-columns:repeat(3,1fr);gap:6px}}
+.sector{background:var(--surface);border:1px solid var(--border-l);border-radius:var(--r-md);padding:16px 10px;text-align:center;cursor:pointer;transition:all .2s var(--ease)}
+.sector:hover{transform:translateY(-3px);box-shadow:var(--sh-m);border-color:var(--g6)}
+.sector:active{transform:scale(.97)}
+.sector-icon{width:40px;height:40px;margin:0 auto 8px;border-radius:var(--r-sm);display:grid;place-items:center;font-size:16px}
+.sector-icon.g{background:var(--g1);color:var(--g7)}
+.sector-icon.a{background:var(--a1);color:var(--a6)}
+.sector-icon.b{background:var(--b1);color:var(--b6)}
+.sector-icon.br{background:var(--br1);color:var(--br7)}
+.sector-icon.r{background:var(--r1);color:var(--r6)}
+.sector-name{font-family:var(--fd);font-size:11px;font-weight:700;color:var(--text);line-height:1.3}
+.sector-count{font-size:9px;color:var(--t4);margin-top:2px}
 
-/* ═══ TABS ═══ */
 .tabs{display:flex;gap:6px;overflow-x:auto;padding:10px 20px 20px;-webkit-overflow-scrolling:touch;scrollbar-width:none}
 .tabs::-webkit-scrollbar{display:none}
-.tab{white-space:nowrap;padding:8px 16px;border-radius:var(--r-full);border:1.5px solid var(--border);color:var(--text-3);font-weight:600;font-size:12px;cursor:pointer;transition:all 0.15s var(--ease);flex-shrink:0;display:flex;align-items:center;gap:5px}
-.tab:hover{border-color:var(--green-600);color:var(--green-700)}
-.tab.active{background:var(--green-700);color:#fff;border-color:var(--green-700);box-shadow:0 2px 6px rgba(4,120,87,0.2)}
-.tab:active{transform:scale(0.96)}
+.tab{white-space:nowrap;padding:8px 16px;border-radius:var(--r-full);border:1.5px solid var(--border);color:var(--t3);font-weight:600;font-size:12px;cursor:pointer;transition:all .15s var(--ease);flex-shrink:0;display:flex;align-items:center;gap:5px}
+.tab:hover{border-color:var(--g6);color:var(--g7)}
+.tab.active{background:var(--g7);color:#fff;border-color:var(--g7);box-shadow:0 2px 6px rgba(4,120,87,.2)}
+.tab:active{transform:scale(.96)}
 
-/* ═══ PRODUCT GRID ═══ */
 .prod-wrap{padding:0 20px 36px}
 .prod-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:14px;max-width:1320px;margin:0 auto}
 @media(max-width:600px){.prod-grid{grid-template-columns:repeat(2,1fr);gap:8px}}
 
-/* ═══ PRODUCT CARD ═══ */
-.pcard{background:var(--surface);border-radius:var(--r-md);overflow:hidden;border:1px solid var(--border-light);transition:all 0.25s var(--ease);position:relative}
-.pcard:hover{transform:translateY(-3px);box-shadow:var(--shadow-md);border-color:var(--border)}
-.pcard:active{transform:scale(0.98)}
+.pcard{background:var(--surface);border-radius:var(--r-md);overflow:hidden;border:1px solid var(--border-l);transition:all .25s var(--ease);position:relative}
+.pcard:hover{transform:translateY(-3px);box-shadow:var(--sh-m);border-color:var(--border)}
+.pcard:active{transform:scale(.98)}
 .pcard-img{position:relative;aspect-ratio:4/3;overflow:hidden;background:var(--surface-alt)}
-.pcard-img img{width:100%;height:100%;object-fit:cover;transition:transform 0.5s var(--ease)}
+.pcard-img img{width:100%;height:100%;object-fit:cover;transition:transform .5s var(--ease)}
 .pcard:hover .pcard-img img{transform:scale(1.05)}
-.pcard-tag{position:absolute;top:8px;left:8px;padding:3px 8px;border-radius:var(--r-full);font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:0.3px;backdrop-filter:blur(8px)}
-.tag-hot{background:rgba(220,38,38,0.9);color:#fff}
-.tag-new{background:rgba(4,120,87,0.9);color:#fff}
-.tag-sale{background:rgba(217,119,6,0.9);color:#fff}
-.tag-ver{background:rgba(37,99,235,0.9);color:#fff}
-.pcard-fav{position:absolute;top:8px;right:8px;width:28px;height:28px;background:rgba(255,255,255,0.9);backdrop-filter:blur(6px);border-radius:50%;display:grid;place-items:center;font-size:11px;color:#ccc;transition:all 0.2s}
-.pcard-fav:hover,.pcard-fav.liked{color:var(--red-600)}
+.pcard-tag{position:absolute;top:8px;left:8px;padding:3px 8px;border-radius:var(--r-full);font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:.3px;backdrop-filter:blur(8px)}
+.tag-hot{background:rgba(220,38,38,.9);color:#fff}
+.tag-new{background:rgba(4,120,87,.9);color:#fff}
+.tag-sale{background:rgba(217,119,6,.9);color:#fff}
+.tag-ver{background:rgba(37,99,235,.9);color:#fff}
+.pcard-fav{position:absolute;top:8px;right:8px;width:28px;height:28px;background:rgba(255,255,255,.9);backdrop-filter:blur(6px);border-radius:50%;display:grid;place-items:center;font-size:11px;color:#ccc;transition:all .2s}
+.pcard-fav:hover,.pcard-fav.liked{color:var(--r6)}
 .pcard-body{padding:12px}
 @media(max-width:600px){.pcard-body{padding:8px}}
-.pcard-cat{font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:1px;color:var(--green-700);margin-bottom:4px}
-.pcard-name{font-family:var(--font-display);font-size:12px;font-weight:600;color:var(--text);line-height:1.35;min-height:32px;margin-bottom:6px}
+.pcard-cat{font-size:9px;font-weight:700;text-transform:uppercase;letter-spacing:1px;color:var(--g7);margin-bottom:4px}
+.pcard-name{font-family:var(--fd);font-size:12px;font-weight:600;color:var(--text);line-height:1.35;min-height:32px;margin-bottom:6px}
 @media(max-width:600px){.pcard-name{font-size:11px;min-height:28px}}
 .pcard-specs{display:flex;gap:3px;flex-wrap:wrap;margin-bottom:8px}
 .spec{font-size:9px;font-weight:600;padding:2px 6px;border-radius:3px}
-.spec-g{background:var(--green-50);color:var(--green-800)}
-.spec-b{background:var(--blue-100);color:var(--blue-600)}
-.spec-a{background:var(--amber-50);color:var(--amber-600)}
-.spec-r{background:var(--brown-100);color:var(--brown-700)}
+.spec-g{background:var(--g0);color:var(--g8)}
+.spec-b{background:var(--b1);color:var(--b6)}
+.spec-a{background:var(--a0);color:var(--a6)}
+.spec-r{background:var(--br1);color:var(--br7)}
 .pcard-price{display:flex;align-items:baseline;gap:5px;margin-bottom:3px}
-.price{font-family:var(--font-display);font-weight:800;font-size:16px;color:var(--green-900)}
+.price{font-family:var(--fd);font-weight:800;font-size:16px;color:var(--g9)}
 @media(max-width:600px){.price{font-size:14px}}
-.unit{font-size:10px;color:var(--text-4);font-weight:500}
+.unit{font-size:10px;color:var(--t4);font-weight:500}
 .old{font-size:11px;color:#aaa;text-decoration:line-through}
-.pcard-note{font-size:10px;color:var(--text-4);margin-bottom:8px}
-.pcard-note b{color:var(--green-700)}
-.pcard-seller{display:flex;align-items:center;gap:6px;margin-bottom:8px;padding-top:8px;border-top:1px solid var(--border-light)}
-.seller-avatar{width:20px;height:20px;border-radius:50%;background:var(--green-100);display:grid;place-items:center;font-size:8px;font-weight:800;color:var(--green-800)}
-.seller-name{font-size:10px;font-weight:600;color:var(--text-2)}
-.seller-ver{font-size:8px;color:var(--green-700);margin-left:auto;display:flex;align-items:center;gap:3px}
-.btn-add{width:100%;padding:9px;border-radius:var(--r-sm);font-weight:700;font-size:11px;display:flex;align-items:center;justify-content:center;gap:5px;transition:all 0.15s var(--ease);text-transform:uppercase;letter-spacing:0.4px;position:relative;overflow:hidden}
-.btn-add-g{background:var(--green-700);color:#fff}
-.btn-add-g:hover{background:var(--green-800)}
-.btn-add-b{background:var(--brown-700);color:#fff}
-.btn-add-b:hover{background:#78350f}
-.btn-add-n{background:#1e3a5f;color:#fff}
-.btn-add-n:hover{background:#172e4a}
-.btn-add:active{transform:scale(0.97)}
+.pcard-note{font-size:10px;color:var(--t4);margin-bottom:8px}
+.pcard-note b{color:var(--g7)}
+.pcard-seller{display:flex;align-items:center;gap:6px;margin-bottom:8px;padding-top:8px;border-top:1px solid var(--border-l);cursor:pointer}
+.pcard-seller:hover .seller-name{color:var(--g7)}
+.seller-avatar{width:20px;height:20px;border-radius:50%;background:var(--g1);display:grid;place-items:center;font-size:8px;font-weight:800;color:var(--g8)}
+.seller-name{font-size:10px;font-weight:600;color:var(--t2);transition:color .15s}
+.seller-ver{font-size:8px;color:var(--g7);margin-left:auto;display:flex;align-items:center;gap:3px}
+.btn-add{width:100%;padding:9px;border-radius:var(--r-sm);font-weight:700;font-size:11px;display:flex;align-items:center;justify-content:center;gap:5px;transition:all .15s var(--ease);text-transform:uppercase;letter-spacing:.4px;position:relative;overflow:hidden}
+.btn-add-g{background:var(--g7);color:#fff}.btn-add-g:hover{background:var(--g8)}
+.btn-add-b{background:var(--br7);color:#fff}.btn-add-b:hover{background:#78350f}
+.btn-add-n{background:#1e3a5f;color:#fff}.btn-add-n:hover{background:#172e4a}
+.btn-add:active{transform:scale(.97)}
 @media(max-width:600px){.btn-add{padding:7px;font-size:10px}}
 
-/* ═══ BUSINESS ACCOUNT PROMO ═══ */
-.biz-promo{background:linear-gradient(135deg,var(--green-900),#0a1628);padding:56px 20px;text-align:center;color:#fff;position:relative;overflow:hidden}
-.biz-promo::before{content:'';position:absolute;top:-30%;right:-10%;width:350px;height:350px;background:rgba(255,255,255,0.02);border-radius:50%}
-.biz-promo h2{font-family:var(--font-display);font-size:clamp(1.5rem,4vw,2.2rem);font-weight:800;letter-spacing:-0.5px;margin-bottom:10px}
-.biz-promo p{opacity:0.8;margin-bottom:24px;font-size:14px;max-width:500px;margin-left:auto;margin-right:auto}
+.biz-promo{background:linear-gradient(135deg,var(--g9),#0a1628);padding:56px 20px;text-align:center;color:#fff;position:relative;overflow:hidden}
+.biz-promo::before{content:'';position:absolute;top:-30%;right:-10%;width:350px;height:350px;background:rgba(255,255,255,.02);border-radius:50%}
+.biz-promo h2{font-family:var(--fd);font-size:clamp(1.5rem,4vw,2.2rem);font-weight:800;letter-spacing:-.5px;margin-bottom:10px}
+.biz-promo p{opacity:.8;margin-bottom:24px;font-size:14px;max-width:500px;margin-left:auto;margin-right:auto}
 .biz-features{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:16px;max-width:800px;margin:0 auto 28px}
-.biz-feat{background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.1);border-radius:var(--r-md);padding:18px;text-align:left}
-.biz-feat i{color:var(--green-500);font-size:18px;margin-bottom:8px;display:block}
-.biz-feat h4{font-family:var(--font-display);font-size:13px;font-weight:700;margin-bottom:4px}
-.biz-feat p{font-size:12px;opacity:0.7;line-height:1.6}
-.btn-biz{padding:14px 28px;background:var(--green-600);color:#fff;border-radius:var(--r-sm);font-weight:700;font-size:14px;display:inline-flex;align-items:center;gap:8px;transition:all 0.2s var(--ease);box-shadow:0 4px 16px rgba(5,150,105,0.3)}
-.btn-biz:hover{transform:translateY(-2px);box-shadow:0 8px 24px rgba(5,150,105,0.4)}
-.btn-biz:active{transform:scale(0.97)}
+.biz-feat{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);border-radius:var(--r-md);padding:18px;text-align:left}
+.biz-feat i{color:var(--g5);font-size:18px;margin-bottom:8px;display:block}
+.biz-feat h4{font-family:var(--fd);font-size:13px;font-weight:700;margin-bottom:4px}
+.biz-feat p{font-size:12px;opacity:.7;line-height:1.6}
+.btn-biz{padding:14px 28px;background:var(--g6);color:#fff;border-radius:var(--r-sm);font-weight:700;font-size:14px;display:inline-flex;align-items:center;gap:8px;transition:all .2s var(--ease);box-shadow:0 4px 16px rgba(5,150,105,.3)}
+.btn-biz:hover{transform:translateY(-2px);box-shadow:0 8px 24px rgba(5,150,105,.4)}
 
-/* ═══ TRUST BAR ═══ */
-.trust{background:var(--surface);border-top:1px solid var(--border-light);border-bottom:1px solid var(--border-light);padding:28px 20px}
+.trust{background:var(--surface);border-top:1px solid var(--border-l);border-bottom:1px solid var(--border-l);padding:28px 20px}
 .trust-grid{max-width:1320px;margin:0 auto;display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
 @media(max-width:768px){.trust-grid{grid-template-columns:repeat(2,1fr);gap:12px}}
-.trust-item{text-align:center;padding:12px}
-.trust-icon{font-size:22px;color:var(--green-700);margin-bottom:6px;display:block}
-.trust-label{font-family:var(--font-display);font-size:13px;font-weight:700;color:var(--text)}
-.trust-sub{font-size:11px;color:var(--text-4);margin-top:2px}
+.trust-item{text-align:center;padding:12px;cursor:pointer;transition:transform .2s}
+.trust-item:hover{transform:translateY(-2px)}
+.trust-icon{font-size:22px;color:var(--g7);margin-bottom:6px;display:block}
+.trust-label{font-family:var(--fd);font-size:13px;font-weight:700;color:var(--text)}
+.trust-sub{font-size:11px;color:var(--t4);margin-top:2px}
 
-/* ═══ TESTIMONIALS ═══ */
-.tests{background:var(--surface-alt);padding:48px 20px;border-top:1px solid var(--border-light)}
+.tests{background:var(--surface-alt);padding:48px 20px;border-top:1px solid var(--border-l)}
 .test-grid{max-width:1320px;margin:0 auto;display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px}
-.test-card{background:var(--surface);border:1px solid var(--border-light);border-radius:var(--r-md);padding:20px;transition:all 0.2s var(--ease)}
-.test-card:hover{box-shadow:var(--shadow-sm);border-color:var(--border)}
-.test-stars{color:var(--amber-600);font-size:12px;margin-bottom:10px;display:flex;gap:1px}
-.test-text{font-size:13px;color:var(--text-2);line-height:1.7;margin-bottom:14px;font-style:italic}
+.test-card{background:var(--surface);border:1px solid var(--border-l);border-radius:var(--r-md);padding:20px;transition:all .2s var(--ease);cursor:pointer}
+.test-card:hover{box-shadow:var(--sh-s);border-color:var(--border)}
+.test-stars{color:var(--a6);font-size:12px;margin-bottom:10px;display:flex;gap:1px}
+.test-text{font-size:13px;color:var(--t2);line-height:1.7;margin-bottom:14px;font-style:italic}
 .test-author{display:flex;align-items:center;gap:10px}
-.test-ava{width:36px;height:36px;border-radius:50%;background:var(--green-100);display:grid;place-items:center;font-weight:700;color:var(--green-800);font-size:14px}
+.test-ava{width:36px;height:36px;border-radius:50%;background:var(--g1);display:grid;place-items:center;font-weight:700;color:var(--g8);font-size:14px}
 .test-info{display:flex;flex-direction:column}
 .test-name{font-weight:600;font-size:12px;color:var(--text)}
-.test-role{font-size:10px;color:var(--text-4)}
+.test-role{font-size:10px;color:var(--t4)}
 
-/* ═══ CTA ═══ */
-.cta{background:linear-gradient(135deg,var(--green-900),#0a1628);padding:48px 20px;text-align:center;color:#fff}
-.cta h2{font-family:var(--font-display);font-size:clamp(1.4rem,3.5vw,2rem);font-weight:800;letter-spacing:-0.4px;margin-bottom:10px}
-.cta p{opacity:0.8;margin-bottom:18px;font-size:14px}
-.cta-phone{font-family:var(--font-display);font-size:clamp(1.8rem,4.5vw,2.5rem);font-weight:800;color:var(--amber-600);display:block;margin-bottom:20px;letter-spacing:-1px}
+.cta{background:linear-gradient(135deg,var(--g9),#0a1628);padding:48px 20px;text-align:center;color:#fff}
+.cta h2{font-family:var(--fd);font-size:clamp(1.4rem,3.5vw,2rem);font-weight:800;letter-spacing:-.4px;margin-bottom:10px}
+.cta p{opacity:.8;margin-bottom:18px;font-size:14px}
+.cta-phone{font-family:var(--fd);font-size:clamp(1.8rem,4.5vw,2.5rem);font-weight:800;color:var(--a6);display:block;margin-bottom:20px;letter-spacing:-1px}
 .cta-btns{display:flex;gap:10px;justify-content:center;flex-wrap:wrap}
-.btn-cta{padding:12px 24px;border-radius:var(--r-full);font-weight:700;font-size:13px;display:inline-flex;align-items:center;gap:7px;transition:all 0.2s var(--ease);box-shadow:0 3px 12px rgba(0,0,0,0.2)}
-.btn-cta:hover{transform:translateY(-2px);box-shadow:0 6px 20px rgba(0,0,0,0.3)}
-.btn-cta:active{transform:scale(0.97)}
-.btn-cta-g{background:var(--amber-600);color:#fff}
+.btn-cta{padding:12px 24px;border-radius:var(--r-full);font-weight:700;font-size:13px;display:inline-flex;align-items:center;gap:7px;transition:all .2s var(--ease);box-shadow:0 3px 12px rgba(0,0,0,.2)}
+.btn-cta:hover{transform:translateY(-2px);box-shadow:0 6px 20px rgba(0,0,0,.3)}
+.btn-cta-g{background:var(--a6);color:#fff}
 .btn-cta-w{background:#25D366;color:#fff}
 
-/* ═══ FOOTER ═══ */
-.footer{background:#0a1628;color:rgba(255,255,255,0.6);padding:48px 20px 100px}
+.footer{background:#0a1628;color:rgba(255,255,255,.6);padding:48px 20px 100px}
 @media(min-width:1024px){.footer{padding-bottom:48px}}
-.footer-grid{max-width:1320px;margin:0 auto;display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:28px}
-.footer-col h4{font-family:var(--font-display);color:#fff;font-size:13px;font-weight:700;margin-bottom:14px}
-.footer-col a{display:block;padding:3px 0;font-size:12px;transition:all 0.15s}
-.footer-col a:hover{color:var(--green-500);padding-left:3px}
-.footer-bottom{max-width:1320px;margin:28px auto 0;padding-top:20px;border-top:1px solid rgba(255,255,255,0.06);display:flex;justify-content:space-between;align-items:center;font-size:11px;flex-wrap:wrap;gap:10px}
+.footer-grid{max-width:1320px;margin:0 auto;display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:24px}
+.footer-col h4{font-family:var(--fd);color:#fff;font-size:13px;font-weight:700;margin-bottom:14px}
+.footer-col a{display:block;padding:3px 0;font-size:12px;transition:all .15s;cursor:pointer}
+.footer-col a:hover{color:var(--g5);padding-left:3px}
+.footer-bottom{max-width:1320px;margin:28px auto 0;padding-top:20px;border-top:1px solid rgba(255,255,255,.06);display:flex;justify-content:space-between;align-items:center;font-size:11px;flex-wrap:wrap;gap:10px}
 .footer-socials{display:flex;gap:10px}
-.footer-socials a{width:32px;height:32px;border-radius:50%;background:rgba(255,255,255,0.06);display:grid;place-items:center;color:rgba(255,255,255,0.5);transition:all 0.15s;font-size:13px}
-.footer-socials a:hover{background:var(--green-700);color:#fff}
+.footer-socials a{width:32px;height:32px;border-radius:50%;background:rgba(255,255,255,.06);display:grid;place-items:center;color:rgba(255,255,255,.5);transition:all .15s;font-size:13px;cursor:pointer}
+.footer-socials a:hover{background:var(--g7);color:#fff}
 
-/* ═══ BOTTOM NAV ═══ */
-.bnav{display:none;position:fixed;bottom:0;left:0;right:0;background:rgba(255,255,255,0.95);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-top:1px solid var(--border);z-index:999;box-shadow:0 -3px 20px rgba(0,0,0,0.05);animation:slideUp 0.3s var(--ease)}
+.bnav{display:none;position:fixed;bottom:0;left:0;right:0;background:rgba(255,255,255,.95);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-top:1px solid var(--border);z-index:999;box-shadow:0 -3px 20px rgba(0,0,0,.05);animation:slideUp .3s var(--ease)}
 @media(max-width:1023px){.bnav{display:grid;grid-template-columns:repeat(5,1fr)}}
-.bnav-i{display:flex;flex-direction:column;align-items:center;padding:7px 3px 5px;color:#999;font-size:9px;font-weight:600;transition:color 0.15s;position:relative}
-.bnav-i i{font-size:18px;margin-bottom:1px;transition:transform 0.2s var(--ease-bounce)}
-.bnav-i.active{color:var(--green-700)}
+.bnav-i{display:flex;flex-direction:column;align-items:center;padding:7px 3px 5px;color:#999;font-size:9px;font-weight:600;transition:color .15s;position:relative;cursor:pointer}
+.bnav-i i{font-size:18px;margin-bottom:1px;transition:transform .2s var(--ease-b)}
+.bnav-i.active{color:var(--g7)}
 .bnav-i.active i{transform:translateY(-1px)}
-.bnav-badge{position:absolute;top:2px;right:calc(50% - 14px);min-width:14px;height:14px;background:var(--red-600);color:#fff;font-size:8px;font-weight:700;border-radius:var(--r-full);display:grid;place-items:center}
+.bnav-badge{position:absolute;top:2px;right:calc(50% - 14px);min-width:14px;height:14px;background:var(--r6);color:#fff;font-size:8px;font-weight:700;border-radius:var(--r-full);display:grid;place-items:center}
 
-/* ═══ FAB ═══ */
-.fab{position:fixed;bottom:80px;right:14px;width:50px;height:50px;background:linear-gradient(135deg,#25D366,#128C7E);color:#fff;border-radius:50%;display:grid;place-items:center;font-size:22px;box-shadow:0 4px 14px rgba(37,211,118,0.35);z-index:998;animation:pulse 2.5s infinite,float 3s ease-in-out infinite;transition:transform 0.2s}
+.fab{position:fixed;bottom:80px;right:14px;width:50px;height:50px;background:linear-gradient(135deg,#25D366,#128C7E);color:#fff;border-radius:50%;display:grid;place-items:center;font-size:22px;box-shadow:0 4px 14px rgba(37,211,118,.35);z-index:998;animation:pulse 2.5s infinite,float 3s ease-in-out infinite;transition:transform .2s;cursor:pointer}
 .fab:hover{transform:scale(1.08)}
 @media(min-width:1024px){.fab{bottom:20px;right:20px}}
-
-/* ═══ BTT ═══ */
-.btt{position:fixed;bottom:80px;left:14px;width:38px;height:38px;background:var(--green-900);color:#fff;border-radius:50%;display:grid;place-items:center;font-size:14px;z-index:998;opacity:0;visibility:hidden;transform:translateY(8px);transition:all 0.25s var(--ease);box-shadow:var(--shadow-sm)}
+.btt{position:fixed;bottom:80px;left:14px;width:38px;height:38px;background:var(--g9);color:#fff;border-radius:50%;display:grid;place-items:center;font-size:14px;z-index:998;opacity:0;visibility:hidden;transform:translateY(8px);transition:all .25s var(--ease);box-shadow:var(--sh-s);cursor:pointer}
 .btt.show{opacity:1;visibility:visible;transform:none}
-.btt:hover{background:var(--green-700);transform:translateY(-1px)}
+.btt:hover{background:var(--g7);transform:translateY(-1px)}
 @media(min-width:1024px){.btt{bottom:20px;left:20px}}
 
-/* ═══ CART DRAWER ═══ */
-.cart-ov{position:fixed;inset:0;background:var(--overlay);z-index:2000;opacity:0;visibility:hidden;transition:all 0.25s var(--ease);backdrop-filter:blur(3px)}
+.cart-ov{position:fixed;inset:0;background:var(--ov);z-index:2000;opacity:0;visibility:hidden;transition:all .25s var(--ease);backdrop-filter:blur(3px)}
 .cart-ov.open{opacity:1;visibility:visible}
-.cart-pnl{position:fixed;top:0;right:0;bottom:0;width:360px;max-width:90vw;background:var(--surface);z-index:2100;transform:translateX(100%);transition:transform 0.3s var(--ease);display:flex;flex-direction:column;box-shadow:var(--shadow-xl)}
+.cart-pnl{position:fixed;top:0;right:0;bottom:0;width:360px;max-width:90vw;background:var(--surface);z-index:2100;transform:translateX(100%);transition:transform .3s var(--ease);display:flex;flex-direction:column;box-shadow:var(--sh-xl)}
 .cart-pnl.open{transform:none}
-.cart-head{padding:16px;border-bottom:1px solid var(--border-light);display:flex;justify-content:space-between;align-items:center}
-.cart-head h3{font-family:var(--font-display);font-weight:700;font-size:16px}
-.cart-x{width:30px;height:30px;border-radius:50%;display:grid;place-items:center;font-size:14px;color:var(--text-4);transition:all 0.15s}
+.cart-head{padding:16px;border-bottom:1px solid var(--border-l);display:flex;justify-content:space-between;align-items:center}
+.cart-head h3{font-family:var(--fd);font-weight:700;font-size:16px}
+.cart-x{width:30px;height:30px;border-radius:50%;display:grid;place-items:center;font-size:14px;color:var(--t4);transition:all .15s;cursor:pointer}
 .cart-x:hover{background:var(--surface-alt);color:var(--text)}
 .cart-list{flex:1;overflow-y:auto;padding:14px}
-.cart-empty{text-align:center;padding:40px 16px;color:var(--text-4)}
-.cart-empty i{font-size:40px;margin-bottom:12px;display:block;opacity:0.15}
-.cart-item{display:flex;gap:10px;padding:12px 0;border-bottom:1px solid var(--border-light);animation:fadeIn 0.2s var(--ease)}
+.cart-empty{text-align:center;padding:40px 16px;color:var(--t4)}
+.cart-empty i{font-size:40px;margin-bottom:12px;display:block;opacity:.15}
+.cart-item{display:flex;gap:10px;padding:12px 0;border-bottom:1px solid var(--border-l);animation:fadeIn .2s var(--ease)}
 .cart-item-info{flex:1}
 .cart-item-name{font-weight:600;font-size:12px;color:var(--text)}
-.cart-item-price{font-family:var(--font-display);font-weight:700;color:var(--green-900);margin-top:3px;font-size:13px}
-.cart-item-del{color:#ccc;transition:color 0.15s;align-self:center;font-size:13px}
-.cart-item-del:hover{color:var(--red-600)}
-.cart-foot{padding:16px;border-top:1px solid var(--border-light);background:var(--bg)}
+.cart-item-price{font-family:var(--fd);font-weight:700;color:var(--g9);margin-top:3px;font-size:13px}
+.cart-item-del{color:#ccc;transition:color .15s;align-self:center;font-size:13px;cursor:pointer}
+.cart-item-del:hover{color:var(--r6)}
+.cart-foot{padding:16px;border-top:1px solid var(--border-l);background:var(--bg)}
 .cart-total{display:flex;justify-content:space-between;align-items:center;margin-bottom:14px}
-.cart-total-lbl{font-weight:600;color:var(--text-3)}
-.cart-total-val{font-family:var(--font-display);font-weight:800;font-size:20px;color:var(--green-900)}
-.btn-chk{width:100%;padding:12px;border-radius:var(--r-sm);font-weight:700;font-size:13px;display:flex;align-items:center;justify-content:center;gap:7px;transition:all 0.15s var(--ease)}
-.btn-chk-w{background:#25D366;color:#fff}
-.btn-chk-w:hover{background:#1ebe5d}
-.btn-chk-c{background:var(--green-700);color:#fff;margin-top:6px}
-.btn-chk-c:hover{background:var(--green-800)}
-.btn-chk:active{transform:scale(0.98)}
+.cart-total-lbl{font-weight:600;color:var(--t3)}
+.cart-total-val{font-family:var(--fd);font-weight:800;font-size:20px;color:var(--g9)}
+.btn-chk{width:100%;padding:12px;border-radius:var(--r-sm);font-weight:700;font-size:13px;display:flex;align-items:center;justify-content:center;gap:7px;transition:all .15s var(--ease);cursor:pointer}
+.btn-chk-w{background:#25D366;color:#fff}.btn-chk-w:hover{background:#1ebe5d}
+.btn-chk-c{background:var(--g7);color:#fff;margin-top:6px}.btn-chk-c:hover{background:var(--g8)}
+.btn-chk:active{transform:scale(.98)}
 
-/* ═══ TOAST ═══ */
-.toast{position:fixed;top:70px;left:50%;transform:translateX(-50%) translateY(-8px);background:var(--text);color:#fff;padding:10px 20px;border-radius:var(--r-full);font-weight:600;font-size:12px;z-index:9999;box-shadow:var(--shadow-lg);display:flex;align-items:center;gap:8px;opacity:0;visibility:hidden;transition:all 0.3s var(--ease-bounce);max-width:90vw}
+.toast{position:fixed;top:70px;left:50%;transform:translateX(-50%) translateY(-8px);background:var(--text);color:#fff;padding:10px 20px;border-radius:var(--r-full);font-weight:600;font-size:12px;z-index:9999;box-shadow:var(--sh-l);display:flex;align-items:center;gap:8px;opacity:0;visibility:hidden;transition:all .3s var(--ease-b);max-width:90vw}
 .toast.show{opacity:1;visibility:visible;transform:translateX(-50%) translateY(0)}
-.toast i{color:var(--green-500)}
-
-/* ═══ SCROLLBAR ═══ */
-::-webkit-scrollbar{width:4px}
-::-webkit-scrollbar-track{background:transparent}
-::-webkit-scrollbar-thumb{background:#d1d5db;border-radius:2px}
-::-webkit-scrollbar-thumb:hover{background:#9ca3af}
+.toast i{color:var(--g5)}
+::-webkit-scrollbar{width:4px}::-webkit-scrollbar-track{background:transparent}::-webkit-scrollbar-thumb{background:#d1d5db;border-radius:2px}
 </style>
 </head>
 <body>
 
-<!-- LOADER -->
 <div class="loader" id="loader"><div class="loader-brand">Agri<em>Connect</em></div><div class="loader-bar"><span></span></div></div>
 
-<!-- HEADER -->
-<header class="hdr">
-<div class="hdr-inner">
-  <a href="#" class="hdr-brand" aria-label="AgriConnect home">
-    <div class="brand-icon"><i class="fas fa-seedling"></i></div>
-    <div class="brand-txt"><span class="brand-name">AGRICONNECT</span><span class="brand-sub">Digital Agri Ecosystem</span></div>
-  </a>
-  <div class="hdr-search">
-    <i class="fas fa-search search-icon"></i>
-    <input type="text" class="search-input" id="searchInput" placeholder="Search products, sellers, categories..." autocomplete="off" aria-label="Search">
-    <div class="search-results" id="searchResults"></div>
-  </div>
-  <div class="hdr-actions">
-    <button class="btn-cart" onclick="openCart()" aria-label="Open cart"><i class="fas fa-shopping-bag"></i> Cart <span class="cart-badge" id="cartBadge">0</span></button>
-    <button class="btn-menu" id="menuBtn" onclick="toggleNav()" aria-label="Menu"><span></span><span></span><span></span></button>
-  </div>
-</div>
-</header>
+<header class="hdr"><div class="hdr-inner">
+  <a href="#" class="hdr-brand" aria-label="AgriConnect home"><div class="brand-icon"><i class="fas fa-seedling"></i></div><div class="brand-txt"><span class="brand-name">AGRICONNECT</span><span class="brand-sub">Digital Agri Ecosystem</span></div></a>
+  <div class="hdr-search"><i class="fas fa-search search-icon"></i><input type="text" class="search-input" id="searchInput" placeholder="Search products, sellers, categories..." autocomplete="off" aria-label="Search"><div class="search-results" id="searchResults"></div></div>
+  <div class="hdr-actions"><button class="btn-cart" onclick="openCart()" aria-label="Cart"><i class="fas fa-shopping-bag"></i> Cart <span class="cart-badge" id="cartBadge">0</span></button><button class="btn-menu" id="menuBtn" onclick="toggleNav()" aria-label="Menu"><span></span><span></span><span></span></button></div>
+</div></header>
 
-<!-- MOBILE SEARCH -->
 <div class="search-mobile"><input type="text" class="search-input" id="searchInputMobile" placeholder="Search products, sellers..." autocomplete="off" aria-label="Search"></div>
 
-<!-- MOBILE NAV -->
 <div class="nav-ov" id="navOv" onclick="toggleNav()"></div>
 <nav class="nav-draw" id="navDraw" aria-label="Main navigation">
   <div class="nav-head"><h3>AgriConnect Nigeria</h3><p>Your Digital Agricultural Home</p></div>
   <div class="nav-links">
-    <a href="#hero" class="nav-l" onclick="toggleNav()"><i class="fas fa-home"></i> Home</a>
-    <a href="#fish" class="nav-l" onclick="toggleNav()"><i class="fas fa-fish"></i> Fish & Aquaculture <span class="badge">Hot</span></a>
-    <a href="#poultry" class="nav-l" onclick="toggleNav()"><i class="fas fa-egg"></i> Poultry & Chicks</a>
-    <a href="#livestock" class="nav-l" onclick="toggleNav()"><i class="fas fa-cow"></i> Livestock & Cattle</a>
-    <a href="#crops" class="nav-l" onclick="toggleNav()"><i class="fas fa-wheat-awn"></i> Seeds & Crops</a>
-    <a href="#equipment" class="nav-l" onclick="toggleNav()"><i class="fas fa-tractor"></i> Farm Equipment</a>
-    <a href="#vet" class="nav-l" onclick="toggleNav()"><i class="fas fa-syringe"></i> Veterinary</a>
-    <a href="#agrochem" class="nav-l" onclick="toggleNav()"><i class="fas fa-flask"></i> Agrochemicals</a>
-    <a href="#logistics" class="nav-l" onclick="toggleNav()"><i class="fas fa-truck"></i> Logistics</a>
-    <a href="#biz" class="nav-l" onclick="toggleNav()"><i class="fas fa-building"></i> Business Account</a>
-    <a href="#reviews" class="nav-l" onclick="toggleNav()"><i class="fas fa-star"></i> Reviews</a>
-    <a href="#contact" class="nav-l" onclick="toggleNav()"><i class="fas fa-phone-alt"></i> Contact</a>
-    <a href="javascript:void(0)" class="nav-l" onclick="openCart();toggleNav()"><i class="fas fa-shopping-bag"></i> My Cart</a>
+    <a class="nav-l" onclick="scrollTo('hero');toggleNav()"><i class="fas fa-home"></i> Home</a>
+    <a class="nav-l" onclick="scrollTo('fish');toggleNav()"><i class="fas fa-fish"></i> Fish & Aquaculture <span class="badge">Hot</span></a>
+    <a class="nav-l" onclick="scrollTo('poultry');toggleNav()"><i class="fas fa-egg"></i> Poultry & Chicks</a>
+    <a class="nav-l" onclick="scrollTo('livestock');toggleNav()"><i class="fas fa-cow"></i> Livestock & Cattle</a>
+    <a class="nav-l" onclick="scrollTo('dairy');toggleNav()"><i class="fas fa-cheese"></i> Dairy & Milk</a>
+    <a class="nav-l" onclick="scrollTo('pigs');toggleNav()"><i class="fas fa-piggy-bank"></i> Piggery</a>
+    <a class="nav-l" onclick="scrollTo('snail');toggleNav()"><i class="fas fa-bug"></i> Snail & Rabbit Farming</a>
+    <a class="nav-l" onclick="scrollTo('apiculture');toggleNav()"><i class="fas fa-honey-pot"></i> Apiculture & Honey</a>
+    <a class="nav-l" onclick="scrollTo('crops');toggleNav()"><i class="fas fa-wheat-awn"></i> Seeds, Crops & Grains</a>
+    <a class="nav-l" onclick="scrollTo('fruits');toggleNav()"><i class="fas fa-apple-whole"></i> Fruits & Vegetables</a>
+    <a class="nav-l" onclick="scrollTo('spices');toggleNav()"><i class="fas fa-pepper-hot"></i> Spices & Herbs</a>
+    <a class="nav-l" onclick="scrollTo('cocoa');toggleNav()"><i class="fas fa-leaf"></i> Cocoa, Palm & Cashew</a>
+    <a class="nav-l" onclick="scrollTo('forestry');toggleNav()"><i class="fas fa-tree"></i> Forestry & Timber</a>
+    <a class="nav-l" onclick="scrollTo('mushroom');toggleNav()"><i class="fas fa-seedling"></i> Mushroom Farming</a>
+    <a class="nav-l" onclick="scrollTo('equipment');toggleNav()"><i class="fas fa-tractor"></i> Farm Equipment</a>
+    <a class="nav-l" onclick="scrollTo('greenhouse');toggleNav()"><i class="fas fa-warehouse"></i> Greenhouse & Hydroponics</a>
+    <a class="nav-l" onclick="scrollTo('vet');toggleNav()"><i class="fas fa-syringe"></i> Veterinary Products</a>
+    <a class="nav-l" onclick="scrollTo('agrochem');toggleNav()"><i class="fas fa-flask"></i> Agrochemicals</a>
+    <a class="nav-l" onclick="scrollTo('processing');toggleNav()"><i class="fas fa-industry"></i> Food Processing</a>
+    <a class="nav-l" onclick="scrollTo('logistics');toggleNav()"><i class="fas fa-truck"></i> Logistics & Cold Chain</a>
+    <a class="nav-l" onclick="scrollTo('drones');toggleNav()"><i class="fas fa-helicopter"></i> Agri-Drones & Tech</a>
+    <a class="nav-l" onclick="scrollTo('solar');toggleNav()"><i class="fas fa-solar-panel"></i> Solar & Renewable Energy</a>
+    <a class="nav-l" onclick="scrollTo('biz');toggleNav()"><i class="fas fa-building"></i> Business Account</a>
+    <a class="nav-l" onclick="scrollTo('reviews');toggleNav()"><i class="fas fa-star"></i> Reviews</a>
+    <a class="nav-l" onclick="scrollTo('contact');toggleNav()"><i class="fas fa-phone-alt"></i> Contact</a>
+    <a class="nav-l" onclick="openCart();toggleNav()"><i class="fas fa-shopping-bag"></i> My Cart</a>
   </div>
 </nav>
 
-<!-- HERO -->
 <section class="hero" id="hero">
   <div class="hero-bg"><img src="hero-banner.jpg" alt="Nigerian agricultural landscape"></div>
   <div class="hero-inner">
     <div class="hero-pill"><i class="fas fa-globe-africa"></i> Africa's Largest Digital Agri Ecosystem</div>
     <h1>One <em>Trusted Platform</em> for Everything Agriculture</h1>
-    <p>Connect with farmers, buyers, suppliers, processors, investors, transporters, and veterinarians across poultry, livestock, crops, equipment, agrochemicals, veterinary products, logistics, and advisory services.</p>
+    <p>Connect with farmers, buyers, suppliers, processors, investors, transporters, and veterinarians across 25+ agricultural sectors — from aquaculture to apiculture, dairy to drones, forestry to food processing.</p>
     <div class="hero-btns">
-      <a href="#sectors" class="btn-h btn-h-gold"><i class="fas fa-th-large"></i> Explore Marketplace</a>
-      <a href="#biz" class="btn-h btn-h-ghost"><i class="fas fa-user-plus"></i> Create Business Account</a>
+      <a class="btn-h btn-h-g" onclick="scrollTo('sectors')"><i class="fas fa-th-large"></i> Explore Marketplace</a>
+      <a class="btn-h btn-h-ghost" onclick="scrollTo('biz')"><i class="fas fa-user-plus"></i> Create Business Account</a>
     </div>
     <div class="hero-stats">
-      <div class="h-stat"><div class="h-stat-val">12,400+</div><div class="h-stat-lbl">Verified Sellers</div></div>
-      <div class="h-stat"><div class="h-stat-val">48,000+</div><div class="h-stat-lbl">Product Listings</div></div>
-      <div class="h-stat"><div class="h-stat-val">36</div><div class="h-stat-lbl">States Covered</div></div>
-      <div class="h-stat"><div class="h-stat-val">98.5%</div><div class="h-stat-lbl">Satisfaction Rate</div></div>
+      <div class="h-stat"><div class="h-stat-val" id="hSellers">0</div><div class="h-stat-lbl">Verified Sellers</div></div>
+      <div class="h-stat"><div class="h-stat-val" id="hListings">0</div><div class="h-stat-lbl">Product Listings</div></div>
+      <div class="h-stat"><div class="h-stat-val" id="hSectors">25+</div><div class="h-stat-lbl">Agri Sectors</div></div>
+      <div class="h-stat"><div class="h-stat-val" id="hRating">0</div><div class="h-stat-lbl">Satisfaction</div></div>
     </div>
   </div>
 </section>
 
-<!-- TICKER -->
 <div class="ticker"><div class="ticker-track" aria-hidden="true">
   <span class="ticker-item"><i class="fas fa-chart-line"></i> Maize prices stable at ₦45,000/bag</span>
   <span class="ticker-item"><i class="fas fa-arrow-up"></i> Soybean demand up 12% this week</span>
-  <span class="ticker-item"><i class="fas fa-truck"></i> New cold-chain logistics now in 6 states</span>
+  <span class="ticker-item"><i class="fas fa-truck"></i> Cold-chain logistics now in 6 states</span>
   <span class="ticker-item"><i class="fas fa-star"></i> 2,400+ new sellers joined this month</span>
-  <span class="ticker-item"><i class="fas fa-shield-alt"></i> All transactions now buyer-protected</span>
-  <span class="ticker-item"><i class="fas fa-calendar-check"></i> AgriConnect Summit 2026 — Register Now</span>
+  <span class="ticker-item"><i class="fas fa-shield-alt"></i> All transactions buyer-protected</span>
+  <span class="ticker-item"><i class="fas fa-leaf"></i> Cocoa exports up 18% this quarter</span>
   <span class="ticker-item"><i class="fas fa-chart-line"></i> Maize prices stable at ₦45,000/bag</span>
   <span class="ticker-item"><i class="fas fa-arrow-up"></i> Soybean demand up 12% this week</span>
-  <span class="ticker-item"><i class="fas fa-truck"></i> New cold-chain logistics now in 6 states</span>
+  <span class="ticker-item"><i class="fas fa-truck"></i> Cold-chain logistics now in 6 states</span>
   <span class="ticker-item"><i class="fas fa-star"></i> 2,400+ new sellers joined this month</span>
-  <span class="ticker-item"><i class="fas fa-shield-alt"></i> All transactions now buyer-protected</span>
-  <span class="ticker-item"><i class="fas fa-calendar-check"></i> AgriConnect Summit 2026 — Register Now</span>
+  <span class="ticker-item"><i class="fas fa-shield-alt"></i> All transactions buyer-protected</span>
+  <span class="ticker-item"><i class="fas fa-leaf"></i> Cocoa exports up 18% this quarter</span>
 </div></div>
 
-<!-- ═══════ AGRICULTURAL SECTORS ═══════ -->
+<!-- ═══ 25 AGRICULTURAL SECTORS ═══ -->
 <div id="sectors">
-<div class="sec-head reveal">
-  <div class="sec-pill"><i class="fas fa-th-large"></i> All Agricultural Sectors</div>
-  <h2 class="sec-title">Explore the Entire Agri Ecosystem</h2>
-  <p class="sec-desc">Browse 10+ sectors connecting every stakeholder in agriculture.</p>
-</div>
+<div class="sec-head reveal"><div class="sec-pill"><i class="fas fa-th-large"></i> All Agricultural Sectors</div><h2 class="sec-title">Explore the Entire Agri Ecosystem</h2><p class="sec-desc">25+ sectors connecting every stakeholder in global agriculture.</p></div>
 <div class="sectors stagger">
-  <div class="sector reveal-sc" style="--i:0" onclick="scrollTo('fish')"><div class="sector-icon green"><i class="fas fa-fish"></i></div><div class="sector-name">Fish & Aquaculture</div><div class="sector-count">4,200+ listings</div></div>
-  <div class="sector reveal-sc" style="--i:1" onclick="scrollTo('poultry')"><div class="sector-icon amber"><i class="fas fa-egg"></i></div><div class="sector-name">Poultry & Chicks</div><div class="sector-count">6,800+ listings</div></div>
-  <div class="sector reveal-sc" style="--i:2" onclick="scrollTo('livestock')"><div class="sector-icon brown"><i class="fas fa-cow"></i></div><div class="sector-name">Livestock & Cattle</div><div class="sector-count">3,100+ listings</div></div>
-  <div class="sector reveal-sc" style="--i:3" onclick="scrollTo('crops')"><div class="sector-icon green"><i class="fas fa-wheat-awn"></i></div><div class="sector-name">Seeds & Crops</div><div class="sector-count">8,500+ listings</div></div>
-  <div class="sector reveal-sc" style="--i:4" onclick="scrollTo('equipment')"><div class="sector-icon blue"><i class="fas fa-tractor"></i></div><div class="sector-name">Farm Equipment</div><div class="sector-count">2,400+ listings</div></div>
-  <div class="sector reveal-sc" style="--i:5" onclick="scrollTo('vet')"><div class="sector-icon red"><i class="fas fa-syringe"></i></div><div class="sector-name">Veterinary Products</div><div class="sector-count">1,800+ listings</div></div>
-  <div class="sector reveal-sc" style="--i:6" onclick="scrollTo('agrochem')"><div class="sector-icon amber"><i class="fas fa-flask"></i></div><div class="sector-name">Agrochemicals</div><div class="sector-count">3,600+ listings</div></div>
-  <div class="sector reveal-sc" style="--i:7" onclick="scrollTo('logistics')"><div class="sector-icon blue"><i class="fas fa-truck"></i></div><div class="sector-name">Logistics & Cold Chain</div><div class="sector-count">900+ providers</div></div>
-  <div class="sector reveal-sc" style="--i:8"><div class="sector-icon green"><i class="fas fa-handshake"></i></div><div class="sector-name">Supplier Connections</div><div class="sector-count">5,200+ suppliers</div></div>
-  <div class="sector reveal-sc" style="--i:9"><div class="sector-icon amber"><i class="fas fa-chart-pie"></i></div><div class="sector-name">Investment & Advisory</div><div class="sector-count">400+ advisors</div></div>
+  <div class="sector reveal-sc" style="--i:0" onclick="scrollTo('fish')"><div class="sector-icon g"><i class="fas fa-fish"></i></div><div class="sector-name">Fish & Aquaculture</div><div class="sector-count" id="sc0">4,200+ listings</div></div>
+  <div class="sector reveal-sc" style="--i:1" onclick="scrollTo('poultry')"><div class="sector-icon a"><i class="fas fa-egg"></i></div><div class="sector-name">Poultry & Chicks</div><div class="sector-count" id="sc1">6,800+ listings</div></div>
+  <div class="sector reveal-sc" style="--i:2" onclick="scrollTo('livestock')"><div class="sector-icon br"><i class="fas fa-cow"></i></div><div class="sector-name">Livestock & Cattle</div><div class="sector-count" id="sc2">3,100+ listings</div></div>
+  <div class="sector reveal-sc" style="--i:3" onclick="scrollTo('dairy')"><div class="sector-icon b"><i class="fas fa-cheese"></i></div><div class="sector-name">Dairy & Milk</div><div class="sector-count" id="sc3">1,800+ listings</div></div>
+  <div class="sector reveal-sc" style="--i:4" onclick="scrollTo('pigs')"><div class="sector-icon br"><i class="fas fa-piggy-bank"></i></div><div class="sector-name">Piggery</div><div class="sector-count" id="sc4">2,200+ listings</div></div>
+  <div class="sector reveal-sc" style="--i:5" onclick="scrollTo('snail')"><div class="sector-icon g"><i class="fas fa-bug"></i></div><div class="sector-name">Snail & Rabbit Farming</div><div class="sector-count" id="sc5">900+ listings</div></div>
+  <div class="sector reveal-sc" style="--i:6" onclick="scrollTo('apiculture')"><div class="sector-icon a"><i class="fas fa-honey-pot"></i></div><div class="sector-name">Apiculture & Honey</div><div class="sector-count" id="sc6">650+ listings</div></div>
+  <div class="sector reveal-sc" style="--i:7" onclick="scrollTo('crops')"><div class="sector-icon g"><i class="fas fa-wheat-awn"></i></div><div class="sector-name">Seeds, Crops & Grains</div><div class="sector-count" id="sc7">8,500+ listings</div></div>
+  <div class="sector reveal-sc" style="--i:8" onclick="scrollTo('fruits')"><div class="sector-icon r"><i class="fas fa-apple-whole"></i></div><div class="sector-name">Fruits & Vegetables</div><div class="sector-count" id="sc8">3,400+ listings</div></div>
+  <div class="sector reveal-sc" style="--i:9" onclick="scrollTo('spices')"><div class="sector-icon a"><i class="fas fa-pepper-hot"></i></div><div class="sector-name">Spices & Herbs</div><div class="sector-count" id="sc9">1,600+ listings</div></div>
+  <div class="sector reveal-sc" style="--i:10" onclick="scrollTo('cocoa')"><div class="sector-icon br"><i class="fas fa-leaf"></i></div><div class="sector-name">Cocoa, Palm & Cashew</div><div class="sector-count" id="sc10">2,100+ listings</div></div>
+  <div class="sector reveal-sc" style="--i:11" onclick="scrollTo('forestry')"><div class="sector-icon g"><i class="fas fa-tree"></i></div><div class="sector-name">Forestry & Timber</div><div class="sector-count" id="sc11">1,200+ listings</div></div>
+  <div class="sector reveal-sc" style="--i:12" onclick="scrollTo('mushroom')"><div class="sector-icon br"><i class="fas fa-seedling"></i></div><div class="sector-name">Mushroom Farming</div><div class="sector-count" id="sc12">400+ listings</div></div>
+  <div class="sector reveal-sc" style="--i:13" onclick="scrollTo('equipment')"><div class="sector-icon b"><i class="fas fa-tractor"></i></div><div class="sector-name">Farm Equipment</div><div class="sector-count" id="sc13">2,400+ listings</div></div>
+  <div class="sector reveal-sc" style="--i:14" onclick="scrollTo('greenhouse')"><div class="sector-icon b"><i class="fas fa-warehouse"></i></div><div class="sector-name">Greenhouse & Hydroponics</div><div class="sector-count" id="sc14">550+ listings</div></div>
+  <div class="sector reveal-sc" style="--i:15" onclick="scrollTo('vet')"><div class="sector-icon r"><i class="fas fa-syringe"></i></div><div class="sector-name">Veterinary Products</div><div class="sector-count" id="sc15">1,800+ listings</div></div>
+  <div class="sector reveal-sc" style="--i:16" onclick="scrollTo('agrochem')"><div class="sector-icon a"><i class="fas fa-flask"></i></div><div class="sector-name">Agrochemicals</div><div class="sector-count" id="sc16">3,600+ listings</div></div>
+  <div class="sector reveal-sc" style="--i:17" onclick="scrollTo('processing')"><div class="sector-icon b"><i class="fas fa-industry"></i></div><div class="sector-name">Food Processing</div><div class="sector-count" id="sc17">1,900+ listings</div></div>
+  <div class="sector reveal-sc" style="--i:18" onclick="scrollTo('logistics')"><div class="sector-icon b"><i class="fas fa-truck"></i></div><div class="sector-name">Logistics & Cold Chain</div><div class="sector-count" id="sc18">900+ providers</div></div>
+  <div class="sector reveal-sc" style="--i:19" onclick="scrollTo('drones')"><div class="sector-icon b"><i class="fas fa-helicopter"></i></div><div class="sector-name">Agri-Drones & Tech</div><div class="sector-count" id="sc19">320+ listings</div></div>
+  <div class="sector reveal-sc" style="--i:20" onclick="scrollTo('solar')"><div class="sector-icon a"><i class="fas fa-solar-panel"></i></div><div class="sector-name">Solar & Renewable Energy</div><div class="sector-count" id="sc20">480+ listings</div></div>
+  <div class="sector reveal-sc" style="--i:21"><div class="sector-icon g"><i class="fas fa-handshake"></i></div><div class="sector-name">Supplier Connections</div><div class="sector-count" id="sc21">5,200+ suppliers</div></div>
+  <div class="sector reveal-sc" style="--i:22"><div class="sector-icon a"><i class="fas fa-chart-pie"></i></div><div class="sector-name">Investment & Advisory</div><div class="sector-count" id="sc22">400+ advisors</div></div>
+  <div class="sector reveal-sc" style="--i:23"><div class="sector-icon b"><i class="fas fa-graduation-cap"></i></div><div class="sector-name">Training & Education</div><div class="sector-count" id="sc23">280+ programs</div></div>
+  <div class="sector reveal-sc" style="--i:24"><div class="sector-icon br"><i class="fas fa-map-marked-alt"></i></div><div class="sector-name">Farm Land & Real Estate</div><div class="sector-count" id="sc24">1,100+ listings</div></div>
 </div>
 </div>
 
-<!-- ═══════ FISH & AQUACULTURE ═══════ -->
-<div id="fish">
-<div class="sec-head reveal"><div class="sec-pill"><i class="fas fa-fish"></i> Fish & Aquaculture</div><h2 class="sec-title">Live Fish, Fingerlings & Feed</h2><p class="sec-desc">Premium catfish, tilapia, and aquaculture supplies from verified farms.</p></div>
-<div class="tabs"><button class="tab active" onclick="setTab(this)">All Fish</button><button class="tab" onclick="setTab(this)">Juveniles</button><button class="tab" onclick="setTab(this)">Table Size</button><button class="tab" onclick="setTab(this)">Bulk Harvest</button><button class="tab" onclick="setTab(this)">Fish Feed</button></div>
+<!-- FISH -->
+<div id="fish"><div class="sec-head reveal"><div class="sec-pill"><i class="fas fa-fish"></i> Fish & Aquaculture</div><h2 class="sec-title">Live Fish, Fingerlings & Feed</h2><p class="sec-desc">Premium catfish, tilapia, and aquaculture supplies from verified farms.</p></div>
+<div class="tabs"><button class="tab active" onclick="setTab(this)">All Fish</button><button class="tab" onclick="setTab(this)">Juveniles</button><button class="tab" onclick="setTab(this)">Table Size</button><button class="tab" onclick="setTab(this)">Bulk</button><button class="tab" onclick="setTab(this)">Fish Feed</button></div>
 <div class="prod-wrap"><div class="prod-grid stagger">
-  <div class="pcard reveal-sc" style="--i:0"><div class="pcard-img"><img src="fish1.jpg" alt="Catfish juveniles" loading="lazy"><div class="pcard-tag tag-hot">Bestseller</div><button class="pcard-fav" onclick="toggleFav(this)"><i class="far fa-heart"></i></button></div><div class="pcard-body"><div class="pcard-cat">Catfish</div><h3 class="pcard-name">Super Active Juveniles (8-12cm)</h3><div class="pcard-specs"><span class="spec spec-g">High Survival</span><span class="spec spec-b">Vaccinated</span></div><div class="pcard-price"><span class="price">₦180</span><span class="unit">/pc</span></div><div class="pcard-note">Box of 100pcs = <b>₦18,000</b></div><div class="pcard-seller"><span class="seller-avatar">D</span><span class="seller-name">Daily Drop Farm</span><span class="seller-ver"><i class="fas fa-check-circle"></i> Verified</span></div><button class="btn-add btn-add-g" onclick="addToCart('Juveniles 100pc',18000,this)"><i class="fas fa-cart-plus"></i> Add to Cart</button></div></div>
-  <div class="pcard reveal-sc" style="--i:1"><div class="pcard-img"><img src="fish6.jpg" alt="Tank-raised fingerlings" loading="lazy"><div class="pcard-tag tag-new">New</div><button class="pcard-fav" onclick="toggleFav(this)"><i class="far fa-heart"></i></button></div><div class="pcard-body"><div class="pcard-cat">Catfish</div><h3 class="pcard-name">Tank-Raised Post-Fingerlings</h3><div class="pcard-specs"><span class="spec spec-g">Uniform Size</span><span class="spec spec-b">Clean Water</span></div><div class="pcard-price"><span class="price">₦130</span><span class="unit">/pc</span></div><div class="pcard-note">Batch 500pcs = <b>₦65,000</b></div><div class="pcard-seller"><span class="seller-avatar">D</span><span class="seller-name">Daily Drop Farm</span><span class="seller-ver"><i class="fas fa-check-circle"></i> Verified</span></div><button class="btn-add btn-add-g" onclick="addToCart('Post-Fingerlings 500pc',65000,this)"><i class="fas fa-cart-plus"></i> Add to Cart</button></div></div>
-  <div class="pcard reveal-sc" style="--i:2"><div class="pcard-img"><img src="fish3.jpg" alt="Table size catfish" loading="lazy"><div class="pcard-tag tag-hot">Ready to Cook</div><button class="pcard-fav" onclick="toggleFav(this)"><i class="far fa-heart"></i></button></div><div class="pcard-body"><div class="pcard-cat">Catfish</div><h3 class="pcard-name">Premium Table Size Catfish (1kg+)</h3><div class="pcard-specs"><span class="spec spec-g">Firm Flesh</span><span class="spec spec-a">Pepper Soup</span></div><div class="pcard-price"><span class="price">₦3,400</span><span class="unit">/kg</span><span class="old">₦4,200</span></div><div class="pcard-note">Basket 20kg = <b>₦68,000</b></div><div class="pcard-seller"><span class="seller-avatar">D</span><span class="seller-name">Daily Drop Farm</span><span class="seller-ver"><i class="fas fa-check-circle"></i> Verified</span></div><button class="btn-add btn-add-g" onclick="addToCart('Table Size 20kg',68000,this)"><i class="fas fa-cart-plus"></i> Add to Cart</button></div></div>
-  <div class="pcard reveal-sc" style="--i:3"><div class="pcard-img"><img src="fish2.jpg" alt="Bulk catfish harvest" loading="lazy"><div class="pcard-tag tag-sale">Wholesale</div><button class="pcard-fav" onclick="toggleFav(this)"><i class="far fa-heart"></i></button></div><div class="pcard-body"><div class="pcard-cat">Catfish</div><h3 class="pcard-name">Earthen Pond Direct Harvest (Bulk)</h3><div class="pcard-specs"><span class="spec spec-a">Reseller Deal</span><span class="spec spec-g">50kg+</span></div><div class="pcard-price"><span class="price">₦2,600</span><span class="unit">/kg</span><span class="old">₦3,100</span></div><div class="pcard-note">Save ₦500/kg!</div><div class="pcard-seller"><span class="seller-avatar">D</span><span class="seller-name">Daily Drop Farm</span><span class="seller-ver"><i class="fas fa-check-circle"></i> Verified</span></div><button class="btn-add btn-add-g" onclick="addToCart('Bulk Harvest 50kg',130000,this)"><i class="fas fa-cart-plus"></i> Book Harvest</button></div></div>
-</div></div>
-</div>
+  <div class="pcard reveal-sc" style="--i:0"><div class="pcard-img"><img src="fish1.jpg" alt="Catfish juveniles" loading="lazy"><div class="pcard-tag tag-hot">Bestseller</div><button class="pcard-fav" onclick="toggleFav(this)"><i class="far fa-heart"></i></button></div><div class="pcard-body"><div class="pcard-cat">Catfish</div><h3 class="pcard-name">Super Active Juveniles (8-12cm)</h3><div class="pcard-specs"><span class="spec spec-g">High Survival</span><span class="spec spec-b">Vaccinated</span></div><div class="pcard-price"><span class="price">₦180</span><span class="unit">/pc</span></div><div class="pcard-note">Box of 100pcs = <b>₦18,000</b></div><div class="pcard-seller" onclick="toast('Viewing Daily Drop Farm profile')"><span class="seller-avatar">D</span><span class="seller-name">Daily Drop Farm</span><span class="seller-ver"><i class="fas fa-check-circle"></i> Verified</span></div><button class="btn-add btn-add-g" onclick="addToCart('Juveniles 100pc',18000,this)"><i class="fas fa-cart-plus"></i> Add to Cart</button></div></div>
+  <div class="pcard reveal-sc" style="--i:1"><div class="pcard-img"><img src="fish6.jpg" alt="Tank-raised fingerlings" loading="lazy"><div class="pcard-tag tag-new">New</div><button class="pcard-fav" onclick="toggleFav(this)"><i class="far fa-heart"></i></button></div><div class="pcard-body"><div class="pcard-cat">Catfish</div><h3 class="pcard-name">Tank-Raised Post-Fingerlings</h3><div class="pcard-specs"><span class="spec spec-g">Uniform</span><span class="spec spec-b">Clean Water</span></div><div class="pcard-price"><span class="price">₦130</span><span class="unit">/pc</span></div><div class="pcard-note">Batch 500pcs = <b>₦65,000</b></div><div class="pcard-seller" onclick="toast('Viewing Daily Drop Farm profile')"><span class="seller-avatar">D</span><span class="seller-name">Daily Drop Farm</span><span class="seller-ver"><i class="fas fa-check-circle"></i> Verified</span></div><button class="btn-add btn-add-g" onclick="addToCart('Post-Fingerlings 500pc',65000,this)"><i class="fas fa-cart-plus"></i> Add to Cart</button></div></div>
+  <div class="pcard reveal-sc" style="--i:2"><div class="pcard-img"><img src="fish3.jpg" alt="Table size catfish" loading="lazy"><div class="pcard-tag tag-hot">Ready to Cook</div><button class="pcard-fav" onclick="toggleFav(this)"><i class="far fa-heart"></i></button></div><div class="pcard-body"><div class="pcard-cat">Catfish</div><h3 class="pcard-name">Premium Table Size Catfish (1kg+)</h3><div class="pcard-specs"><span class="spec spec-g">Firm Flesh</span><span class="spec spec-a">Pepper Soup</span></div><div class="pcard-price"><span class="price">₦3,400</span><span class="unit">/kg</span><span class="old">₦4,200</span></div><div class="pcard-note">Basket 20kg = <b>₦68,000</b></div><div class="pcard-seller" onclick="toast('Viewing Daily Drop Farm profile')"><span class="seller-avatar">D</span><span class="seller-name">Daily Drop Farm</span><span class="seller-ver"><i class="fas fa-check-circle"></i> Verified</span></div><button class="btn-add btn-add-g" onclick="addToCart('Table Size 20kg',68000,this)"><i class="fas fa-cart-plus"></i> Add to Cart</button></div></div>
+  <div class="pcard reveal-sc" style="--i:3"><div class="pcard-img"><img src="fish2.jpg" alt="Bulk harvest" loading="lazy"><div class="pcard-tag tag-sale">Wholesale</div><button class="pcard-fav" onclick="toggleFav(this)"><i class="far fa-heart"></i></button></div><div class="pcard-body"><div class="pcard-cat">Catfish</div><h3 class="pcard-name">Earthen Pond Direct Harvest (Bulk)</h3><div class="pcard-specs"><span class="spec spec-a">Reseller</span><span class="spec spec-g">50kg+</span></div><div class="pcard-price"><span class="price">₦2,600</span><span class="unit">/kg</span><span class="old">₦3,100</span></div><div class="pcard-note">Save ₦500/kg!</div><div class="pcard-seller" onclick="toast('Viewing Daily Drop Farm profile')"><span class="seller-avatar">D</span><span class="seller-name">Daily Drop Farm</span><span class="seller-ver"><i class="fas fa-check-circle"></i> Verified</span></div><button class="btn-add btn-add-g" onclick="addToCart('Bulk Harvest 50kg',130000,this)"><i class="fas fa-cart-plus"></i> Book Harvest</button></div></div>
+</div></div></div>
 
-<!-- ═══════ POULTRY ═══════ -->
-<div id="poultry">
-<div class="sec-head reveal"><div class="sec-pill"><i class="fas fa-egg"></i> Poultry & Chicks</div><h2 class="sec-title">Chicks, Layers, Feed & Equipment</h2><p class="sec-desc">Day-old chicks, point-of-lay pullets, turkey poults, and premium poultry feed.</p></div>
-<div class="tabs"><button class="tab active" onclick="setTab(this)">All Poultry</button><button class="tab" onclick="setTab(this)">Broiler Chicks</button><button class="tab" onclick="setTab(this)">Layer Pullets</button><button class="tab" onclick="setTab(this)">Turkeys</button><button class="tab" onclick="setTab(this)">Poultry Feed</button></div>
+<!-- POULTRY -->
+<div id="poultry"><div class="sec-head reveal"><div class="sec-pill"><i class="fas fa-egg"></i> Poultry & Chicks</div><h2 class="sec-title">Chicks, Layers, Turkeys & Feed</h2></div>
 <div class="prod-wrap"><div class="prod-grid stagger">
-  <div class="pcard reveal-sc" style="--i:0"><div class="pcard-img"><img src="poultry1.jpg" alt="Day-old broiler chicks" loading="lazy"><div class="pcard-tag tag-hot">Popular</div><button class="pcard-fav" onclick="toggleFav(this)"><i class="far fa-heart"></i></button></div><div class="pcard-body"><div class="pcard-cat">Poultry</div><h3 class="pcard-name">Day-Old Broiler Chicks (Cobb/Arbor Acres)</h3><div class="pcard-specs"><span class="spec spec-r">Vaccinated</span><span class="spec spec-b">Male/Female</span></div><div class="pcard-price"><span class="price">₦450</span><span class="unit">/chick</span></div><div class="pcard-note">Box of 50 = <b>₦22,500</b></div><div class="pcard-seller"><span class="seller-avatar">S</span><span class="seller-name">Sunrise Hatchery</span><span class="seller-ver"><i class="fas fa-check-circle"></i> Verified</span></div><button class="btn-add btn-add-b" onclick="addToCart('DOC Broilers 50pk',22500,this)"><i class="fas fa-cart-plus"></i> Order Chicks</button></div></div>
-  <div class="pcard reveal-sc" style="--i:1"><div class="pcard-img"><img src="poultry2.jpg" alt="Point-of-lay pullets" loading="lazy"><div class="pcard-tag tag-new">Ready to Lay</div><button class="pcard-fav" onclick="toggleFav(this)"><i class="far fa-heart"></i></button></div><div class="pcard-body"><div class="pcard-cat">Poultry</div><h3 class="pcard-name">Point-of-Lay Pullets (16-18 Weeks)</h3><div class="pcard-specs"><span class="spec spec-r">About to Lay</span><span class="spec spec-g">ISA Brown</span></div><div class="pcard-price"><span class="price">₦3,800</span><span class="unit">/bird</span></div><div class="pcard-note">Ready for egg production</div><div class="pcard-seller"><span class="seller-avatar">G</span><span class="seller-name">Golden Farms</span><span class="seller-ver"><i class="fas fa-check-circle"></i> Verified</span></div><button class="btn-add btn-add-b" onclick="addToCart('POL Birds 10pc',38000,this)"><i class="fas fa-cart-plus"></i> Reserve Now</button></div></div>
-  <div class="pcard reveal-sc" style="--i:2"><div class="pcard-img"><img src="poultry3.jpg" alt="Turkey poults" loading="lazy"><div class="pcard-tag tag-sale">Seasonal</div><button class="pcard-fav" onclick="toggleFav(this)"><i class="far fa-heart"></i></button></div><div class="pcard-body"><div class="pcard-cat">Poultry</div><h3 class="pcard-name">Turkey Poults (Heritage Breed)</h3><div class="pcard-specs"><span class="spec spec-a">Christmas Ready</span><span class="spec spec-r">Heritage</span></div><div class="pcard-price"><span class="price">₦3,200</span><span class="unit">/poult</span></div><div class="pcard-note">Min order 10 poults</div><div class="pcard-seller"><span class="seller-avatar">T</span><span class="seller-name">TurkeyKing NG</span><span class="seller-ver"><i class="fas fa-check-circle"></i> Verified</span></div><button class="btn-add btn-add-b" onclick="addToCart('Turkey Poults 10pk',32000,this)"><i class="fas fa-cart-plus"></i> Inquire Stock</button></div></div>
-  <div class="pcard reveal-sc" style="--i:3"><div class="pcard-img"><img src="feed2.jpg" alt="Poultry feed" loading="lazy"><button class="pcard-fav" onclick="toggleFav(this)"><i class="far fa-heart"></i></button></div><div class="pcard-body"><div class="pcard-cat">Feed</div><h3 class="pcard-name">Broiler Starter Crumbles (0-3 weeks)</h3><div class="pcard-specs"><span class="spec spec-g">24% Protein</span><span class="spec spec-r">Medicated</span></div><div class="pcard-price"><span class="price">₦22,000</span><span class="unit">/25kg</span></div><div class="pcard-seller"><span class="seller-avatar">F</span><span class="seller-name">FeedMaster NG</span><span class="seller-ver"><i class="fas fa-check-circle"></i> Verified</span></div><button class="btn-add btn-add-b" onclick="addToCart('Broiler Starter 25kg',22000,this)"><i class="fas fa-cart-plus"></i> Add to Cart</button></div></div>
-</div></div>
-</div>
+  <div class="pcard reveal-sc" style="--i:0"><div class="pcard-img"><img src="poultry1.jpg" alt="Broiler chicks" loading="lazy"><div class="pcard-tag tag-hot">Popular</div><button class="pcard-fav" onclick="toggleFav(this)"><i class="far fa-heart"></i></button></div><div class="pcard-body"><div class="pcard-cat">Poultry</div><h3 class="pcard-name">Day-Old Broiler Chicks (Cobb/Arbor)</h3><div class="pcard-specs"><span class="spec spec-r">Vaccinated</span><span class="spec spec-b">Male/Female</span></div><div class="pcard-price"><span class="price">₦450</span><span class="unit">/chick</span></div><div class="pcard-note">Box of 50 = <b>₦22,500</b></div><div class="pcard-seller" onclick="toast('Viewing Sunrise Hatchery profile')"><span class="seller-avatar">S</span><span class="seller-name">Sunrise Hatchery</span><span class="seller-ver"><i class="fas fa-check-circle"></i> Verified</span></div><button class="btn-add btn-add-b" onclick="addToCart('DOC Broilers 50pk',22500,this)"><i class="fas fa-cart-plus"></i> Order Chicks</button></div></div>
+  <div class="pcard reveal-sc" style="--i:1"><div class="pcard-img"><img src="poultry2.jpg" alt="POL pullets" loading="lazy"><div class="pcard-tag tag-new">Ready to Lay</div><button class="pcard-fav" onclick="toggleFav(this)"><i class="far fa-heart"></i></button></div><div class="pcard-body"><div class="pcard-cat">Poultry</div><h3 class="pcard-name">Point-of-Lay Pullets (16-18 Weeks)</h3><div class="pcard-specs"><span class="spec spec-r">ISA Brown</span><span class="spec spec-g">Vaccinated</span></div><div class="pcard-price"><span class="price">₦3,800</span><span class="unit">/bird</span></div><div class="pcard-seller" onclick="toast('Viewing Golden Farms profile')"><span class="seller-avatar">G</span><span class="seller-name">Golden Farms</span><span class="seller-ver"><i class="fas fa-check-circle"></i> Verified</span></div><button class="btn-add btn-add-b" onclick="addToCart('POL Birds 10pc',38000,this)"><i class="fas fa-cart-plus"></i> Reserve Now</button></div></div>
+  <div class="pcard reveal-sc" style="--i:2"><div class="pcard-img"><img src="poultry3.jpg" alt="Turkey poults" loading="lazy"><div class="pcard-tag tag-sale">Seasonal</div><button class="pcard-fav" onclick="toggleFav(this)"><i class="far fa-heart"></i></button></div><div class="pcard-body"><div class="pcard-cat">Poultry</div><h3 class="pcard-name">Turkey Poults (Heritage Breed)</h3><div class="pcard-specs"><span class="spec spec-a">Christmas</span><span class="spec spec-r">Heritage</span></div><div class="pcard-price"><span class="price">₦3,200</span><span class="unit">/poult</span></div><div class="pcard-seller" onclick="toast('Viewing TurkeyKing NG profile')"><span class="seller-avatar">T</span><span class="seller-name">TurkeyKing NG</span><span class="seller-ver"><i class="fas fa-check-circle"></i> Verified</span></div><button class="btn-add btn-add-b" onclick="addToCart('Turkey Poults 10pk',32000,this)"><i class="fas fa-cart-plus"></i> Inquire Stock</button></div></div>
+  <div class="pcard reveal-sc" style="--i:3"><div class="pcard-img"><img src="feed2.jpg" alt="Poultry feed" loading="lazy"><button class="pcard-fav" onclick="toggleFav(this)"><i class="far fa-heart"></i></button></div><div class="pcard-body"><div class="pcard-cat">Feed</div><h3 class="pcard-name">Broiler Starter Crumbles (25kg)</h3><div class="pcard-specs"><span class="spec spec-g">24% Protein</span><span class="spec spec-r">Medicated</span></div><div class="pcard-price"><span class="price">₦22,000</span><span class="unit">/bag</span></div><div class="pcard-seller" onclick="toast('Viewing FeedMaster NG profile')"><span class="seller-avatar">F</span><span class="seller-name">FeedMaster NG</span><span class="seller-ver"><i class="fas fa-check-circle"></i> Verified</span></div><button class="btn-add btn-add-b" onclick="addToCart('Broiler Starter 25kg',22000,this)"><i class="fas fa-cart-plus"></i> Add to Cart</button></div></div>
+</div></div></div>
 
-<!-- ═══════ LIVESTOCK ═══════ -->
-<div id="livestock">
-<div class="sec-head reveal"><div class="sec-pill"><i class="fas fa-cow"></i> Livestock & Cattle</div><h2 class="sec-title">Cattle, Goats, Sheep & Pigs</h2><p class="sec-desc">Healthy livestock from verified ranches and farms across Nigeria.</p></div>
+<!-- LIVESTOCK -->
+<div id="livestock"><div class="sec-head reveal"><div class="sec-pill"><i class="fas fa-cow"></i> Livestock & Cattle</div><h2 class="sec-title">Cattle, Goats, Sheep & Rams</h2></div>
 <div class="prod-wrap"><div class="prod-grid stagger">
-  <div class="pcard reveal-sc" style="--i:0"><div class="pcard-img"><img src="img/livestock2.jpg" alt="Cattle ranch Nigeria" loading="lazy"><div class="pcard-tag tag-ver">Verified Ranch</div><button class="pcard-fav" onclick="toggleFav(this)"><i class="far fa-heart"></i></button></div><div class="pcard-body"><div class="pcard-cat">Cattle</div><h3 class="pcard-name">White Fulani Cattle (Mature Bull)</h3><div class="pcard-specs"><span class="spec spec-r">Grass-Fed</span><span class="spec spec-g">Vet Checked</span></div><div class="pcard-price"><span class="price">₦450,000</span><span class="unit">/head</span></div><div class="pcard-note">Transport available</div><div class="pcard-seller"><span class="seller-avatar">K</span><span class="seller-name">Kano Cattle Ranch</span><span class="seller-ver"><i class="fas fa-check-circle"></i> Verified</span></div><button class="btn-add btn-add-b" onclick="addToCart('Cattle Bull 1hd',450000,this)"><i class="fas fa-cart-plus"></i> Inquire</button></div></div>
-  <div class="pcard reveal-sc" style="--i:1"><div class="pcard-img"><img src="img/livestock2.jpg" alt="Goats for sale" loading="lazy"><button class="pcard-fav" onclick="toggleFav(this)"><i class="far fa-heart"></i></button></div><div class="pcard-body"><div class="pcard-cat">Goats</div><h3 class="pcard-name">West African Dwarf Goats (Male)</h3><div class="pcard-specs"><span class="spec spec-g">Healthy</span><span class="spec spec-a">Breeding Stock</span></div><div class="pcard-price"><span class="price">₦45,000</span><span class="unit">/head</span></div><div class="pcard-seller"><span class="seller-avatar">A</span><span class="seller-name">AgroLive Farms</span><span class="seller-ver"><i class="fas fa-check-circle"></i> Verified</span></div><button class="btn-add btn-add-b" onclick="addToCart('WAD Goat Male',45000,this)"><i class="fas fa-cart-plus"></i> Inquire</button></div></div>
-  <div class="pcard reveal-sc" style="--i:2"><div class="pcard-img"><img src="img/livestock2.jpg" alt="Sheep" loading="lazy"><button class="pcard-fav" onclick="toggleFav(this)"><i class="far fa-heart"></i></button></div><div class="pcard-body"><div class="pcard-cat">Sheep</div><h3 class="pcard-name">Balami Rams (Festival Ready)</h3><div class="pcard-specs"><span class="spec spec-r">Well-Fed</span><span class="spec spec-g">Disease-Free</span></div><div class="pcard-price"><span class="price">₦85,000</span><span class="unit">/head</span></div><div class="pcard-note">Eid & Christmas specials</div><div class="pcard-seller"><span class="seller-avatar">B</span><span class="seller-name">Borno Livestock</span><span class="seller-ver"><i class="fas fa-check-circle"></i> Verified</span></div><button class="btn-add btn-add-b" onclick="addToCart('Balami Ram',85000,this)"><i class="fas fa-cart-plus"></i> Inquire</button></div></div>
-</div></div>
-</div>
+  <div class="pcard reveal-sc" style="--i:0"><div class="pcard-img"><img src="img/livestock2.jpg" alt="Cattle" loading="lazy"><div class="pcard-tag tag-ver">Verified Ranch</div><button class="pcard-fav" onclick="toggleFav(this)"><i class="far fa-heart"></i></button></div><div class="pcard-body"><div class="pcard-cat">Cattle</div><h3 class="pcard-name">White Fulani Cattle (Mature Bull)</h3><div class="pcard-specs"><span class="spec spec-r">Grass-Fed</span><span class="spec spec-g">Vet Checked</span></div><div class="pcard-price"><span class="price">₦450,000</span><span class="unit">/head</span></div><div class="pcard-seller" onclick="toast('Viewing Kano Cattle Ranch profile')"><span class="seller-avatar">K</span><span class="seller-name">Kano Cattle Ranch</span><span class="seller-ver"><i class="fas fa-check-circle"></i> Verified</span></div><button class="btn-add btn-add-b" onclick="addToCart('Cattle Bull 1hd',450000,this)"><i class="fas fa-cart-plus"></i> Inquire</button></div></div>
+  <div class="pcard reveal-sc" style="--i:1"><div class="pcard-img"><img src="img/livestock2.jpg" alt="Goats" loading="lazy"><button class="pcard-fav" onclick="toggleFav(this)"><i class="far fa-heart"></i></button></div><div class="pcard-body"><div class="pcard-cat">Goats</div><h3 class="pcard-name">West African Dwarf Goats (Male)</h3><div class="pcard-specs"><span class="spec spec-g">Healthy</span><span class="spec spec-a">Breeding</span></div><div class="pcard-price"><span class="price">₦45,000</span><span class="unit">/head</span></div><div class="pcard-seller" onclick="toast('Viewing AgroLive Farms profile')"><span class="seller-avatar">A</span><span class="seller-name">AgroLive Farms</span><span class="seller-ver"><i class="fas fa-check-circle"></i> Verified</span></div><button class="btn-add btn-add-b" onclick="addToCart('WAD Goat',45000,this)"><i class="fas fa-cart-plus"></i> Inquire</button></div></div>
+  <div class="pcard reveal-sc" style="--i:2"><div class="pcard-img"><img src="img/livestock2.jpg" alt="Sheep" loading="lazy"><button class="pcard-fav" onclick="toggleFav(this)"><i class="far fa-heart"></i></button></div><div class="pcard-body"><div class="pcard-cat">Sheep</div><h3 class="pcard-name">Balami Rams (Festival Ready)</h3><div class="pcard-specs"><span class="spec spec-r">Well-Fed</span><span class="spec spec-g">Disease-Free</span></div><div class="pcard-price"><span class="price">₦85,000</span><span class="unit">/head</span></div><div class="pcard-seller" onclick="toast('Viewing Borno Livestock profile')"><span class="seller-avatar">B</span><span class="seller-name">Borno Livestock</span><span class="seller-ver"><i class="fas fa-check-circle"></i> Verified</span></div><button class="btn-add btn-add-b" onclick="addToCart('Balami Ram',85000,this)"><i class="fas fa-cart-plus"></i> Inquire</button></div></div>
+</div></div></div>
 
-<!-- ═══════ SEEDS & CROPS ═══════ -->
-<div id="crops">
-<div class="sec-head reveal"><div class="sec-pill"><i class="fas fa-wheat-awn"></i> Seeds & Crops</div><h2 class="sec-title">Seeds, Grains & Farm Produce</h2><p class="sec-desc">Maize, rice, cassava, soybean, sesame, and premium seed varieties.</p></div>
+<!-- DAIRY -->
+<div id="dairy"><div class="sec-head reveal"><div class="sec-pill"><i class="fas fa-cheese"></i> Dairy & Milk</div><h2 class="sec-title">Fresh Milk, Yogurt & Dairy Products</h2><p class="sec-desc">Pasteurized milk, yogurt, cheese, and dairy processing equipment.</p></div>
 <div class="prod-wrap"><div class="prod-grid stagger">
-  <div class="pcard reveal-sc" style="--i:0"><div class="pcard-img"><img src="img/crops1.jpg" alt="Maize harvest" loading="lazy"><div class="pcard-tag tag-sale">Bulk Deal</div><button class="pcard-fav" onclick="toggleFav(this)"><i class="far fa-heart"></i></button></div><div class="pcard-body"><div class="pcard-cat">Grains</div><h3 class="pcard-name">Premium Yellow Maize (Grade A)</h3><div class="pcard-specs"><span class="spec spec-g">Dried</span><span class="spec spec-a">Feed Grade</span></div><div class="pcard-price"><span class="price">₦42,000</span><span class="unit">/100kg bag</span></div><div class="pcard-seller"><span class="seller-avatar">B</span><span class="seller-name">Benue Grains Co.</span><span class="seller-ver"><i class="fas fa-check-circle"></i> Verified</span></div><button class="btn-add btn-add-g" onclick="addToCart('Maize 100kg',42000,this)"><i class="fas fa-cart-plus"></i> Add to Cart</button></div></div>
-  <div class="pcard reveal-sc" style="--i:1"><div class="pcard-img"><img src="img/crops2.jpg" alt="Rice paddy" loading="lazy"><button class="pcard-fav" onclick="toggleFav(this)"><i class="far fa-heart"></i></button></div><div class="pcard-body"><div class="pcard-cat">Grains</div><h3 class="pcard-name">Processed Ofada Rice (50kg)</h3><div class="pcard-specs"><span class="spec spec-g">Local</span><span class="spec spec-b">Stone-Free</span></div><div class="pcard-price"><span class="price">₦38,000</span><span class="unit">/50kg</span></div><div class="pcard-seller"><span class="seller-avatar">O</span><span class="seller-name">Ogun Rice Mills</span><span class="seller-ver"><i class="fas fa-check-circle"></i> Verified</span></div><button class="btn-add btn-add-g" onclick="addToCart('Ofada Rice 50kg',38000,this)"><i class="fas fa-cart-plus"></i> Add to Cart</button></div></div>
-  <div class="pcard reveal-sc" style="--i:2"><div class="pcard-img"><img src="img/crops1.jpg" alt="Soybean" loading="lazy"><button class="pcard-fav" onclick="toggleFav(this)"><i class="far fa-heart"></i></button></div><div class="pcard-body"><div class="pcard-cat">Oil Seeds</div><h3 class="pcard-name">Clean Soybeans (Feed & Oil Grade)</h3><div class="pcard-specs"><span class="spec spec-g">High Protein</span><span class="spec spec-a">Export Quality</span></div><div class="pcard-price"><span class="price">₦55,000</span><span class="unit">/100kg</span></div><div class="pcard-seller"><span class="seller-avatar">N</span><span class="seller-name">Niger Soy Traders</span><span class="seller-ver"><i class="fas fa-check-circle"></i> Verified</span></div><button class="btn-add btn-add-g" onclick="addToCart('Soybean 100kg',55000,this)"><i class="fas fa-cart-plus"></i> Add to Cart</button></div></div>
-</div></div>
-</div>
+  <div class="pcard reveal-sc" style="--i:0"><div class="pcard-img"><img src="img/dairy1.jpg" alt="Fresh milk" loading="lazy"><div class="pcard-tag tag-new">Fresh Daily</div><button class="pcard-fav" onclick="toggleFav(this)"><i class="far fa-heart"></i></button></div><div class="pcard-body"><div class="pcard-cat">Dairy</div><h3 class="pcard-name">Fresh Pasteurized Cow Milk (5 Litres)</h3><div class="pcard-specs"><span class="spec spec-g">Organic</span><span class="spec spec-b">No Preservatives</span></div><div class="pcard-price"><span class="price">₦3,500</span><span class="unit">/5L</span></div><div class="pcard-seller" onclick="toast('Viewing FreshDairy NG profile')"><span class="seller-avatar">F</span><span class="seller-name">FreshDairy NG</span><span class="seller-ver"><i class="fas fa-check-circle"></i> Verified</span></div><button class="btn-add btn-add-g" onclick="addToCart('Fresh Milk 5L',3500,this)"><i class="fas fa-cart-plus"></i> Add to Cart</button></div></div>
+  <div class="pcard reveal-sc" style="--i:1"><div class="pcard-img"><img src="img/dairy1.jpg" alt="Yogurt" loading="lazy"><button class="pcard-fav" onclick="toggleFav(this)"><i class="far fa-heart"></i></button></div><div class="pcard-body"><div class="pcard-cat">Dairy</div><h3 class="pcard-name">Natural Greek Yogurt (1kg)</h3><div class="pcard-specs"><span class="spec spec-g">Probiotic</span><span class="spec spec-a">No Sugar</span></div><div class="pcard-price"><span class="price">₦2,800</span><span class="unit">/kg</span></div><div class="pcard-seller" onclick="toast('Viewing YogurtLand profile')"><span class="seller-avatar">Y</span><span class="seller-name">YogurtLand</span><span class="seller-ver"><i class="fas fa-check-circle"></i> Verified</span></div><button class="btn-add btn-add-g" onclick="addToCart('Greek Yogurt 1kg',2800,this)"><i class="fas fa-cart-plus"></i> Add to Cart</button></div></div>
+</div></div></div>
 
-<!-- ═══════ FARM EQUIPMENT ═══════ -->
-<div id="equipment">
-<div class="sec-head reveal"><div class="sec-pill"><i class="fas fa-tractor"></i> Farm Equipment</div><h2 class="sec-title">Tractors, Irrigation & Machinery</h2><p class="sec-desc">New and used farm equipment, irrigation systems, and processing machinery.</p></div>
+<!-- PIGGERY -->
+<div id="pigs"><div class="sec-head reveal"><div class="sec-pill"><i class="fas fa-piggy-bank"></i> Piggery</div><h2 class="sec-title">Pigs, Piglets & Pork Products</h2></div>
 <div class="prod-wrap"><div class="prod-grid stagger">
-  <div class="pcard reveal-sc" style="--i:0"><div class="pcard-img"><img src="img/equipment1.jpg" alt="Farm tractor" loading="lazy"><div class="pcard-tag tag-new">New Stock</div><button class="pcard-fav" onclick="toggleFav(this)"><i class="far fa-heart"></i></button></div><div class="pcard-body"><div class="pcard-cat">Tractors</div><h3 class="pcard-name">Massey Ferguson 375 (75HP 4WD)</h3><div class="pcard-specs"><span class="spec spec-b">Brand New</span><span class="spec spec-g">Warranty</span></div><div class="pcard-price"><span class="price">₦12,500,000</span></div><div class="pcard-seller"><span class="seller-avatar">T</span><span class="seller-name">Tractors.com.ng</span><span class="seller-ver"><i class="fas fa-check-circle"></i> Verified</span></div><button class="btn-add btn-add-n" onclick="addToCart('MF 375 Tractor',12500000,this)"><i class="fas fa-cart-plus"></i> Request Quote</button></div></div>
-  <div class="pcard reveal-sc" style="--i:1"><div class="pcard-img"><img src="img/equipment1.jpg" alt="Drip irrigation" loading="lazy"><button class="pcard-fav" onclick="toggleFav(this)"><i class="far fa-heart"></i></button></div><div class="pcard-body"><div class="pcard-cat">Irrigation</div><h3 class="pcard-name">Drip Irrigation Kit (1 Acre)</h3><div class="pcard-specs"><span class="spec spec-g">Complete Kit</span><span class="spec spec-b">Install Guide</span></div><div class="pcard-price"><span class="price">₦350,000</span></div><div class="pcard-seller"><span class="seller-avatar">I</span><span class="seller-name">IrrigateNG</span><span class="seller-ver"><i class="fas fa-check-circle"></i> Verified</span></div><button class="btn-add btn-add-n" onclick="addToCart('Drip Irrigation 1Acre',350000,this)"><i class="fas fa-cart-plus"></i> Add to Cart</button></div></div>
-</div></div>
-</div>
+  <div class="pcard reveal-sc" style="--i:0"><div class="pcard-img"><img src="img/pig1.jpg" alt="Pigs" loading="lazy"><div class="pcard-tag tag-hot">High Demand</div><button class="pcard-fav" onclick="toggleFav(this)"><i class="far fa-heart"></i></button></div><div class="pcard-body"><div class="pcard-cat">Piggery</div><h3 class="pcard-name">Large White Growers (3 Months)</h3><div class="pcard-specs"><span class="spec spec-g">Vaccinated</span><span class="spec spec-b">Fast Growth</span></div><div class="pcard-price"><span class="price">₦35,000</span><span class="unit">/pig</span></div><div class="pcard-seller" onclick="toast('Viewing PigFarm Lagos profile')"><span class="seller-avatar">P</span><span class="seller-name">PigFarm Lagos</span><span class="seller-ver"><i class="fas fa-check-circle"></i> Verified</span></div><button class="btn-add btn-add-b" onclick="addToCart('Large White Pig',35000,this)"><i class="fas fa-cart-plus"></i> Order</button></div></div>
+  <div class="pcard reveal-sc" style="--i:1"><div class="pcard-img"><img src="img/pig1.jpg" alt="Piglets" loading="lazy"><button class="pcard-fav" onclick="toggleFav(this)"><i class="far fa-heart"></i></button></div><div class="pcard-body"><div class="pcard-cat">Piggery</div><h3 class="pcard-name">Piglets (8 Weeks, Weaned)</h3><div class="pcard-specs"><span class="spec spec-g">Healthy</span><span class="spec spec-a">Duroc Cross</span></div><div class="pcard-price"><span class="price">₦15,000</span><span class="unit">/piglet</span></div><div class="pcard-seller" onclick="toast('Viewing PorkKing Farms profile')"><span class="seller-avatar">P</span><span class="seller-name">PorkKing Farms</span><span class="seller-ver"><i class="fas fa-check-circle"></i> Verified</span></div><button class="btn-add btn-add-b" onclick="addToCart('Piglet 8wk',15000,this)"><i class="fas fa-cart-plus"></i> Order</button></div></div>
+</div></div></div>
 
-<!-- ═══════ VETERINARY ═══════ -->
-<div id="vet">
-<div class="sec-head reveal"><div class="sec-pill"><i class="fas fa-syringe"></i> Veterinary Products</div><h2 class="sec-title">Animal Health & Medicine</h2><p class="sec-desc">Vaccines, antibiotics, dewormers, and veterinary supplies for all livestock.</p></div>
+<!-- SNAIL & RABBIT -->
+<div id="snail"><div class="sec-head reveal"><div class="sec-pill"><i class="fas fa-bug"></i> Snail & Rabbit Farming</div><h2 class="sec-title">Snails, Rabbits & Specialty Livestock</h2></div>
 <div class="prod-wrap"><div class="prod-grid stagger">
-  <div class="pcard reveal-sc" style="--i:0"><div class="pcard-img"><img src="img/vet2.jpg" alt="Veterinary vaccination" loading="lazy"><div class="pcard-tag tag-ver">Vet Approved</div><button class="pcard-fav" onclick="toggleFav(this)"><i class="far fa-heart"></i></button></div><div class="pcard-body"><div class="pcard-cat">Vaccines</div><h3 class="pcard-name">Newcastle Disease Vaccine (100 doses)</h3><div class="pcard-specs"><span class="spec spec-b">NDV Lasota</span><span class="spec spec-g">Cold Chain</span></div><div class="pcard-price"><span class="price">₦3,500</span><span class="unit">/vial</span></div><div class="pcard-seller"><span class="seller-avatar">V</span><span class="sender-name">VetSupply NG</span><span class="seller-ver"><i class="fas fa-check-circle"></i> Verified</span></div><button class="btn-add btn-add-n" onclick="addToCart('NDV Vaccine 100dose',3500,this)"><i class="fas fa-cart-plus"></i> Add to Cart</button></div></div>
-  <div class="pcard reveal-sc" style="--i:1"><div class="pcard-img"><img src="img/vet1.jpg" alt="Animal medicine" loading="lazy"><button class="pcard-fav" onclick="toggleFav(this)"><i class="far fa-heart"></i></button></div><div class="pcard-body"><div class="pcard-cat">Dewormers</div><h3 class="pcard-name">Ivermectin Injection (Cattle & Goats)</h3><div class="pcard-specs"><span class="spec spec-g">Broad Spectrum</span><span class="spec spec-r">100ml</span></div><div class="pcard-price"><span class="price">₦8,500</span><span class="unit">/bottle</span></div><div class="pcard-seller"><span class="seller-avatar">A</span><span class="seller-name">AgroVet Labs</span><span class="seller-ver"><i class="fas fa-check-circle"></i> Verified</span></div><button class="btn-add btn-add-n" onclick="addToCart('Ivermectin 100ml',8500,this)"><i class="fas fa-cart-plus"></i> Add to Cart</button></div></div>
-</div></div>
-</div>
+  <div class="pcard reveal-sc" style="--i:0"><div class="pcard-img"><img src="img/snail1.jpg" alt="Snails" loading="lazy"><div class="pcard-tag tag-new">Profitable</div><button class="pcard-fav" onclick="toggleFav(this)"><i class="far fa-heart"></i></button></div><div class="pcard-body"><div class="pcard-cat">Snail Farming</div><h3 class="pcard-name">Giant African Land Snails (Breeding Size)</h3><div class="pcard-specs"><span class="spec spec-g">Achatina</span><span class="spec spec-a">High Yield</span></div><div class="pcard-price"><span class="price">₦500</span><span class="unit">/snail</span></div><div class="pcard-note">Pack of 50 = <b>₦25,000</b></div><div class="pcard-seller" onclick="toast('Viewing SnailFarm NG profile')"><span class="seller-avatar">S</span><span class="seller-name">SnailFarm NG</span><span class="seller-ver"><i class="fas fa-check-circle"></i> Verified</span></div><button class="btn-add btn-add-g" onclick="addToCart('Snails 50pk',25000,this)"><i class="fas fa-cart-plus"></i> Order</button></div></div>
+  <div class="pcard reveal-sc" style="--i:1"><div class="pcard-img"><img src="img/rabbit1.jpg" alt="Rabbits" loading="lazy"><button class="pcard-fav" onclick="toggleFav(this)"><i class="far fa-heart"></i></button></div><div class="pcard-body"><div class="pcard-cat">Rabbit Farming</div><h3 class="pcard-name">New Zealand White Rabbits (Adult Pair)</h3><div class="pcard-specs"><span class="spec spec-g">Breeding</span><span class="spec spec-b">Fast Growth</span></div><div class="pcard-price"><span class="price">₦12,000</span><span class="unit">/pair</span></div><div class="pcard-seller" onclick="toast('Viewing RabbitHub profile')"><span class="seller-avatar">R</span><span class="seller-name">RabbitHub</span><span class="seller-ver"><i class="fas fa-check-circle"></i> Verified</span></div><button class="btn-add btn-add-g" onclick="addToCart('Rabbit Pair',12000,this)"><i class="fas fa-cart-plus"></i> Order</button></div></div>
+</div></div></div>
 
-<!-- ═══════ AGROCHEMICALS ═══════ -->
-<div id="agrochem">
-<div class="sec-head reveal"><div class="sec-pill"><i class="fas fa-flask"></i> Agrochemicals</div><h2 class="sec-title">Herbicides, Pesticides & Fertilizers</h2><p class="sec-desc">Crop protection products, soil amendments, and plant nutrition.</p></div>
+<!-- APICULTURE -->
+<div id="apiculture"><div class="sec-head reveal"><div class="sec-pill"><i class="fas fa-honey-pot"></i> Apiculture & Honey</div><h2 class="sec-title">Honey, Beeswax & Beekeeping Supplies</h2></div>
 <div class="prod-wrap"><div class="prod-grid stagger">
-  <div class="pcard reveal-sc" style="--i:0"><div class="pcard-img"><img src="img/agrochem1.jpg" alt="Herbicide" loading="lazy"><div class="pcard-tag tag-sale">Best Value</div><button class="pcard-fav" onclick="toggleFav(this)"><i class="far fa-heart"></i></button></div><div class="pcard-body"><div class="pcard-cat">Herbicides</div><h3 class="pcard-name">Glyphosate 480 SL (5 Litres)</h3><div class="pcard-specs"><span class="spec spec-g">Broad Spectrum</span><span class="spec spec-a">Post-Emergence</span></div><div class="pcard-price"><span class="price">₦8,500</span><span class="unit">/5L</span></div><div class="pcard-seller"><span class="seller-avatar">C</span><span class="seller-name">CropChem Nigeria</span><span class="seller-ver"><i class="fas fa-check-circle"></i> Verified</span></div><button class="btn-add btn-add-g" onclick="addToCart('Glyphosate 5L',8500,this)"><i class="fas fa-cart-plus"></i> Add to Cart</button></div></div>
-  <div class="pcard reveal-sc" style="--i:1"><div class="pcard-img"><img src="img/agrochem1.jpg" alt="Fertilizer" loading="lazy"><button class="pcard-fav" onclick="toggleFav(this)"><i class="far fa-heart"></i></button></div><div class="pcard-body"><div class="pcard-cat">Fertilizers</div><h3 class="pcard-name">NPK 15-15-15 Fertilizer (50kg)</h3><div class="pcard-specs"><span class="spec spec-g">Balanced</span><span class="spec spec-b">All Crops</span></div><div class="pcard-price"><span class="price">₦18,000</span><span class="unit">/50kg</span></div><div class="pcard-seller"><span class="seller-avatar">F</span><span class="seller-name">FertileFields NG</span><span class="seller-ver"><i class="fas fa-check-circle"></i> Verified</span></div><button class="btn-add btn-add-g" onclick="addToCart('NPK 15-15-15 50kg',18000,this)"><i class="fas fa-cart-plus"></i> Add to Cart</button></div></div>
-</div></div>
-</div>
+  <div class="pcard reveal-sc" style="--i:0"><div class="pcard-img"><img src="img/honey1.jpg" alt="Pure honey" loading="lazy"><div class="pcard-tag tag-sale">Premium</div><button class="pcard-fav" onclick="toggleFav(this)"><i class="far fa-heart"></i></button></div><div class="pcard-body"><div class="pcard-cat">Honey</div><h3 class="pcard-name">Pure Raw Honey (Unprocessed, 1 Litre)</h3><div class="pcard-specs"><span class="spec spec-g">100% Natural</span><span class="spec spec-a">Forest Source</span></div><div class="pcard-price"><span class="price">₦5,500</span><span class="unit">/litre</span></div><div class="pcard-seller" onclick="toast('Viewing BeeFarm Nigeria profile')"><span class="seller-avatar">B</span><span class="seller-name">BeeFarm Nigeria</span><span class="seller-ver"><i class="fas fa-check-circle"></i> Verified</span></div><button class="btn-add btn-add-g" onclick="addToCart('Pure Honey 1L',5500,this)"><i class="fas fa-cart-plus"></i> Add to Cart</button></div></div>
+  <div class="pcard reveal-sc" style="--i:1"><div class="pcard-img"><img src="img/honey1.jpg" alt="Beehive" loading="lazy"><button class="pcard-fav" onclick="toggleFav(this)"><i class="far fa-heart"></i></button></div><div class="pcard-body"><div class="pcard-cat">Equipment</div><h3 class="pcard-name">Complete Beehive Kit (10-Frame)</h3><div class="pcard-specs"><span class="spec spec-b">Langstroth</span><span class="spec spec-g">Wooden</span></div><div class="pcard-price"><span class="price">₦45,000</span><span class="unit">/unit</span></div><div class="pcard-seller" onclick="toast('Viewing Apiculture NG profile')"><span class="seller-avatar">A</span><span class="seller-name">Apiculture NG</span><span class="seller-ver"><i class="fas fa-check-circle"></i> Verified</span></div><button class="btn-add btn-add-g" onclick="addToCart('Beehive Kit',45000,this)"><i class="fas fa-cart-plus"></i> Add to Cart</button></div></div>
+</div></div></div>
 
-<!-- ═══════ LOGISTICS ═══════ -->
-<div id="logistics">
-<div class="sec-head reveal"><div class="sec-pill"><i class="fas fa-truck"></i> Logistics & Cold Chain</div><h2 class="sec-title">Transport, Storage & Distribution</h2><p class="sec-desc">Refrigerated trucks, cold storage, warehouse, and last-mile delivery services.</p></div>
+<!-- CROPS -->
+<div id="crops"><div class="sec-head reveal"><div class="sec-pill"><i class="fas fa-wheat-awn"></i> Seeds, Crops & Grains</div><h2 class="sec-title">Maize, Rice, Soybean & Seeds</h2></div>
 <div class="prod-wrap"><div class="prod-grid stagger">
-  <div class="pcard reveal-sc" style="--i:0"><div class="pcard-img"><img src="img/logistics1.jpg" alt="Cold chain truck" loading="lazy"><div class="pcard-tag tag-new">Available Now</div><button class="pcard-fav" onclick="toggleFav(this)"><i class="far fa-heart"></i></button></div><div class="pcard-body"><div class="pcard-cat">Transport</div><h3 class="pcard-name">Refrigerated Truck — Lagos to Abuja</h3><div class="pcard-specs"><span class="spec spec-b">Temp Controlled</span><span class="spec spec-g">Same Day</span></div><div class="pcard-price"><span class="price">₦180,000</span><span class="unit">/trip</span></div><div class="pcard-seller"><span class="seller-avatar">C</span><span class="seller-name">ColdChain NG</span><span class="seller-ver"><i class="fas fa-check-circle"></i> Verified</span></div><button class="btn-add btn-add-n" onclick="addToCart('Refrig Truck Lagos-Abuja',180000,this)"><i class="fas fa-cart-plus"></i> Book Now</button></div></div>
-  <div class="pcard reveal-sc" style="--i:1"><div class="pcard-img"><img src="img/logistics1.jpg" alt="Cold storage facility" loading="lazy"><button class="pcard-fav" onclick="toggleFav(this)"><i class="far fa-heart"></i></button></div><div class="pcard-body"><div class="pcard-cat">Storage</div><h3 class="pcard-name">Cold Storage Rental (Per Month)</h3><div class="pcard-specs"><span class="spec spec-g">-18°C</span><span class="spec spec-b">50 Tons</span></div><div class="pcard-price"><span class="price">₦350,000</span><span class="unit">/month</span></div><div class="pcard-seller"><span class="seller-avatar">F</span><span class="seller-name">FreshStore Lagos</span><span class="seller-ver"><i class="fas fa-check-circle"></i> Verified</span></div><button class="btn-add btn-add-n" onclick="addToCart('Cold Storage 1mo',350000,this)"><i class="fas fa-cart-plus"></i> Inquire</button></div></div>
-</div></div>
-</div>
+  <div class="pcard reveal-sc" style="--i:0"><div class="pcard-img"><img src="img/crops1.jpg" alt="Maize" loading="lazy"><div class="pcard-tag tag-sale">Bulk Deal</div><button class="pcard-fav" onclick="toggleFav(this)"><i class="far fa-heart"></i></button></div><div class="pcard-body"><div class="pcard-cat">Grains</div><h3 class="pcard-name">Premium Yellow Maize (Grade A)</h3><div class="pcard-specs"><span class="spec spec-g">Dried</span><span class="spec spec-a">Feed Grade</span></div><div class="pcard-price"><span class="price">₦42,000</span><span class="unit">/100kg</span></div><div class="pcard-seller" onclick="toast('Viewing Benue Grains profile')"><span class="seller-avatar">B</span><span class="seller-name">Benue Grains Co.</span><span class="seller-ver"><i class="fas fa-check-circle"></i> Verified</span></div><button class="btn-add btn-add-g" onclick="addToCart('Maize 100kg',42000,this)"><i class="fas fa-cart-plus"></i> Add to Cart</button></div></div>
+  <div class="pcard reveal-sc" style="--i:1"><div class="pcard-img"><img src="img/crops2.jpg" alt="Rice" loading="lazy"><button class="pcard-fav" onclick="toggleFav(this)"><i class="far fa-heart"></i></button></div><div class="pcard-body"><div class="pcard-cat">Grains</div><h3 class="pcard-name">Processed Ofada Rice (50kg)</h3><div class="pcard-specs"><span class="spec spec-g">Local</span><span class="spec spec-b">Stone-Free</span></div><div class="pcard-price"><span class="price">₦38,000</span><span class="unit">/50kg</span></div><div class="pcard-seller" onclick="toast('Viewing Ogun Rice Mills profile')"><span class="seller-avatar">O</span><span class="seller-name">Ogun Rice Mills</span><span class="seller-ver"><i class="fas fa-check-circle"></i> Verified</span></div><button class="btn-add btn-add-g" onclick="addToCart('Ofada Rice 50kg',38000,this)"><i class="fas fa-cart-plus"></i> Add to Cart</button></div></div>
+</div></div></div>
 
-<!-- ═══════ BUSINESS ACCOUNT PROMO ═══════ -->
+<!-- FRUITS & VEGETABLES -->
+<div id="fruits"><div class="sec-head reveal"><div class="sec-pill"><i class="fas fa-apple-whole"></i> Fruits & Vegetables</div><h2 class="sec-title">Fresh Produce, Tomatoes & Farm Vegetables</h2></div>
+<div class="prod-wrap"><div class="prod-grid stagger">
+  <div class="pcard reveal-sc" style="--i:0"><div class="pcard-img"><img src="img/veg1.jpg" alt="Fresh vegetables" loading="lazy"><div class="pcard-tag tag-new">Farm Fresh</div><button class="pcard-fav" onclick="toggleFav(this)"><i class="far fa-heart"></i></button></div><div class="pcard-body"><div class="pcard-cat">Vegetables</div><h3 class="pcard-name">Fresh Tomatoes (Roma Variety, Crates)</h3><div class="pcard-specs"><span class="spec spec-g">Organic</span><span class="spec spec-a">Same Day</span></div><div class="pcard-price"><span class="price">₦18,000</span><span class="unit">/crate</span></div><div class="pcard-seller" onclick="toast('Viewing VegFresh NG profile')"><span class="seller-avatar">V</span><span class="seller-name">VegFresh NG</span><span class="seller-ver"><i class="fas fa-check-circle"></i> Verified</span></div><button class="btn-add btn-add-g" onclick="addToCart('Tomatoes Crate',18000,this)"><i class="fas fa-cart-plus"></i> Add to Cart</button></div></div>
+  <div class="pcard reveal-sc" style="--i:1"><div class="pcard-img"><img src="img/fruit1.jpg" alt="Fresh fruits" loading="lazy"><button class="pcard-fav" onclick="toggleFav(this)"><i class="far fa-heart"></i></button></div><div class="pcard-body"><div class="pcard-cat">Fruits</div><h3 class="pcard-name">Fresh Mangoes (Kent Variety, Box)</h3><div class="pcard-specs"><span class="spec spec-g">Export Grade</span><span class="spec spec-b">Seasonal</span></div><div class="pcard-price"><span class="price">₦12,000</span><span class="unit">/box</span></div><div class="pcard-seller" onclick="toast('Viewing FruitKing profile')"><span class="seller-avatar">F</span><span class="seller-name">FruitKing</span><span class="seller-ver"><i class="fas fa-check-circle"></i> Verified</span></div><button class="btn-add btn-add-g" onclick="addToCart('Mangoes Box',12000,this)"><i class="fas fa-cart-plus"></i> Add to Cart</button></div></div>
+</div></div></div>
+
+<!-- SPICES & HERBS -->
+<div id="spices"><div class="sec-head reveal"><div class="sec-pill"><i class="fas fa-pepper-hot"></i> Spices & Herbs</div><h2 class="sec-title">Pepper, Ginger, Turmeric & Spices</h2></div>
+<div class="prod-wrap"><div class="prod-grid stagger">
+  <div class="pcard reveal-sc" style="--i:0"><div class="pcard-img"><img src="img/spice1.jpg" alt="Spices" loading="lazy"><div class="pcard-tag tag-hot">High Demand</div><button class="pcard-fav" onclick="toggleFav(this)"><i class="far fa-heart"></i></button></div><div class="pcard-body"><div class="pcard-cat">Spices</div><h3 class="pcard-name">Dried Ginger (Sliced, Export Grade)</h3><div class="pcard-specs"><span class="spec spec-g">Sun-Dried</span><span class="spec spec-a">Export</span></div><div class="pcard-price"><span class="price">₦850,000</span><span class="unit">/ton</span></div><div class="pcard-seller" onclick="toast('Viewing SpiceTrade NG profile')"><span class="seller-avatar">S</span><span class="seller-name">SpiceTrade NG</span><span class="seller-ver"><i class="fas fa-check-circle"></i> Verified</span></div><button class="btn-add btn-add-g" onclick="addToCart('Ginger 1 Ton',850000,this)"><i class="fas fa-cart-plus"></i> Inquire</button></div></div>
+</div></div></div>
+
+<!-- COCOA, PALM & CASHEW -->
+<div id="cocoa"><div class="sec-head reveal"><div class="sec-pill"><i class="fas fa-leaf"></i> Cocoa, Palm & Cashew</div><h2 class="sec-title">Export Crops & Industrial Raw Materials</h2></div>
+<div class="prod-wrap"><div class="prod-grid stagger">
+  <div class="pcard reveal-sc" style="--i:0"><div class="pcard-img"><img src="img/cocoa1.jpg" alt="Cocoa beans" loading="lazy"><div class="pcard-tag tag-ver">Export Grade</div><button class="pcard-fav" onclick="toggleFav(this)"><i class="far fa-heart"></i></button></div><div class="pcard-body"><div class="pcard-cat">Cocoa</div><h3 class="pcard-name">Fermented Cocoa Beans (Grade I)</h3><div class="pcard-specs"><span class="spec spec-br">Ondo State</span><span class="spec spec-g">Export</span></div><div class="pcard-price"><span class="price">₦12,000,000</span><span class="unit">/ton</span></div><div class="pcard-seller" onclick="toast('Viewing CocoaExport NG profile')"><span class="seller-avatar">C</span><span class="seller-name">CocoaExport NG</span><span class="seller-ver"><i class="fas fa-check-circle"></i> Verified</span></div><button class="btn-add btn-add-g" onclick="addToCart('Cocoa 1 Ton',12000000,this)"><i class="fas fa-cart-plus"></i> Inquire</button></div></div>
+  <div class="pcard reveal-sc" style="--i:1"><div class="pcard-img"><img src="img/palm1.jpg" alt="Palm oil" loading="lazy"><button class="pcard-fav" onclick="toggleFav(this)"><i class="far fa-heart"></i></button></div><div class="pcard-body"><div class="pcard-cat">Palm Oil</div><h3 class="pcard-name">Red Palm Oil (Fresh, 25 Litres)</h3><div class="pcard-specs"><span class="spec spec-a">Unrefined</span><span class="spec spec-g">Pure</span></div><div class="pcard-price"><span class="price">₦32,000</span><span class="unit">/25L</span></div><div class="pcard-seller" onclick="toast('Viewing PalmOil Kings profile')"><span class="seller-avatar">P</span><span class="seller-name">PalmOil Kings</span><span class="seller-ver"><i class="fas fa-check-circle"></i> Verified</span></div><button class="btn-add btn-add-g" onclick="addToCart('Palm Oil 25L',32000,this)"><i class="fas fa-cart-plus"></i> Add to Cart</button></div></div>
+</div></div></div>
+
+<!-- FORESTRY -->
+<div id="forestry"><div class="sec-head reveal"><div class="sec-pill"><i class="fas fa-tree"></i> Forestry & Timber</div><h2 class="sec-title">Timber, Lumber & Forestry Products</h2></div>
+<div class="prod-wrap"><div class="prod-grid stagger">
+  <div class="pcard reveal-sc" style="--i:0"><div class="pcard-img"><img src="img/forestry1.jpg" alt="Timber" loading="lazy"><button class="pcard-fav" onclick="toggleFav(this)"><i class="far fa-heart"></i></button></div><div class="pcard-body"><div class="pcard-cat">Timber</div><h3 class="pcard-name">Hardwood Timber (Mahogany, Per Log)</h3><div class="pcard-specs"><span class="spec spec-br">Seasoned</span><span class="spec spec-g">Construction</span></div><div class="pcard-price"><span class="price">₦85,000</span><span class="unit">/log</span></div><div class="pcard-seller" onclick="toast('Viewing TimberWorld profile')"><span class="seller-avatar">T</span><span class="seller-name">TimberWorld</span><span class="seller-ver"><i class="fas fa-check-circle"></i> Verified</span></div><button class="btn-add btn-add-g" onclick="addToCart('Mahogany Log',85000,this)"><i class="fas fa-cart-plus"></i> Inquire</button></div></div>
+</div></div></div>
+
+<!-- MUSHROOM -->
+<div id="mushroom"><div class="sec-head reveal"><div class="sec-pill"><i class="fas fa-seedling"></i> Mushroom Farming</div><h2 class="sec-title">Oyster, Shiitake & Specialty Mushrooms</h2></div>
+<div class="prod-wrap"><div class="prod-grid stagger">
+  <div class="pcard reveal-sc" style="--i:0"><div class="pcard-img"><img src="img/mushroom1.jpg" alt="Mushrooms" loading="lazy"><div class="pcard-tag tag-new">Growing Trend</div><button class="pcard-fav" onclick="toggleFav(this)"><i class="far fa-heart"></i></button></div><div class="pcard-body"><div class="pcard-cat">Mushroom</div><h3 class="pcard-name">Fresh Oyster Mushrooms (1kg)</h3><div class="pcard-specs"><span class="spec spec-g">Organic</span><span class="spec spec-b">Indoor Grown</span></div><div class="pcard-price"><span class="price">₦3,500</span><span class="unit">/kg</span></div><div class="pcard-seller" onclick="toast('Viewing MushFarm NG profile')"><span class="seller-avatar">M</span><span class="seller-name">MushFarm NG</span><span class="seller-ver"><i class="fas fa-check-circle"></i> Verified</span></div><button class="btn-add btn-add-g" onclick="addToCart('Oyster Mushrooms 1kg',3500,this)"><i class="fas fa-cart-plus"></i> Add to Cart</button></div></div>
+</div></div></div>
+
+<!-- EQUIPMENT -->
+<div id="equipment"><div class="sec-head reveal"><div class="sec-pill"><i class="fas fa-tractor"></i> Farm Equipment</div><h2 class="sec-title">Tractors, Irrigation & Machinery</h2></div>
+<div class="prod-wrap"><div class="prod-grid stagger">
+  <div class="pcard reveal-sc" style="--i:0"><div class="pcard-img"><img src="img/equipment1.jpg" alt="Tractor" loading="lazy"><div class="pcard-tag tag-new">New Stock</div><button class="pcard-fav" onclick="toggleFav(this)"><i class="far fa-heart"></i></button></div><div class="pcard-body"><div class="pcard-cat">Tractors</div><h3 class="pcard-name">Massey Ferguson 375 (75HP 4WD)</h3><div class="pcard-specs"><span class="spec spec-b">Brand New</span><span class="spec spec-g">Warranty</span></div><div class="pcard-price"><span class="price">₦12,500,000</span></div><div class="pcard-seller" onclick="toast('Viewing Tractors.com.ng profile')"><span class="seller-avatar">T</span><span class="seller-name">Tractors.com.ng</span><span class="seller-ver"><i class="fas fa-check-circle"></i> Verified</span></div><button class="btn-add btn-add-n" onclick="addToCart('MF 375 Tractor',12500000,this)"><i class="fas fa-cart-plus"></i> Request Quote</button></div></div>
+  <div class="pcard reveal-sc" style="--i:1"><div class="pcard-img"><img src="img/equipment1.jpg" alt="Irrigation" loading="lazy"><button class="pcard-fav" onclick="toggleFav(this)"><i class="far fa-heart"></i></button></div><div class="pcard-body"><div class="pcard-cat">Irrigation</div><h3 class="pcard-name">Drip Irrigation Kit (1 Acre)</h3><div class="pcard-specs"><span class="spec spec-g">Complete</span><span class="spec spec-b">Install Guide</span></div><div class="pcard-price"><span class="price">₦350,000</span></div><div class="pcard-seller" onclick="toast('Viewing IrrigateNG profile')"><span class="seller-avatar">I</span><span class="seller-name">IrrigateNG</span><span class="seller-ver"><i class="fas fa-check-circle"></i> Verified</span></div><button class="btn-add btn-add-n" onclick="addToCart('Drip Irrigation 1Acre',350000,this)"><i class="fas fa-cart-plus"></i> Add to Cart</button></div></div>
+</div></div></div>
+
+<!-- GREENHOUSE -->
+<div id="greenhouse"><div class="sec-head reveal"><div class="sec-pill"><i class="fas fa-warehouse"></i> Greenhouse & Hydroponics</div><h2 class="sec-title">Greenhouse Kits, Hydroponic Systems & Supplies</h2></div>
+<div class="prod-wrap"><div class="prod-grid stagger">
+  <div class="pcard reveal-sc" style="--i:0"><div class="pcard-img"><img src="img/greenhouse1.jpg" alt="Greenhouse" loading="lazy"><div class="pcard-tag tag-new">Modern Farming</div><button class="pcard-fav" onclick="toggleFav(this)"><i class="far fa-heart"></i></button></div><div class="pcard-body"><div class="pcard-cat">Greenhouse</div><h3 class="pcard-name">Walk-In Tunnel Greenhouse (10x30m)</h3><div class="pcard-specs"><span class="spec spec-g">UV Protected</span><span class="spec spec-b">Steel Frame</span></div><div class="pcard-price"><span class="price">₦1,800,000</span></div><div class="pcard-seller" onclick="toast('Viewing GreenGrow NG profile')"><span class="seller-avatar">G</span><span class="seller-name">GreenGrow NG</span><span class="seller-ver"><i class="fas fa-check-circle"></i> Verified</span></div><button class="btn-add btn-add-n" onclick="addToCart('Greenhouse 10x30m',1800000,this)"><i class="fas fa-cart-plus"></i> Request Quote</button></div></div>
+</div></div></div>
+
+<!-- VET -->
+<div id="vet"><div class="sec-head reveal"><div class="sec-pill"><i class="fas fa-syringe"></i> Veterinary Products</div><h2 class="sec-title">Animal Health & Medicine</h2></div>
+<div class="prod-wrap"><div class="prod-grid stagger">
+  <div class="pcard reveal-sc" style="--i:0"><div class="pcard-img"><img src="img/vet2.jpg" alt="Vaccination" loading="lazy"><div class="pcard-tag tag-ver">Vet Approved</div><button class="pcard-fav" onclick="toggleFav(this)"><i class="far fa-heart"></i></button></div><div class="pcard-body"><div class="pcard-cat">Vaccines</div><h3 class="pcard-name">Newcastle Disease Vaccine (100 doses)</h3><div class="pcard-specs"><span class="spec spec-b">NDV Lasota</span><span class="spec spec-g">Cold Chain</span></div><div class="pcard-price"><span class="price">₦3,500</span><span class="unit">/vial</span></div><div class="pcard-seller" onclick="toast('Viewing VetSupply NG profile')"><span class="seller-avatar">V</span><span class="seller-name">VetSupply NG</span><span class="seller-ver"><i class="fas fa-check-circle"></i> Verified</span></div><button class="btn-add btn-add-n" onclick="addToCart('NDV Vaccine',3500,this)"><i class="fas fa-cart-plus"></i> Add to Cart</button></div></div>
+  <div class="pcard reveal-sc" style="--i:1"><div class="pcard-img"><img src="img/vet1.jpg" alt="Medicine" loading="lazy"><button class="pcard-fav" onclick="toggleFav(this)"><i class="far fa-heart"></i></button></div><div class="pcard-body"><div class="pcard-cat">Dewormers</div><h3 class="pcard-name">Ivermectin Injection (Cattle & Goats)</h3><div class="pcard-specs"><span class="spec spec-g">Broad Spectrum</span><span class="spec spec-r">100ml</span></div><div class="pcard-price"><span class="price">₦8,500</span><span class="unit">/bottle</span></div><div class="pcard-seller" onclick="toast('Viewing AgroVet Labs profile')"><span class="seller-avatar">A</span><span class="seller-name">AgroVet Labs</span><span class="seller-ver"><i class="fas fa-check-circle"></i> Verified</span></div><button class="btn-add btn-add-n" onclick="addToCart('Ivermectin 100ml',8500,this)"><i class="fas fa-cart-plus"></i> Add to Cart</button></div></div>
+</div></div></div>
+
+<!-- AGROCHEMICALS -->
+<div id="agrochem"><div class="sec-head reveal"><div class="sec-pill"><i class="fas fa-flask"></i> Agrochemicals</div><h2 class="sec-title">Herbicides, Pesticides & Fertilizers</h2></div>
+<div class="prod-wrap"><div class="prod-grid stagger">
+  <div class="pcard reveal-sc" style="--i:0"><div class="pcard-img"><img src="img/agrochem1.jpg" alt="Herbicide" loading="lazy"><div class="pcard-tag tag-sale">Best Value</div><button class="pcard-fav" onclick="toggleFav(this)"><i class="far fa-heart"></i></button></div><div class="pcard-body"><div class="pcard-cat">Herbicides</div><h3 class="pcard-name">Glyphosate 480 SL (5 Litres)</h3><div class="pcard-specs"><span class="spec spec-g">Broad Spectrum</span><span class="spec spec-a">Post-Emergence</span></div><div class="pcard-price"><span class="price">₦8,500</span><span class="unit">/5L</span></div><div class="pcard-seller" onclick="toast('Viewing CropChem profile')"><span class="seller-avatar">C</span><span class="seller-name">CropChem Nigeria</span><span class="seller-ver"><i class="fas fa-check-circle"></i> Verified</span></div><button class="btn-add btn-add-g" onclick="addToCart('Glyphosate 5L',8500,this)"><i class="fas fa-cart-plus"></i> Add to Cart</button></div></div>
+  <div class="pcard reveal-sc" style="--i:1"><div class="pcard-img"><img src="img/agrochem1.jpg" alt="Fertilizer" loading="lazy"><button class="pcard-fav" onclick="toggleFav(this)"><i class="far fa-heart"></i></button></div><div class="pcard-body"><div class="pcard-cat">Fertilizers</div><h3 class="pcard-name">NPK 15-15-15 Fertilizer (50kg)</h3><div class="pcard-specs"><span class="spec spec-g">Balanced</span><span class="spec spec-b">All Crops</span></div><div class="pcard-price"><span class="price">₦18,000</span><span class="unit">/50kg</span></div><div class="pcard-seller" onclick="toast('Viewing FertileFields profile')"><span class="seller-avatar">F</span><span class="seller-name">FertileFields NG</span><span class="seller-ver"><i class="fas fa-check-circle"></i> Verified</span></div><button class="btn-add btn-add-g" onclick="addToCart('NPK 50kg',18000,this)"><i class="fas fa-cart-plus"></i> Add to Cart</button></div></div>
+</div></div></div>
+
+<!-- PROCESSING -->
+<div id="processing"><div class="sec-head reveal"><div class="sec-pill"><i class="fas fa-industry"></i> Food Processing</div><h2 class="sec-title">Processing Equipment & Machinery</h2></div>
+<div class="prod-wrap"><div class="prod-grid stagger">
+  <div class="pcard reveal-sc" style="--i:0"><div class="pcard-img"><img src="img/processing1.jpg" alt="Processing machine" loading="lazy"><button class="pcard-fav" onclick="toggleFav(this)"><i class="far fa-heart"></i></button></div><div class="pcard-body"><div class="pcard-cat">Processing</div><h3 class="pcard-name">Industrial Cassava Processor (1 Ton/hr)</h3><div class="pcard-specs"><span class="spec spec-b">Electric</span><span class="spec spec-g">Garri/Fufu</span></div><div class="pcard-price"><span class="price">₦2,500,000</span></div><div class="pcard-seller" onclick="toast('Viewing AgroMachines profile')"><span class="seller-avatar">A</span><span class="seller-name">AgroMachines</span><span class="seller-ver"><i class="fas fa-check-circle"></i> Verified</span></div><button class="btn-add btn-add-n" onclick="addToCart('Cassava Processor',2500000,this)"><i class="fas fa-cart-plus"></i> Request Quote</button></div></div>
+</div></div></div>
+
+<!-- LOGISTICS -->
+<div id="logistics"><div class="sec-head reveal"><div class="sec-pill"><i class="fas fa-truck"></i> Logistics & Cold Chain</div><h2 class="sec-title">Transport, Storage & Distribution</h2></div>
+<div class="prod-wrap"><div class="prod-grid stagger">
+  <div class="pcard reveal-sc" style="--i:0"><div class="pcard-img"><img src="img/logistics1.jpg" alt="Cold truck" loading="lazy"><div class="pcard-tag tag-new">Available</div><button class="pcard-fav" onclick="toggleFav(this)"><i class="far fa-heart"></i></button></div><div class="pcard-body"><div class="pcard-cat">Transport</div><h3 class="pcard-name">Refrigerated Truck — Lagos to Abuja</h3><div class="pcard-specs"><span class="spec spec-b">Temp Controlled</span><span class="spec spec-g">Same Day</span></div><div class="pcard-price"><span class="price">₦180,000</span><span class="unit">/trip</span></div><div class="pcard-seller" onclick="toast('Viewing ColdChain NG profile')"><span class="seller-avatar">C</span><span class="seller-name">ColdChain NG</span><span class="seller-ver"><i class="fas fa-check-circle"></i> Verified</span></div><button class="btn-add btn-add-n" onclick="addToCart('Refrig Truck Lagos-Abuja',180000,this)"><i class="fas fa-cart-plus"></i> Book Now</button></div></div>
+  <div class="pcard reveal-sc" style="--i:1"><div class="pcard-img"><img src="img/logistics1.jpg" alt="Cold storage" loading="lazy"><button class="pcard-fav" onclick="toggleFav(this)"><i class="far fa-heart"></i></button></div><div class="pcard-body"><div class="pcard-cat">Storage</div><h3 class="pcard-name">Cold Storage Rental (Per Month)</h3><div class="pcard-specs"><span class="spec spec-g">-18°C</span><span class="spec spec-b">50 Tons</span></div><div class="pcard-price"><span class="price">₦350,000</span><span class="unit">/month</span></div><div class="pcard-seller" onclick="toast('Viewing FreshStore Lagos profile')"><span class="seller-avatar">F</span><span class="seller-name">FreshStore Lagos</span><span class="seller-ver"><i class="fas fa-check-circle"></i> Verified</span></div><button class="btn-add btn-add-n" onclick="addToCart('Cold Storage 1mo',350000,this)"><i class="fas fa-cart-plus"></i> Inquire</button></div></div>
+</div></div></div>
+
+<!-- DRONES -->
+<div id="drones"><div class="sec-head reveal"><div class="sec-pill"><i class="fas fa-helicopter"></i> Agri-Drones & Tech</div><h2 class="sec-title">Precision Agriculture & Smart Farming</h2></div>
+<div class="prod-wrap"><div class="prod-grid stagger">
+  <div class="pcard reveal-sc" style="--i:0"><div class="pcard-img"><img src="img/drone1.jpg" alt="Agricultural drone" loading="lazy"><div class="pcard-tag tag-new">Precision Ag</div><button class="pcard-fav" onclick="toggleFav(this)"><i class="far fa-heart"></i></button></div><div class="pcard-body"><div class="pcard-cat">Drones</div><h3 class="pcard-name">Agri-Spraying Drone (16L Tank)</h3><div class="pcard-specs"><span class="spec spec-b">GPS</span><span class="spec spec-g">Auto-Pilot</span></div><div class="pcard-price"><span class="price">₦4,500,000</span></div><div class="pcard-seller" onclick="toast('Viewing DroneAg NG profile')"><span class="seller-avatar">D</span><span class="seller-name">DroneAg NG</span><span class="seller-ver"><i class="fas fa-check-circle"></i> Verified</span></div><button class="btn-add btn-add-n" onclick="addToCart('Agri Drone 16L',4500000,this)"><i class="fas fa-cart-plus"></i> Request Quote</button></div></div>
+</div></div></div>
+
+<!-- SOLAR -->
+<div id="solar"><div class="sec-head reveal"><div class="sec-pill"><i class="fas fa-solar-panel"></i> Solar & Renewable Energy</div><h2 class="sec-title">Solar Pumps, Panels & Farm Power</h2></div>
+<div class="prod-wrap"><div class="prod-grid stagger">
+  <div class="pcard reveal-sc" style="--i:0"><div class="pcard-img"><img src="img/solar1.jpg" alt="Solar panels" loading="lazy"><div class="pcard-tag tag-sale">Eco-Friendly</div><button class="pcard-fav" onclick="toggleFav(this)"><i class="far fa-heart"></i></button></div><div class="pcard-body"><div class="pcard-cat">Solar</div><h3 class="pcard-name">Solar Water Pump System (1HP)</h3><div class="pcard-specs"><span class="spec spec-g">Off-Grid</span><span class="spec spec-b">Borehole</span></div><div class="pcard-price"><span class="price">₦650,000</span></div><div class="pcard-seller" onclick="toast('Viewing SolarFarm NG profile')"><span class="seller-avatar">S</span><span class="seller-name">SolarFarm NG</span><span class="seller-ver"><i class="fas fa-check-circle"></i> Verified</span></div><button class="btn-add btn-add-g" onclick="addToCart('Solar Pump 1HP',650000,this)"><i class="fas fa-cart-plus"></i> Request Quote</button></div></div>
+</div></div></div>
+
+<!-- BUSINESS ACCOUNT -->
 <div class="biz-promo reveal" id="biz">
   <h2>Grow Your Agri-Business Online</h2>
-  <p>Create a free verified business account. List products, connect with buyers, manage orders, and scale your agricultural enterprise.</p>
+  <p>Create a free verified business account. List products, connect with buyers, manage orders, and scale your agricultural enterprise across 25+ sectors.</p>
   <div class="biz-features">
     <div class="biz-feat"><i class="fas fa-store"></i><h4>Free Business Profile</h4><p>Create your verified agri-business page with logo, products, and contact details.</p></div>
-    <div class="biz-feat"><i class="fas fa-boxes-stacked"></i><h4>Unlimited Listings</h4><p>List as many products as you want across all agricultural categories.</p></div>
+    <div class="biz-feat"><i class="fas fa-boxes-stacked"></i><h4>Unlimited Listings</h4><p>List as many products as you want across all 25+ agricultural categories.</p></div>
     <div class="biz-feat"><i class="fas fa-users"></i><h4>Direct Buyer Access</h4><p>Connect directly with farmers, processors, retailers, and bulk buyers.</p></div>
     <div class="biz-feat"><i class="fas fa-chart-line"></i><h4>Sales Dashboard</h4><p>Track orders, revenue, and customer analytics in real-time.</p></div>
   </div>
   <button class="btn-biz" onclick="toast('Business registration coming soon! Call 09126480004 for early access.')"><i class="fas fa-user-plus"></i> Create Free Business Account</button>
 </div>
 
-<!-- TRUST BAR -->
+<!-- TRUST -->
 <div class="trust reveal">
 <div class="trust-grid">
-  <div class="trust-item"><span class="trust-icon"><i class="fas fa-shield-alt"></i></span><div class="trust-label">Buyer Protection</div><div class="trust-sub">Every transaction secured</div></div>
-  <div class="trust-item"><span class="trust-icon"><i class="fas fa-user-check"></i></span><div class="trust-label">Verified Sellers</div><div class="trust-sub">12,400+ vetted businesses</div></div>
-  <div class="trust-item"><span class="trust-icon"><i class="fas fa-truck-fast"></i></span><div class="trust-label">Nationwide Delivery</div><div class="trust-sub">36 states, 24-48hrs</div></div>
-  <div class="trust-item"><span class="trust-icon"><i class="fas fa-headset"></i></span><div class="trust-label">24/7 Support</div><div class="trust-sub">Call, WhatsApp, or chat</div></div>
+  <div class="trust-item" onclick="toast('Every transaction is protected by our buyer guarantee')"><span class="trust-icon"><i class="fas fa-shield-alt"></i></span><div class="trust-label">Buyer Protection</div><div class="trust-sub" id="tBuyer">Every transaction secured</div></div>
+  <div class="trust-item" onclick="scrollTo('biz')"><span class="trust-icon"><i class="fas fa-user-check"></i></span><div class="trust-label">Verified Sellers</div><div class="trust-sub" id="tSeller">0 vetted businesses</div></div>
+  <div class="trust-item" onclick="scrollTo('logistics')"><span class="trust-icon"><i class="fas fa-truck-fast"></i></span><div class="trust-label">Nationwide Delivery</div><div class="trust-sub">36 states, 24-48hrs</div></div>
+  <div class="trust-item" onclick="scrollTo('contact')"><span class="trust-icon"><i class="fas fa-headset"></i></span><div class="trust-label">24/7 Support</div><div class="trust-sub">Call, WhatsApp, or chat</div></div>
 </div>
 </div>
 
@@ -624,16 +612,16 @@ input,select,textarea{font-family:inherit}
 <div class="tests" id="reviews">
 <div class="sec-head reveal"><div class="sec-pill"><i class="fas fa-star"></i> Trusted by Thousands</div><h2 class="sec-title">What Our Community Says</h2><p class="sec-desc">Real feedback from farmers, buyers, and agribusinesses across Nigeria.</p></div>
 <div class="test-grid">
-  <div class="test-card reveal"><div class="test-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div><p class="test-text">"AgriConnect changed my business. I now sell catfish to buyers in 5 states without leaving my farm. The buyer protection gives everyone confidence."</p><div class="test-author"><div class="test-ava">A</div><div class="test-info"><span class="test-name">Adebayo Fashola</span><span class="test-role">Catfish Farmer, Ogun State</span></div></div></div>
-  <div class="test-card reveal"><div class="test-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div><p class="test-text">"I found a reliable tractor supplier and drip irrigation installer all on one platform. Saved me weeks of searching. The verified seller badges are trustworthy."</p><div class="test-author"><div class="test-ava">C</div><div class="test-info"><span class="test-name">Chioma Obi</span><span class="test-role">Crop Farmer, Enugu State</span></div></div></div>
-  <div class="test-card reveal"><div class="test-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i></div><p class="test-text">"As a poultry feed supplier, AgriConnect gave me access to 3,000+ farmers in my first month. The business dashboard helps me track every order."</p><div class="test-author"><div class="test-ava">M</div><div class="test-info"><span class="test-name">Musa Ibrahim</span><span class="test-role">Feed Supplier, Kaduna State</span></div></div></div>
+  <div class="test-card reveal" onclick="toast('Read more reviews on our Facebook page')"><div class="test-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div><p class="test-text">"AgriConnect changed my business. I now sell catfish to buyers in 5 states without leaving my farm. The buyer protection gives everyone confidence."</p><div class="test-author"><div class="test-ava">A</div><div class="test-info"><span class="test-name">Adebayo Fashola</span><span class="test-role">Catfish Farmer, Ogun State</span></div></div></div>
+  <div class="test-card reveal" onclick="toast('Read more reviews on our Facebook page')"><div class="test-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div><p class="test-text">"I found a reliable tractor supplier and drip irrigation installer all on one platform. Saved me weeks of searching. The verified seller badges are trustworthy."</p><div class="test-author"><div class="test-ava">C</div><div class="test-info"><span class="test-name">Chioma Obi</span><span class="test-role">Crop Farmer, Enugu State</span></div></div></div>
+  <div class="test-card reveal" onclick="toast('Read more reviews on our Facebook page')"><div class="test-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i></div><p class="test-text">"As a poultry feed supplier, AgriConnect gave me access to 3,000+ farmers in my first month. The business dashboard helps me track every order."</p><div class="test-author"><div class="test-ava">M</div><div class="test-info"><span class="test-name">Musa Ibrahim</span><span class="test-role">Feed Supplier, Kaduna State</span></div></div></div>
 </div>
 </div>
 
 <!-- CTA -->
 <div class="cta reveal" id="contact">
   <h2>Join Africa's Largest Agri Ecosystem</h2>
-  <p>Connect with 12,400+ verified sellers and 48,000+ product listings today.</p>
+  <p>Connect with verified sellers across 25+ agricultural sectors today.</p>
   <span class="cta-phone">09126480004</span>
   <div class="cta-btns">
     <a href="tel:+2349126480004" class="btn-cta btn-cta-g"><i class="fas fa-phone-alt"></i> Call Now</a>
@@ -644,11 +632,11 @@ input,select,textarea{font-family:inherit}
 <!-- FOOTER -->
 <footer class="footer">
 <div class="footer-grid">
-  <div class="footer-col"><h4>AgriConnect Nigeria</h4><p style="font-size:12px;line-height:1.7;margin-bottom:10px">Africa's largest digital agricultural ecosystem connecting farmers, buyers, suppliers, processors, investors, transporters, and veterinarians.</p><p style="font-size:11px">📍 Lagos, Nigeria</p></div>
-  <div class="footer-col"><h4>Marketplace</h4><a href="#fish">Fish & Aquaculture</a><a href="#poultry">Poultry & Chicks</a><a href="#livestock">Livestock & Cattle</a><a href="#crops">Seeds & Crops</a><a href="#equipment">Farm Equipment</a></div>
-  <div class="footer-col"><h4>Services</h4><a href="#vet">Veterinary Products</a><a href="#agrochem">Agrochemicals</a><a href="#logistics">Logistics & Cold Chain</a><a href="#">Advisory Services</a><a href="#">Investment Hub</a></div>
-  <div class="footer-col"><h4>For Business</h4><a href="#biz">Create Business Account</a><a href="#">Seller Dashboard</a><a href="#">Verified Badge</a><a href="#">API Access</a></div>
-  <div class="footer-col"><h4>Support</h4><a href="tel:+2349126480004">📞 09126480004</a><a href="https://wa.me/2349126480004">💬 WhatsApp</a><a href="mailto:support@agriconnect.ng">📧 support@agriconnect.ng</a></div>
+  <div class="footer-col"><h4>AgriConnect Nigeria</h4><p style="font-size:12px;line-height:1.7;margin-bottom:10px">Africa's largest digital agricultural ecosystem connecting every stakeholder across 25+ sectors.</p><p style="font-size:11px">📍 Lagos, Nigeria</p></div>
+  <div class="footer-col"><h4>Marketplace</h4><a onclick="scrollTo('fish')">Fish & Aquaculture</a><a onclick="scrollTo('poultry')">Poultry & Chicks</a><a onclick="scrollTo('livestock')">Livestock & Cattle</a><a onclick="scrollTo('dairy')">Dairy & Milk</a><a onclick="scrollTo('pigs')">Piggery</a><a onclick="scrollTo('crops')">Seeds & Crops</a><a onclick="scrollTo('fruits')">Fruits & Vegetables</a></div>
+  <div class="footer-col"><h4>More Sectors</h4><a onclick="scrollTo('apiculture')">Apiculture & Honey</a><a onclick="scrollTo('forestry')">Forestry & Timber</a><a onclick="scrollTo('mushroom')">Mushroom Farming</a><a onclick="scrollTo('spices')">Spices & Herbs</a><a onclick="scrollTo('cocoa')">Cocoa & Palm Oil</a><a onclick="scrollTo('equipment')">Farm Equipment</a></div>
+  <div class="footer-col"><h4>Services</h4><a onclick="scrollTo('vet')">Veterinary</a><a onclick="scrollTo('agrochem')">Agrochemicals</a><a onclick="scrollTo('logistics')">Logistics</a><a onclick="scrollTo('drones')">Agri-Drones</a><a onclick="scrollTo('solar')">Solar Energy</a><a onclick="scrollTo('processing')">Food Processing</a></div>
+  <div class="footer-col"><h4>Support</h4><a onclick="scrollTo('biz')">Business Account</a><a href="tel:+2349126480004">📞 09126480004</a><a href="https://wa.me/2349126480004">💬 WhatsApp</a><a href="mailto:support@agriconnect.ng">📧 Email</a></div>
 </div>
 <div class="footer-bottom">
   <span>&copy; 2026 AgriConnect Nigeria. All rights reserved.</span>
@@ -683,98 +671,122 @@ input,select,textarea{font-family:inherit}
   <button class="bnav-i" onclick="callUs()"><i class="fas fa-phone-volume"></i><span>Call</span></button>
 </nav>
 
-<!-- FAB -->
 <button class="fab" onclick="window.open('https://wa.me/2349126480004?text=Hi%20AgriConnect','_blank')" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></button>
 <button class="btt" id="btt" onclick="scrollTo('hero')" aria-label="Back to top"><i class="fas fa-chevron-up"></i></button>
-
-<!-- TOAST -->
 <div class="toast" id="toast" role="alert"><i class="fas fa-check-circle"></i><span id="toastMsg"></span></div>
 
 <script>
-/* LOADER */
 window.addEventListener('load',()=>setTimeout(()=>document.getElementById('loader').classList.add('done'),500));
 
-/* SCROLL REVEAL */
-const ro=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting)e.target.classList.add('vis')}),{threshold:0.06,rootMargin:'0px 0px -30px 0px'});
+const ro=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting)e.target.classList.add('vis')}),{threshold:0.05,rootMargin:'0px 0px -20px 0px'});
 document.querySelectorAll('.reveal,.reveal-sc').forEach(el=>ro.observe(el));
-
-/* SEARCH */
-const products=[
-  {n:'Catfish Juveniles (8-12cm)',p:180,u:'/pc',c:'Fish & Aquaculture',img:'fish1.jpg'},
-  {n:'Tank-Raised Post-Fingerlings',p:130,u:'/pc',c:'Fish & Aquaculture',img:'fish6.jpg'},
-  {n:'Table Size Catfish (1kg+)',p:3400,u:'/kg',c:'Fish & Aquaculture',img:'fish3.jpg'},
-  {n:'Earthen Pond Bulk Harvest',p:2600,u:'/kg',c:'Fish & Aquaculture',img:'fish2.jpg'},
-  {n:'Concrete Pond Grow-Out',p:2800,u:'/kg',c:'Fish & Aquaculture',img:'fish4.jpg'},
-  {n:'Farm Visit Select & Weigh',p:3100,u:'/kg',c:'Fish & Aquaculture',img:'fish5.jpg'},
-  {n:'Day-Old Broiler Chicks',p:450,u:'/chick',c:'Poultry',img:'poultry1.jpg'},
-  {n:'Point-of-Lay Pullets',p:3800,u:'/bird',c:'Poultry',img:'poultry2.jpg'},
-  {n:'Turkey Poults',p:3200,u:'/poult',c:'Poultry',img:'poultry3.jpg'},
-  {n:'Broiler Starter Feed 25kg',p:22000,u:'/bag',c:'Poultry Feed',img:'feed2.jpg'},
-  {n:'Broiler Grower Feed 25kg',p:20500,u:'/bag',c:'Poultry Feed',img:'poultry4.jpg'},
-  {n:'Layer Mash 25kg',p:19000,u:'/bag',c:'Poultry Feed',img:'poultry5.jpg'},
-  {n:'Aqua-Champ Starter 15kg',p:26800,u:'/bag',c:'Fish Feed',img:'feed1.jpg'},
-  {n:'Global Growth Grower 15kg',p:22500,u:'/bag',c:'Fish Feed',img:'feed2.jpg'},
-  {n:'Optima Finisher 15kg',p:19900,u:'/bag',c:'Fish Feed',img:'feed1.jpg'},
-  {n:'Organic Aqua Feed 10kg',p:29500,u:'/bag',c:'Fish Feed',img:'feed2.jpg'},
-  {n:'White Fulani Cattle Bull',p:450000,u:'/head',c:'Livestock',img:'img/livestock2.jpg'},
-  {n:'WAD Goats (Male)',p:45000,u:'/head',c:'Livestock',img:'img/livestock2.jpg'},
-  {n:'Balami Rams',p:85000,u:'/head',c:'Livestock',img:'img/livestock2.jpg'},
-  {n:'Premium Yellow Maize 100kg',p:42000,u:'/bag',c:'Seeds & Crops',img:'img/crops1.jpg'},
-  {n:'Ofada Rice 50kg',p:38000,u:'/bag',c:'Seeds & Crops',img:'img/crops2.jpg'},
-  {n:'Clean Soybeans 100kg',p:55000,u:'/bag',c:'Seeds & Crops',img:'img/crops1.jpg'},
-  {n:'Massey Ferguson 375 Tractor',p:12500000,u:'',c:'Farm Equipment',img:'img/equipment1.jpg'},
-  {n:'Drip Irrigation Kit (1 Acre)',p:350000,u:'',c:'Farm Equipment',img:'img/equipment1.jpg'},
-  {n:'Newcastle Disease Vaccine',p:3500,u:'/vial',c:'Veterinary',img:'img/vet2.jpg'},
-  {n:'Ivermectin Injection 100ml',p:8500,u:'/bottle',c:'Veterinary',img:'img/vet1.jpg'},
-  {n:'Glyphosate 480 SL 5L',p:8500,u:'/5L',c:'Agrochemicals',img:'img/agrochem1.jpg'},
-  {n:'NPK 15-15-15 Fertilizer 50kg',p:18000,u:'/50kg',c:'Agrochemicals',img:'img/agrochem1.jpg'},
-  {n:'Refrigerated Truck Lagos-Abuja',p:180000,u:'/trip',c:'Logistics',img:'img/logistics1.jpg'},
-  {n:'Cold Storage Rental',p:350000,u:'/month',c:'Logistics',img:'img/logistics1.jpg'}
-];
-
-function doSearch(q){
-  const el=document.getElementById('searchResults');
-  if(!q||q.length<2){el.classList.remove('show');return}
-  const ql=q.toLowerCase();
-  const res=products.filter(p=>p.n.toLowerCase().includes(ql)||p.c.toLowerCase().includes(ql)).slice(0,8);
-  if(!res.length){el.innerHTML='<div style="padding:16px;text-align:center;color:var(--text-4);font-size:13px">No results found</div>';el.classList.add('show');return}
-  let h='<div class="search-cat">Results ('+res.length+')</div>';
-  res.forEach(r=>{h+=`<div class="search-item" onclick="toast('Viewing ${r.n}');document.getElementById('searchResults').classList.remove('show')"><img src="${r.img}" alt="${r.n}"><div class="search-item-info"><div class="search-item-name">${r.n}</div><div class="search-item-cat">${r.c}</div></div><div class="search-item-price">₦${r.p.toLocaleString()}${r.u}</div></div>`});
-  el.innerHTML=h;el.classList.add('show');
-}
-document.getElementById('searchInput')?.addEventListener('input',e=>doSearch(e.target.value));
-document.getElementById('searchInputMobile')?.addEventListener('input',e=>doSearch(e.target.value));
-document.addEventListener('click',e=>{if(!e.target.closest('.hdr-search')&&!e.target.closest('.search-mobile'))document.getElementById('searchResults').classList.remove('show')});
 
 /* LIVE METRICS */
 const MK='ac_metrics';
 function getM(){try{const d=JSON.parse(localStorage.getItem(MK));if(d&&Date.now()-d.t<864e5)return d}catch(e){}return null}
 function saveM(d){d.t=Date.now();localStorage.setItem(MK,JSON.stringify(d))}
-(function(){let m=getM();if(!m){m={sellers:12400+Math.floor(Math.random()*200),listings:48000+Math.floor(Math.random()*500)};saveM(m)}m.sellers+=Math.floor(Math.random()*3)+1;m.listings+=Math.floor(Math.random()*5)+1;saveM(m)})();
+(function(){
+  let m=getM();
+  if(!m){
+    m={sellers:12400+Math.floor(Math.random()*300),listings:48000+Math.floor(Math.random()*800),rating:(4.7+Math.random()*0.2).toFixed(1),reviews:3200+Math.floor(Math.random()*100)};
+    saveM(m);
+  }
+  m.sellers+=Math.floor(Math.random()*3)+1;
+  m.listings+=Math.floor(Math.random()*8)+1;
+  saveM(m);
 
-/* CART (localStorage) */
-const CK='ac_cart';
-let cart=[];
+  // Hero stats
+  document.getElementById('hSellers').textContent=m.sellers.toLocaleString()+'+';
+  document.getElementById('hListings').textContent=m.listings.toLocaleString()+'+';
+  document.getElementById('hRating').textContent=m.rating+'/5';
+  document.getElementById('hSectors').textContent='25+';
+
+  // Trust bar
+  document.getElementById('tSeller').textContent=m.sellers.toLocaleString()+'+ vetted businesses';
+
+  // Sector counts with live increments
+  var bases=[4200,6800,3100,1800,2200,900,650,8500,3400,1600,2100,1200,400,2400,550,1800,3600,1900,900,320,480,5200,400,280,1100];
+  for(var i=0;i<25;i++){
+    var el=document.getElementById('sc'+i);
+    if(el)el.textContent=(bases[i]+Math.floor(Math.random()*50)).toLocaleString()+'+ listings';
+  }
+})();
+
+/* SEARCH */
+var products=[
+  {n:'Catfish Juveniles (8-12cm)',p:180,u:'/pc',c:'Fish & Aquaculture',img:'fish1.jpg'},
+  {n:'Tank-Raised Post-Fingerlings',p:130,u:'/pc',c:'Fish & Aquaculture',img:'fish6.jpg'},
+  {n:'Table Size Catfish (1kg+)',p:3400,u:'/kg',c:'Fish & Aquaculture',img:'fish3.jpg'},
+  {n:'Earthen Pond Bulk Harvest',p:2600,u:'/kg',c:'Fish & Aquaculture',img:'fish2.jpg'},
+  {n:'Day-Old Broiler Chicks',p:450,u:'/chick',c:'Poultry',img:'poultry1.jpg'},
+  {n:'Point-of-Lay Pullets',p:3800,u:'/bird',c:'Poultry',img:'poultry2.jpg'},
+  {n:'Turkey Poults',p:3200,u:'/poult',c:'Poultry',img:'poultry3.jpg'},
+  {n:'Broiler Starter Feed 25kg',p:22000,u:'/bag',c:'Poultry Feed',img:'feed2.jpg'},
+  {n:'White Fulani Cattle Bull',p:450000,u:'/head',c:'Livestock',img:'img/livestock2.jpg'},
+  {n:'WAD Goats',p:45000,u:'/head',c:'Livestock',img:'img/livestock2.jpg'},
+  {n:'Fresh Cow Milk 5L',p:3500,u:'',c:'Dairy',img:'img/dairy1.jpg'},
+  {n:'Large White Pigs',p:35000,u:'/pig',c:'Piggery',img:'img/pig1.jpg'},
+  {n:'Giant African Snails 50pk',p:25000,u:'',c:'Snail Farming',img:'img/snail1.jpg'},
+  {n:'New Zealand Rabbits Pair',p:12000,u:'',c:'Rabbit Farming',img:'img/rabbit1.jpg'},
+  {n:'Pure Raw Honey 1L',p:5500,u:'',c:'Apiculture',img:'img/honey1.jpg'},
+  {n:'Beehive Kit 10-Frame',p:45000,u:'',c:'Apiculture',img:'img/honey1.jpg'},
+  {n:'Premium Yellow Maize 100kg',p:42000,u:'',c:'Seeds & Crops',img:'img/crops1.jpg'},
+  {n:'Ofada Rice 50kg',p:38000,u:'',c:'Seeds & Crops',img:'img/crops2.jpg'},
+  {n:'Fresh Tomatoes Crate',p:18000,u:'',c:'Fruits & Vegetables',img:'img/veg1.jpg'},
+  {n:'Fresh Mangoes Box',p:12000,u:'',c:'Fruits & Vegetables',img:'img/fruit1.jpg'},
+  {n:'Dried Ginger Export Grade',p:850000,u:'/ton',c:'Spices & Herbs',img:'img/spice1.jpg'},
+  {n:'Cocoa Beans Grade I',p:12000000,u:'/ton',c:'Cocoa & Palm',img:'img/cocoa1.jpg'},
+  {n:'Red Palm Oil 25L',p:32000,u:'',c:'Cocoa & Palm',img:'img/palm1.jpg'},
+  {n:'Mahogany Timber Log',p:85000,u:'/log',c:'Forestry',img:'img/forestry1.jpg'},
+  {n:'Oyster Mushrooms 1kg',p:3500,u:'',c:'Mushroom',img:'img/mushroom1.jpg'},
+  {n:'Massey Ferguson 375',p:12500000,u:'',c:'Farm Equipment',img:'img/equipment1.jpg'},
+  {n:'Drip Irrigation Kit',p:350000,u:'',c:'Farm Equipment',img:'img/equipment1.jpg'},
+  {n:'Walk-In Greenhouse',p:1800000,u:'',c:'Greenhouse',img:'img/greenhouse1.jpg'},
+  {n:'NDV Vaccine 100 doses',p:3500,u:'',c:'Veterinary',img:'img/vet2.jpg'},
+  {n:'Ivermectin 100ml',p:8500,u:'',c:'Veterinary',img:'img/vet1.jpg'},
+  {n:'Glyphosate 5L',p:8500,u:'',c:'Agrochemicals',img:'img/agrochem1.jpg'},
+  {n:'NPK Fertilizer 50kg',p:18000,u:'',c:'Agrochemicals',img:'img/agrochem1.jpg'},
+  {n:'Cassava Processor 1T/hr',p:2500000,u:'',c:'Food Processing',img:'img/processing1.jpg'},
+  {n:'Refrigerated Truck Lagos-Abuja',p:180000,u:'',c:'Logistics',img:'img/logistics1.jpg'},
+  {n:'Cold Storage Rental',p:350000,u:'/mo',c:'Logistics',img:'img/logistics1.jpg'},
+  {n:'Agri-Spraying Drone 16L',p:4500000,u:'',c:'Agri-Drones',img:'img/drone1.jpg'},
+  {n:'Solar Water Pump 1HP',p:650000,u:'',c:'Solar Energy',img:'img/solar1.jpg'}
+];
+
+function doSearch(q){
+  var el=document.getElementById('searchResults');
+  if(!q||q.length<2){el.classList.remove('show');return}
+  var ql=q.toLowerCase();
+  var res=products.filter(function(p){return p.n.toLowerCase().indexOf(ql)!==-1||p.c.toLowerCase().indexOf(ql)!==-1}).slice(0,8);
+  if(!res.length){el.innerHTML='<div style="padding:16px;text-align:center;color:var(--t4);font-size:13px">No results found</div>';el.classList.add('show');return}
+  var h='<div class="search-cat">Results ('+res.length+')</div>';
+  res.forEach(function(r){h+='<div class="search-item" onclick="toast(\'Viewing '+r.n+'\');document.getElementById(\'searchResults\').classList.remove(\'show\')"><img src="'+r.img+'" alt="'+r.n+'"><div class="search-item-info"><div class="search-item-name">'+r.n+'</div><div class="search-item-cat">'+r.c+'</div></div><div class="search-item-price">₦'+r.p.toLocaleString()+r.u+'</div></div>'});
+  el.innerHTML=h;el.classList.add('show');
+}
+document.getElementById('searchInput').addEventListener('input',function(e){doSearch(e.target.value)});
+document.getElementById('searchInputMobile').addEventListener('input',function(e){doSearch(e.target.value)});
+document.addEventListener('click',function(e){if(!e.target.closest('.hdr-search')&&!e.target.closest('.search-mobile'))document.getElementById('searchResults').classList.remove('show')});
+
+/* CART */
+var CK='ac_cart',cart=[];
 try{cart=JSON.parse(localStorage.getItem(CK))||[]}catch(e){cart=[]}
 function saveCart(){localStorage.setItem(CK,JSON.stringify(cart))}
-function addToCart(n,p,btn){cart.push({n,p});saveCart();renderCart();toast(n+' added!');if(btn){const r=document.createElement('span');r.style.cssText='position:absolute;border-radius:50%;background:rgba(255,255,255,0.3);animation:ripple 0.6s ease-out;pointer-events:none';const b=btn.getBoundingClientRect(),s=Math.max(b.width,b.height);r.style.width=r.style.height=s+'px';r.style.left='50%';r.style.top='50%';r.style.marginLeft=-s/2+'px';r.style.marginTop=-s/2+'px';btn.appendChild(r);setTimeout(()=>r.remove(),600)}}
+function addToCart(n,p,btn){cart.push({n:n,p:p});saveCart();renderCart();toast(n+' added!');if(btn){var r=document.createElement('span');r.style.cssText='position:absolute;border-radius:50%;background:rgba(255,255,255,.3);animation:ripple .6s ease-out;pointer-events:none';var b=btn.getBoundingClientRect(),s=Math.max(b.width,b.height);r.style.width=r.style.height=s+'px';r.style.left='50%';r.style.top='50%';r.style.marginLeft=-s/2+'px';r.style.marginTop=-s/2+'px';btn.appendChild(r);setTimeout(function(){r.remove()},600)}}
 function delItem(i){cart.splice(i,1);saveCart();renderCart()}
-function renderCart(){const c=cart.length,t=cart.reduce((s,i)=>s+i.p,0);document.getElementById('cartBadge').textContent=c;const bn=document.getElementById('bnavB');if(bn)bn.textContent=c;const el=document.getElementById('cartList'),ft=document.getElementById('cartFoot');if(!c){el.innerHTML='<div class="cart-empty"><i class="fas fa-shopping-basket"></i><p>Your cart is empty</p></div>';ft.style.display='none';return}let h='';cart.forEach((it,i)=>{h+='<div class="cart-item"><div class="cart-item-info"><div class="cart-item-name">'+it.n+'</div><div class="cart-item-price">₦'+it.p.toLocaleString()+'</div></div><button class="cart-item-del" onclick="delItem('+i+')"><i class="fas fa-trash-alt"></i></button></div>'});el.innerHTML=h;ft.style.display='block';document.getElementById('cartTotal').textContent='₦'+t.toLocaleString()}
+function renderCart(){var c=cart.length,t=cart.reduce(function(s,i){return s+i.p},0);document.getElementById('cartBadge').textContent=c;var bn=document.getElementById('bnavB');if(bn)bn.textContent=c;var el=document.getElementById('cartList'),ft=document.getElementById('cartFoot');if(!c){el.innerHTML='<div class="cart-empty"><i class="fas fa-shopping-basket"></i><p>Your cart is empty</p></div>';ft.style.display='none';return}var h='';cart.forEach(function(it,i){h+='<div class="cart-item"><div class="cart-item-info"><div class="cart-item-name">'+it.n+'</div><div class="cart-item-price">₦'+it.p.toLocaleString()+'</div></div><button class="cart-item-del" onclick="delItem('+i+')"><i class="fas fa-trash-alt"></i></button></div>'});el.innerHTML=h;ft.style.display='block';document.getElementById('cartTotal').textContent='₦'+t.toLocaleString()}
 renderCart();
 function openCart(){document.getElementById('cartOv').classList.add('open');document.getElementById('cartPnl').classList.add('open');document.body.style.overflow='hidden'}
 function closeCart(){document.getElementById('cartOv').classList.remove('open');document.getElementById('cartPnl').classList.remove('open');document.body.style.overflow=''}
 function toggleNav(){document.getElementById('navDraw').classList.toggle('open');document.getElementById('navOv').classList.toggle('open');document.getElementById('menuBtn').classList.toggle('open');document.body.style.overflow=document.getElementById('navDraw').classList.contains('open')?'hidden':''}
-function chkWA(){if(!cart.length)return;let m='🛒 *NEW ORDER from AgriConnect*%0A%0A',t=0;cart.forEach((it,i)=>{m+=(i+1)+'. '+it.n+' — ₦'+it.p.toLocaleString()+'%0A';t+=it.p});m+='%0A💰 *TOTAL: ₦'+t.toLocaleString()+'*%0A%0AConfirm availability please!';window.open('https://wa.me/2349126480004?text='+m,'_blank')}
+function chkWA(){if(!cart.length)return;var m='🛒 *NEW ORDER from AgriConnect*%0A%0A',t=0;cart.forEach(function(it,i){m+=(i+1)+'. '+it.n+' — ₦'+it.p.toLocaleString()+'%0A';t+=it.p});m+='%0A💰 *TOTAL: ₦'+t.toLocaleString()+'*%0A%0AConfirm availability please!';window.open('https://wa.me/2349126480004?text='+m,'_blank')}
 function chkCall(){window.location.href='tel:+2349126480004'}
 function callUs(){window.location.href='tel:+2349126480004'}
-let tt;function toast(m){const t=document.getElementById('toast');document.getElementById('toastMsg').textContent=m;t.classList.add('show');clearTimeout(tt);tt=setTimeout(()=>t.classList.remove('show'),2500)}
-function toggleFav(el){el.classList.toggle('liked');const i=el.querySelector('i');if(el.classList.contains('liked')){i.classList.replace('far','fas');toast('Added to wishlist')}else{i.classList.replace('fas','far')}}
-function scrollTo(id){const el=document.getElementById(id);if(el)el.scrollIntoView({behavior:'smooth',block:'start'})}
-function setTab(el){el.parentElement.querySelectorAll('.tab').forEach(t=>t.classList.remove('active'));el.classList.add('active')}
-function setBn(el){document.querySelectorAll('.bnav-i').forEach(t=>t.classList.remove('active'));el.classList.add('active')}
-window.addEventListener('scroll',()=>{document.getElementById('btt').classList.toggle('show',window.scrollY>400)});
-const so=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){const id=e.target.id;const m={fish:'All Fish',poultry:'All Poultry',livestock:'',crops:'',equipment:'',vet:'',agrochem:'',logistics:''};document.querySelectorAll('.tab').forEach(t=>t.classList.remove('active'));if(m[id]&&document.querySelector('#'+id+' .tab'))document.querySelector('#'+id+' .tab').classList.add('active')}}),{threshold:0.15});
-['fish','poultry','livestock','crops','equipment','vet','agrochem','logistics'].forEach(id=>{const el=document.getElementById(id);if(el)so.observe(el)});
+var tt;function toast(m){var t=document.getElementById('toast');document.getElementById('toastMsg').textContent=m;t.classList.add('show');clearTimeout(tt);tt=setTimeout(function(){t.classList.remove('show')},2500)}
+function toggleFav(el){el.classList.toggle('liked');var i=el.querySelector('i');if(el.classList.contains('liked')){i.classList.replace('far','fas');toast('Added to wishlist')}else{i.classList.replace('fas','far')}}
+function scrollTo(id){var el=document.getElementById(id);if(el)el.scrollIntoView({behavior:'smooth',block:'start'})}
+function setTab(el){el.parentElement.querySelectorAll('.tab').forEach(function(t){t.classList.remove('active')});el.classList.add('active')}
+function setBn(el){document.querySelectorAll('.bnav-i').forEach(function(t){t.classList.remove('active')});el.classList.add('active')}
+window.addEventListener('scroll',function(){document.getElementById('btt').classList.toggle('show',window.scrollY>400)});
 </script>
 </body>
 </html>
