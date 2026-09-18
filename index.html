@@ -40,6 +40,19 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;0,9..40,800;1,9..40,400&family=Instrument+Sans:wght@400;500;600;700&family=Noto+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<!-- SmartSupp Live Chat -->
+<script type="text/javascript">
+var _smartsupp = _smartsupp || {};
+_smartsupp.key = 'AGRICONNECT_SMARTSUPP_KEY';
+_smartsupp.color = '#0369a1';
+_smartsupp.privacyNoticeEnabled = true;
+window.smartsupp||(function(d) {
+var s,c,o=smartsupp=function(){ o._.push(arguments)};o._=[];
+s=d.getElementsByTagName('script')[0];c=d.createElement('script');
+c.type='text/javascript';c.charset='utf-8';c.async=true;
+c.src='https://www.smartsuppchat.com/loader.js?';s.parentNode.insertBefore(c,s);
+})(document);
+</script>
 <style>
 :root{--bg:#f0f7fc;--surface:#fff;--surface-alt:#e8f1fa;--border:#c8ddf0;--border-l:#e0ecf7;--text:#0a1628;--t2:#1e3a5f;--t3:#4a6fa5;--t4:#8aa4c4;--g9:#0c2d48;--g8:#0c4a6e;--g7:#0369a1;--g6:#0284c7;--g5:#38bdf8;--g1:#bae6fd;--g0:#e0f2fe;--a6:#0891b2;--a1:#cffafe;--a0:#ecfeff;--r6:#dc2626;--r1:#fee2e2;--b6:#2563eb;--b1:#dbeafe;--br7:#1e40af;--br1:#eff6ff;--ov:rgba(10,22,40,0.55);--sh-s:0 1px 2px rgba(12,74,110,.06);--sh-m:0 8px 24px rgba(12,74,110,.1);--sh-l:0 16px 48px rgba(12,74,110,.12);--sh-xl:0 24px 64px rgba(12,74,110,.16);--r-xs:8px;--r-sm:12px;--r-md:16px;--r-lg:24px;--r-full:9999px;--ease:cubic-bezier(.4,0,.2,1);--ease-b:cubic-bezier(.34,1.56,.64,1);--fd:'DM Sans','Noto Sans',-apple-system,sans-serif;--fb:'Instrument Sans','Noto Sans',-apple-system,sans-serif}
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
@@ -361,6 +374,43 @@ input,select{font-family:inherit}
 .carousel-dots{display:flex;justify-content:center;gap:6px;padding-top:20px}
 .carousel-dot{width:8px;height:8px;border-radius:50%;background:var(--border);transition:all .3s var(--ease);cursor:pointer}
 .carousel-dot.active{background:var(--g7);width:24px;border-radius:4px}
+
+/* ═══ AI CHATBOT ═══ */
+.chatbot-fab{position:fixed;bottom:80px;right:80px;width:56px;height:56px;background:linear-gradient(135deg,#0284c7,#0369a1);color:#fff;border-radius:50%;display:grid;place-items:center;font-size:24px;box-shadow:0 4px 20px rgba(3,105,161,.4);z-index:997;cursor:pointer;transition:all .3s var(--ease);animation:pulse 3s infinite}
+.chatbot-fab:hover{transform:scale(1.1);box-shadow:0 6px 28px rgba(3,105,161,.5)}
+.chatbot-fab .badge-dot{position:absolute;top:-2px;right:-2px;width:14px;height:14px;background:var(--r6);border-radius:50%;border:2px solid #fff;animation:bounceIn .3s var(--ease-b)}
+@media(min-width:1024px){.chatbot-fab{bottom:20px;right:80px}}
+.chatbot-win{position:fixed;bottom:140px;right:20px;width:380px;max-width:calc(100vw - 40px);max-height:520px;background:var(--surface);border-radius:var(--r-lg);box-shadow:var(--sh-xl);z-index:3000;display:flex;flex-direction:column;overflow:hidden;transform:scale(0) translateY(20px);transform-origin:bottom right;opacity:0;visibility:hidden;transition:all .3s var(--ease-b)}
+.chatbot-win.open{transform:scale(1) translateY(0);opacity:1;visibility:visible}
+@media(max-width:480px){.chatbot-win{bottom:72px;right:10px;left:10px;width:auto;max-height:60vh}}
+.chatbot-header{background:linear-gradient(135deg,var(--g7),var(--g9));color:#fff;padding:14px 16px;display:flex;align-items:center;gap:10px}
+.chatbot-header-avatar{width:36px;height:36px;border-radius:50%;background:rgba(255,255,255,.15);display:grid;place-items:center;font-size:16px}
+.chatbot-header-info{flex:1}
+.chatbot-header-info h4{font-family:var(--fd);font-size:14px;font-weight:700}
+.chatbot-header-info p{font-size:10px;opacity:.7;display:flex;align-items:center;gap:4px}
+.chatbot-header-info p .online-dot{width:6px;height:6px;border-radius:50%;background:#4ade80;display:inline-block}
+.chatbot-header-close{width:28px;height:28px;border-radius:50%;display:grid;place-items:center;font-size:12px;color:rgba(255,255,255,.7);cursor:pointer;transition:all .15s}
+.chatbot-header-close:hover{background:rgba(255,255,255,.15);color:#fff}
+.chatbot-body{flex:1;overflow-y:auto;padding:14px;display:flex;flex-direction:column;gap:10px;background:var(--bg)}
+.chatbot-msg{max-width:85%;padding:10px 14px;border-radius:var(--r-md);font-size:13px;line-height:1.5;animation:fadeIn .2s var(--ease)}
+.chatbot-msg.bot{background:var(--surface);border:1px solid var(--border-l);color:var(--text);align-self:flex-start;border-bottom-left-radius:4px}
+.chatbot-msg.user{background:linear-gradient(135deg,var(--g7),var(--g8));color:#fff;align-self:flex-end;border-bottom-right-radius:4px}
+.chatbot-msg .msg-time{font-size:9px;opacity:.5;margin-top:4px;display:block}
+.chatbot-quick{display:flex;flex-wrap:wrap;gap:6px;padding:0 14px 10px;background:var(--bg)}
+.chatbot-quick-btn{padding:6px 12px;border-radius:var(--r-full);border:1.5px solid var(--border);background:var(--surface);font-size:11px;font-weight:600;color:var(--t2);cursor:pointer;transition:all .15s var(--ease);white-space:nowrap}
+.chatbot-quick-btn:hover{border-color:var(--g6);color:var(--g7);background:var(--g0)}
+.chatbot-footer{padding:10px 14px;border-top:1px solid var(--border-l);background:var(--surface);display:flex;gap:8px;align-items:center}
+.chatbot-input{flex:1;padding:9px 14px;border:1.5px solid var(--border);border-radius:var(--r-full);font-size:13px;background:var(--surface-alt);color:var(--text);outline:none;transition:all .2s var(--ease)}
+.chatbot-input:focus{border-color:var(--g6);background:#fff}
+.chatbot-send{width:36px;height:36px;border-radius:50%;background:linear-gradient(135deg,var(--g7),var(--g8));color:#fff;display:grid;place-items:center;font-size:14px;cursor:pointer;transition:all .2s var(--ease);flex-shrink:0;border:none}
+.chatbot-send:hover{transform:scale(1.05)}
+.chatbot-typing{display:flex;gap:4px;padding:10px 14px;background:var(--surface);border:1px solid var(--border-l);border-radius:var(--r-md);align-self:flex-start;border-bottom-left-radius:4px;max-width:60px}
+.chatbot-typing span{width:6px;height:6px;border-radius:50%;background:var(--t4);animation:typingDot 1.4s infinite both}
+.chatbot-typing span:nth-child(2){animation-delay:.2s}
+.chatbot-typing span:nth-child(3){animation-delay:.4s}
+@keyframes typingDot{0%,80%,100%{transform:scale(0);opacity:.4}40%{transform:scale(1);opacity:1}}
+.chatbot-wa-link{display:inline-flex;align-items:center;gap:5px;padding:6px 12px;background:#25D366;color:#fff;border-radius:var(--r-full);font-size:11px;font-weight:600;cursor:pointer;transition:all .15s;text-decoration:none;margin-top:6px}
+.chatbot-wa-link:hover{background:#1ebe5d;transform:translateY(-1px)}
 </style>
 </head>
 <body>
@@ -1748,9 +1798,73 @@ var AC = (function() {
     toast: toast,
     toggleFav: toggleFav,
     setTab: setTab,
-    changeLang: changeLang
+    changeLang: changeLang,
+    toggleChatbot: function(){},
+    sendChat: function(){}
   };
 })();
 </script>
+<!-- ═══ AI CHATBOT WIDGET ═══ -->
+<button class="chatbot-fab" id="chatbotFab" onclick="AC.toggleChatbot()" aria-label="AI Assistant">
+  <i class="fas fa-robot"></i>
+  <span class="badge-dot"></span>
+</button>
+<div class="chatbot-win" id="chatbotWin">
+  <div class="chatbot-header">
+    <div class="chatbot-header-avatar"><i class="fas fa-seedling"></i></div>
+    <div class="chatbot-header-info">
+      <h4>AgriBot AI Assistant</h4>
+      <p><span class="online-dot"></span> Online — Instant replies</p>
+    </div>
+    <div class="chatbot-header-close" onclick="AC.toggleChatbot()"><i class="fas fa-times"></i></div>
+  </div>
+  <div class="chatbot-body" id="chatbotBody"></div>
+  <div class="chatbot-quick" id="chatbotQuick"></div>
+  <div class="chatbot-footer">
+    <input type="text" class="chatbot-input" id="chatbotInput" placeholder="Ask me anything about agriculture..." onkeydown="if(event.key==='Enter')AC.sendChat()">
+    <button class="chatbot-send" onclick="AC.sendChat()"><i class="fas fa-paper-plane"></i></button>
+  </div>
+</div>
+<script>
+(function(){
+'use strict';
+var WA='2349126480004',open=false,history=[];
+var quick=[
+  {l:'🐟 Fish Prices',m:'What are the current fish prices?'},
+  {l:'🐔 Poultry Deals',m:'Show me poultry deals'},
+  {l:'💰 Payment Options',m:'What payment methods do you accept?'},
+  {l:'📦 Track Order',m:'How can I track my order?'},
+  {l:'🚚 Delivery Info',m:'What are your delivery options?'},
+  {l:'💬 WhatsApp Us',m:'connect_wa'}
+];
+var R={
+  greet:{p:['hello','hi','hey','good morning','good afternoon','how far'],r:['Hello! 👋 Welcome to AgriConnect! How can I help you today?','Hi there! 🌱 I am AgriBot, your AI farming assistant. Ask me anything about our 25+ agricultural sectors!','Welcome! 🚜 I can help with products, prices, delivery, payments. What do you need?']},
+  fish:{p:['fish','catfish','tilapia','fingerlings','aquaculture','juvenile'],r:['🐟 **Fish & Aquaculture**:\n\n• Catfish Juveniles — ₦180/pc\n• Table Size Catfish — ₦3,400/kg\n• Fingerlings — ₦130/pc\n• Bulk Harvest — ₦2,600/kg\n\nAll from verified farms. Want to order?']},
+  poultry:{p:['poultry','chick','broiler','layer','turkey','egg'],r:['🐔 **Poultry & Chicks**:\n\n• Day-Old Broilers — ₦450/chick\n• Point-of-Lay Pullets — ₦3,800/bird\n• Turkey Poults — ₦3,200/poult\n• Starter Feed 25kg — ₦22,000\n\nAll vaccinated. Shall I add some to your cart?']},
+  livestock:{p:['livestock','cattle','cow','goat','sheep','ram','bull'],r:['🐄 **Livestock & Cattle**:\n\n• White Fulani Bull — ₦450,000/head\n• WAD Goats — ₦45,000/head\n• Balami Rams — ₦85,000/head\n\nAll vet-checked. Connected directly to verified ranches.']},
+  pay:{p:['payment','pay','method','card','transfer','bank','how to pay'],r:['💳 **5 Payment Methods:**\n\n1. 💳 Card — Visa, Mastercard, Apple Pay\n2. 🏦 Bank Transfer — GTB\n3. ₿ Crypto — BTC, ETH, SOL, USDT, XRP, DOGE, TON\n4. 💵 Cash on Delivery\n5. 💳 POS at Doorstep\n\nAll 256-bit SSL encrypted. Proceed to checkout?']},
+  delivery:{p:['delivery','deliver','shipping','transport','logistics','how long'],r:['🚚 **Delivery Options:**\n\n• Same Day — Lagos & Abuja\n• 24-48hrs — All states\n• Refrigerated — Perishables\n• FREE delivery on orders above ₦50,000!']},
+  order:{p:['order','track','my order','status','where is'],r:['📦 **Order Tracking:**\n\n1. Check email for tracking ID\n2. Call **09126480004**\n3. WhatsApp us for instant update\n\nAll orders have buyer protection!']},
+  price:{p:['price','cost','how much','rate','discount','sale','promo'],r:['💰 **Best Prices:**\n\n🐟 Catfish — ₦180/pc\n🐔 Chicks — ₦450/pc\n🐄 Cattle — ₦450,000\n🌾 Maize 100kg — ₦42,000\n🍫 Cocoa/ton — ₦12M\n\nSALE items available!']},
+  biz:{p:['business','sell','seller','register','vendor','supplier'],r:['🏪 **Become a Seller:**\n\n✅ Free profile\n✅ Unlimited listings\n✅ 12,400+ buyers\n✅ Sales dashboard\n\nCall **09126480004** to register!']},
+  contact:{p:['contact','call','phone','reach','support','number'],r:['📞 **Contact Us:**\n\n📱 Phone: **09126480004**\n📧 Email: support@agriconnect.ng\n💳 Payments: payments@agriconnect.ng\n\nAvailable 24/7!']},
+  wholesale:{p:['wholesale','bulk','ton','container','export'],r:['📦 **Bulk Orders:**\n\n• Cocoa — ₦12M/ton\n• Maize — ₦42,000/100kg\n• Ginger — ₦850,000/ton\n\nCall **09126480004** for wholesale pricing!']},
+  crypto:{p:['crypto','bitcoin','btc','ethereum','usdt','solana','doge','ton','xrp'],r:['₿ **8 Crypto Accepted:**\n\nBTC, ETH, BNB, SOL, USDT, XRP, DOGE, TON\n\nCart → Checkout → Crypto → Copy wallet → Send. Confirmed in 10-30 mins!']},
+  sector:{p:['sector','category','what do you sell','products','available'],r:['🌾 **25+ Sectors:**\n\n🐟 Fish 🐔 Poultry 🐄 Livestock 🧀 Dairy 🐷 Pigs 🐌 Snails 🍯 Honey 🌽 Crops 🍎 Fruits 🌶️ Spices 🍫 Cocoa 🌳 Forestry 🍄 Mushroom 🚜 Equipment 🏗️ Greenhouse 💉 Vet 🧪 Agrochem 🏭 Processing 🚚 Logistics 🤖 Drones ☀️ Solar 🚢 Export 📊 Finance\n\nWhich sector?']}
+};
+var defs=['I can help with: fish, poultry, livestock, delivery, payments, orders, or seller registration. What do you need?','For specific queries, call **09126480004**. Or ask about product prices, delivery options, payment methods!','Browse our 25+ sectors or ask me about specific products. I have pricing for everything!'];
+function time(){var d=new Date();return d.getHours().toString().padStart(2,'0')+':'+d.getMinutes().toString().padStart(2,'0')}
+function addMsg(t,u){var b=document.getElementById('chatbotBody');if(!b)return;var d=document.createElement('div');d.className='chatbot-msg '+(u?'user':'bot');d.innerHTML=t.replace(/\*\*(.*?)\*\*/g,'<strong>$1</strong>').replace(/\n/g,'<br>')+'<span class="msg-time">'+time()+'</span>';b.appendChild(d);b.scrollTop=b.scrollHeight;history.push({t:t,u:u})}
+function typing(){var b=document.getElementById('chatbotBody');if(!b)return;var d=document.createElement('div');d.className='chatbot-typing';d.id='typingDots';d.innerHTML='<span></span><span></span><span></span>';b.appendChild(d);b.scrollTop=b.scrollHeight}
+function noTyping(){var e=document.getElementById('typingDots');if(e)e.remove()}
+function respond(inp){var l=inp.toLowerCase().trim();if(l==='connect_wa'||l.includes('whatsapp'))return{t:'💬 **Connect on WhatsApp:**\n\nClick below to chat with our team!',wa:1};var ks=Object.keys(R);for(var i=0;i<ks.length;i++){var k=ks[i],v=R[k];for(var j=0;j<v.p.length;j++){if(l.indexOf(v.p[j])!==-1)return{t:v.r[Math.floor(Math.random()*v.r.length)]}}}return{t:defs[Math.floor(Math.random()*defs.length)]}}
+function buildQ(){var e=document.getElementById('chatbotQuick');if(!e)return;e.innerHTML='';quick.forEach(function(q){var b=document.createElement('button');b.className='chatbot-quick-btn';b.textContent=q.l;b.onclick=function(){if(q.m==='connect_wa')window.open('https://wa.me/'+WA+'?text=Hi%20AgriConnect%2C%20I%20need%20help','_blank');else send(q.m)};e.appendChild(b)})}
+function send(t){if(!t.trim())return;addMsg(t,1);var i=document.getElementById('chatbotInput');if(i)i.value='';typing();setTimeout(function(){noTyping();var r=respond(t);addMsg(r.t,0);if(r.wa){var b=document.getElementById('chatbotBody');if(b){var m=b.lastElementChild;if(m){var a=document.createElement('a');a.className='chatbot-wa-link';a.href='https://wa.me/'+WA+'?text=Hi%20AgriConnect%2C%20I%20need%20assistance';a.target='_blank';a.innerHTML='<i class="fab fa-whatsapp"></i> Chat on WhatsApp';m.appendChild(a)}}}},600+Math.random()*800)}
+function init(){setTimeout(function(){addMsg('👋 **Welcome to AgriConnect!**\n\nI am AgriBot, your AI farming assistant.\n\n• 🐟 Product prices\n• 💳 Payment options (crypto too!)\n• 🚚 Delivery info\n• 📦 Order tracking\n• 🏪 Seller registration\n\nHow can I help?',0);buildQ()},1500)}
+function toggle(){open=!open;var w=document.getElementById('chatbotWin'),f=document.getElementById('chatbotFab'),d=f?f.querySelector('.badge-dot'):null;if(w)w.classList.toggle('open',open);if(d)d.style.display=open?'none':'block';if(open&&history.length===0)init()}
+if(typeof AC!=='undefined'){AC.toggleChatbot=toggle;AC.sendChat=function(){var i=document.getElementById('chatbotInput');if(i)send(i.value)}}else{window.toggleChatbot=toggle;window.sendChat=function(){var i=document.getElementById('chatbotInput');if(i)send(i.value)}}
+})();
+</script>
+
 </body>
 </html>
