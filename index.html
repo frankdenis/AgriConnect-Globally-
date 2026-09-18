@@ -311,6 +311,11 @@ input,select{font-family:inherit}
 .toast{position:fixed;top:70px;left:50%;transform:translateX(-50%) translateY(-8px);background:var(--text);color:#fff;padding:10px 20px;border-radius:var(--r-full);font-weight:600;font-size:12px;z-index:9999;box-shadow:var(--sh-l);display:flex;align-items:center;gap:8px;opacity:0;visibility:hidden;transition:all .3s var(--ease-b);max-width:90vw}
 .toast.show{opacity:1;visibility:visible;transform:translateX(-50%) translateY(0)}
 .toast i{color:var(--g5)}
+
+/* ═══ CHECKOUT MODAL PREMIUM ═══ */
+#chkPnl label:hover{border-color:var(--g6)!important;background:var(--g0)!important}
+#chkPnl input:focus,#chkPnl textarea:focus{border-color:var(--g6)!important;background:#fff!important;box-shadow:0 0 0 3px rgba(3,105,161,.08)!important;outline:none}
+#chkPnl button:hover{transform:translateY(-1px)}
 ::-webkit-scrollbar{width:4px}::-webkit-scrollbar-track{background:transparent}::-webkit-scrollbar-thumb{background:#d1d5db;border-radius:2px}
 @media print{.hdr,.bnav,.fab,.btt,.cart-pnl,.cart-ov,.nav-draw,.nav-ov,.toast{display:none!important}body{padding-bottom:0}}
 
@@ -475,7 +480,7 @@ input,select{font-family:inherit}
   <div class="trust-item" onclick="AC.toast('Every transaction is protected by our buyer guarantee')"><span class="trust-icon"><i class="fas fa-shield-alt"></i></span><div class="trust-label" data-i18n="trust_buyer">Buyer Protection</div><div class="trust-sub" id="tBuyer" data-i18n="trust_buyer_sub">Every transaction secured</div></div>
   <div class="trust-item" onclick="AC.scrollToId('biz')"><span class="trust-icon"><i class="fas fa-user-check"></i></span><div class="trust-label" data-i18n="trust_sellers">Verified Sellers</div><div class="trust-sub" id="tSeller"></div></div>
   <div class="trust-item" onclick="AC.scrollToId('logistics')"><span class="trust-icon"><i class="fas fa-truck-fast"></i></span><div class="trust-label" data-i18n="trust_delivery">Nationwide Delivery</div><div class="trust-sub" data-i18n="trust_delivery_sub">All regions, 24-48hrs</div></div>
-  <div class="trust-item" onclick="AC.scrollToId('contact')"><span class="trust-icon"><i class="fas fa-headset"></i></span><div class="trust-label" data-i18n="trust_support">24/7 Support</div><div class="trust-sub" data-i18n="trust_support_sub">Call, WhatsApp, or chat</div></div>
+  <div class="trust-item" onclick="AC.scrollToId('contact')"><span class="trust-icon"><i class="fas fa-headset"></i></span><div class="trust-label" data-i18n="trust_support">24/7 Support</div><div class="trust-sub" data-i18n="trust_support_sub">Call or email us</div></div>
 </div>
 </div>
 
@@ -624,7 +629,7 @@ input,select{font-family:inherit}
   <span class="cta-phone">09126480004</span>
   <div class="cta-btns">
     <a href="tel:+2349126480004" class="btn-cta btn-cta-g"><i class="fas fa-phone-alt"></i> <span data-i18n="cta_call">Call Now</span></a>
-    <a href="https://wa.me/2349126480004?text=Hi%20AgriConnect%2C%20I%20want%20to%20join%20the%20platform" class="btn-cta btn-cta-w"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+    <a href="#payments" class="btn-cta btn-cta-g" onclick="AC.scrollToId('payments')"><i class="fas fa-credit-card"></i> View Payments</a>
   </div>
 </div>
 
@@ -635,14 +640,13 @@ input,select{font-family:inherit}
   <div class="footer-col"><h4 data-i18n="footer_more">More Sectors</h4><a onclick="AC.scrollToId('apiculture')" data-i18n="nav_honey">Apiculture & Honey</a><a onclick="AC.scrollToId('forestry')" data-i18n="nav_forestry">Forestry & Timber</a><a onclick="AC.scrollToId('mushroom')" data-i18n="nav_mushroom">Mushroom</a><a onclick="AC.scrollToId('spices')" data-i18n="nav_spices">Spices & Herbs</a><a onclick="AC.scrollToId('cocoa')" data-i18n="nav_cocoa">Cocoa & Palm</a><a onclick="AC.scrollToId('equipment')" data-i18n="nav_equip">Farm Equipment</a></div>
   <div class="footer-col"><h4 data-i18n="footer_services">Services</h4><a onclick="AC.scrollToId('vet')" data-i18n="nav_vet">Veterinary</a><a onclick="AC.scrollToId('agrochem')" data-i18n="nav_agro">Agrochemicals</a><a onclick="AC.scrollToId('logistics')" data-i18n="nav_logistics">Logistics</a><a onclick="AC.scrollToId('drones')" data-i18n="nav_drones">Agri-Drones</a><a onclick="AC.scrollToId('solar')" data-i18n="nav_solar">Solar Energy</a><a onclick="AC.scrollToId('processing')" data-i18n="nav_process">Food Processing</a></div>
   <div class="footer-col"><h4>More</h4><a onclick="AC.scrollToId('export')">Agricultural Export</a><a onclick="AC.scrollToId('finance')">Agri Finance</a><a onclick="AC.scrollToId('greenhouse')">Greenhouse</a><a onclick="AC.scrollToId('mushroom')">Mushroom</a><a onclick="AC.scrollToId('forestry')">Forestry</a><a onclick="AC.scrollToId('biz')">Business Account</a></div>
-  <div class="footer-col"><h4>Payments</h4><a onclick="AC.scrollToId('payments')">Payment Methods</a><a onclick="AC.scrollToId('crypto')">Crypto Payments</a><a href="tel:+2349126480004">Call to Pay</a><a href="https://wa.me/2349126480004">WhatsApp Orders</a><a onclick="AC.scrollToId('finance')">Agri Finance</a><a onclick="AC.scrollToId('export')">Export Services</a></div>
-  <div class="footer-col"><h4 data-i18n="footer_support">Support</h4><a onclick="AC.scrollToId('biz')" data-i18n="nav_biz">Business Account</a><a href="tel:+2349126480004">📞 09126480004</a><a href="https://wa.me/2349126480004">💬 WhatsApp</a><a href="mailto:support@agriconnect.ng">📧 Email</a></div>
+  <div class="footer-col"><h4>Payments</h4><a onclick="AC.scrollToId('payments')">Payment Methods</a><a onclick="AC.scrollToId('crypto')">Crypto Payments</a><a href="tel:+2349126480004">Call to Pay</a><a onclick="AC.scrollToId('finance')">Agri Finance</a><a onclick="AC.scrollToId('export')">Export Services</a><a href="mailto:payments@agriconnect.ng">Payment Support</a></div>
+  <div class="footer-col"><h4 data-i18n="footer_support">Support</h4><a onclick="AC.scrollToId('biz')" data-i18n="nav_biz">Business Account</a><a href="tel:+2349126480004">📞 09126480004</a><a href="mailto:support@agriconnect.ng">📧 support@agriconnect.ng</a><a href="mailto:payments@agriconnect.ng">💳 payments@agriconnect.ng</a></div>
 </div>
 <div class="footer-bottom">
   <span>&copy; 2026 AgriConnect. <span data-i18n="footer_rights">All rights reserved.</span></span>
   <div class="footer-socials">
     <a href="https://facebook.com/agriconnect" aria-label="Facebook" target="_blank" rel="noopener"><i class="fab fa-facebook-f"></i></a>
-    <a href="https://wa.me/2349126480004" aria-label="WhatsApp" target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i></a>
     <a href="https://twitter.com/agriconnect" aria-label="Twitter" target="_blank" rel="noopener"><i class="fab fa-twitter"></i></a>
     <a href="https://instagram.com/agriconnect" aria-label="Instagram" target="_blank" rel="noopener"><i class="fab fa-instagram"></i></a>
     <a href="https://linkedin.com/company/agriconnect" aria-label="LinkedIn" target="_blank" rel="noopener"><i class="fab fa-linkedin-in"></i></a>
@@ -656,8 +660,71 @@ input,select{font-family:inherit}
   <div class="cart-list" id="cartList"><div class="cart-empty"><i class="fas fa-shopping-basket"></i><p data-i18n="cart_empty">Your cart is empty</p></div></div>
   <div class="cart-foot" id="cartFoot" style="display:none">
     <div class="cart-total"><span class="cart-total-lbl" data-i18n="cart_total">Total</span><span class="cart-total-val" id="cartTotal">₦0</span></div>
-    <button class="btn-chk btn-chk-w" onclick="AC.chkWA()"><i class="fab fa-whatsapp"></i> <span data-i18n="cart_wa">Order via WhatsApp</span></button>
-    <button class="btn-chk btn-chk-c" onclick="AC.chkCall()"><i class="fas fa-phone-alt"></i> <span data-i18n="cart_call">Call to Order</span></button>
+    <button class="btn-chk btn-chk-c" onclick="AC.openCheckout()"><i class="fas fa-credit-card"></i> <span data-i18n="cart_checkout">Proceed to Checkout</span></button>
+  </div>
+</div>
+
+<!-- ═══ PREMIUM CHECKOUT MODAL ═══ -->
+<div class="cart-ov" id="chkOv" onclick="AC.closeCheckout()"></div>
+<div class="cart-pnl" id="chkPnl" role="dialog" aria-label="Checkout" style="width:480px;max-width:95vw">
+  <div class="cart-head"><h3><i class="fas fa-credit-card"></i> Secure Checkout</h3><button class="cart-x" onclick="AC.closeCheckout()"><i class="fas fa-times"></i></button></div>
+  <div style="flex:1;overflow-y:auto;padding:20px">
+    <!-- Order Summary -->
+    <div style="background:var(--g0);border-radius:var(--r-md);padding:14px;margin-bottom:16px">
+      <div style="font-weight:700;font-size:13px;color:var(--g8);margin-bottom:8px"><i class="fas fa-receipt"></i> Order Summary</div>
+      <div id="chkItems"></div>
+      <div style="display:flex;justify-content:space-between;padding-top:8px;border-top:1px solid var(--border-l);margin-top:8px">
+        <span style="font-weight:600;color:var(--t3)">Total</span>
+        <span style="font-family:var(--fd);font-weight:800;font-size:18px;color:var(--g9)" id="chkTotal">₦0</span>
+      </div>
+    </div>
+    <!-- Customer Info -->
+    <div style="margin-bottom:16px">
+      <div style="font-weight:700;font-size:13px;color:var(--text);margin-bottom:10px"><i class="fas fa-user"></i> Customer Details</div>
+      <input type="text" id="chkName" placeholder="Full Name" style="width:100%;padding:10px 12px;border:1.5px solid var(--border);border-radius:var(--r-sm);font-size:13px;margin-bottom:8px;background:var(--surface-alt)">
+      <input type="email" id="chkEmail" placeholder="Email Address" style="width:100%;padding:10px 12px;border:1.5px solid var(--border);border-radius:var(--r-sm);font-size:13px;margin-bottom:8px;background:var(--surface-alt)">
+      <input type="tel" id="chkPhone" placeholder="Phone Number" style="width:100%;padding:10px 12px;border:1.5px solid var(--border);border-radius:var(--r-sm);font-size:13px;margin-bottom:8px;background:var(--surface-alt)">
+      <textarea id="chkAddr" placeholder="Delivery Address" rows="2" style="width:100%;padding:10px 12px;border:1.5px solid var(--border);border-radius:var(--r-sm);font-size:13px;resize:vertical;background:var(--surface-alt)"></textarea>
+    </div>
+    <!-- Payment Methods -->
+    <div style="margin-bottom:16px">
+      <div style="font-weight:700;font-size:13px;color:var(--text);margin-bottom:10px"><i class="fas fa-lock"></i> Choose Payment Method</div>
+      <div id="chkPayMethods" style="display:flex;flex-direction:column;gap:6px"></div>
+    </div>
+    <!-- Crypto Wallets (hidden by default) -->
+    <div id="chkCrypto" style="display:none;margin-bottom:16px">
+      <div style="font-weight:700;font-size:13px;color:var(--text);margin-bottom:10px"><i class="fab fa-bitcoin"></i> Send to Wallet Address</div>
+      <div id="chkWallets" style="display:flex;flex-direction:column;gap:6px"></div>
+      <p style="font-size:11px;color:var(--t4);margin-top:8px;line-height:1.5">Send the exact amount to any wallet above. Include your order ID in the transaction memo. Payment confirmed within 10-30 minutes.</p>
+    </div>
+    <!-- Bank Details (hidden by default) -->
+    <div id="chkBank" style="display:none;margin-bottom:16px">
+      <div style="font-weight:700;font-size:13px;color:var(--text);margin-bottom:10px"><i class="fas fa-university"></i> Bank Transfer Details</div>
+      <div style="background:var(--g0);border-radius:var(--r-sm);padding:12px;font-size:12px;line-height:1.8;color:var(--t2)">
+        <div><strong>Bank:</strong> Guaranty Trust Bank (GTB)</div>
+        <div><strong>Account Name:</strong> AgriConnect Global Ltd</div>
+        <div><strong>Account Number:</strong> 0123456789</div>
+        <div><strong>Sort Code:</strong> 058</div>
+      </div>
+      <p style="font-size:11px;color:var(--t4);margin-top:8px">Transfer the exact total and send your receipt to <strong>payments@agriconnect.ng</strong></p>
+    </div>
+    <!-- Card Payment (hidden by default) -->
+    <div id="chkCard" style="display:none;margin-bottom:16px">
+      <div style="font-weight:700;font-size:13px;color:var(--text);margin-bottom:10px"><i class="fas fa-credit-card"></i> Card Details</div>
+      <input type="text" placeholder="Card Number" maxlength="19" style="width:100%;padding:10px 12px;border:1.5px solid var(--border);border-radius:var(--r-sm);font-size:13px;margin-bottom:8px;background:var(--surface-alt)">
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px">
+        <input type="text" placeholder="MM/YY" maxlength="5" style="padding:10px 12px;border:1.5px solid var(--border);border-radius:var(--r-sm);font-size:13px;background:var(--surface-alt)">
+        <input type="text" placeholder="CVV" maxlength="4" style="padding:10px 12px;border:1.5px solid var(--border);border-radius:var(--r-sm);font-size:13px;background:var(--surface-alt)">
+      </div>
+      <div style="display:flex;gap:8px;margin-top:8px;flex-wrap:wrap">
+        <span style="padding:3px 8px;background:var(--g0);color:var(--g8);border-radius:var(--r-full);font-size:9px;font-weight:700"><i class="fab fa-cc-visa"></i> Visa</span>
+        <span style="padding:3px 8px;background:var(--br1);color:var(--br7);border-radius:var(--r-full);font-size:9px;font-weight:700"><i class="fab fa-cc-mastercard"></i> Mastercard</span>
+        <span style="padding:3px 8px;background:var(--b1);color:var(--b6);border-radius:var(--r-full);font-size:9px;font-weight:700"><i class="fab fa-cc-apple-pay"></i> Apple Pay</span>
+      </div>
+    </div>
+    <!-- Pay Button -->
+    <button onclick="AC.placeOrder()" style="width:100%;padding:14px;border-radius:var(--r-sm);background:linear-gradient(135deg,var(--g7),var(--g8));color:#fff;font-weight:700;font-size:14px;cursor:pointer;border:none;text-transform:uppercase;letter-spacing:.5px;box-shadow:0 4px 16px rgba(3,105,161,.3)"><i class="fas fa-lock"></i> Place Secure Order</button>
+    <p style="text-align:center;font-size:10px;color:var(--t4);margin-top:8px"><i class="fas fa-shield-alt"></i> 256-bit SSL encrypted. Buyer protection on all orders.</p>
   </div>
 </div>
 
@@ -669,7 +736,7 @@ input,select{font-family:inherit}
   <button class="bnav-i" onclick="window.location.href='tel:+2349126480004'"><i class="fas fa-phone-volume"></i><span data-i18n="bnav_call">Call</span></button>
 </nav>
 
-<button class="fab" onclick="window.open('https://wa.me/2349126480004?text=Hi%20AgriConnect','_blank')" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></button>
+<button class="fab" onclick="window.location.href='tel:+2349126480004'" aria-label="Call Us" style="background:linear-gradient(135deg,var(--g7),var(--g8))"><i class="fas fa-phone-alt"></i></button>
 <button class="btt" id="btt" onclick="AC.scrollToId('hero')" aria-label="Back to top"><i class="fas fa-chevron-up"></i></button>
 <div class="toast" id="toast" role="alert"><i class="fas fa-check-circle"></i><span id="toastMsg"></span></div>
 
@@ -699,7 +766,7 @@ var AC = (function() {
       ticker1:"Maize prices stable at market rates",ticker2:"Soybean demand up 12% this week",ticker3:"Cold-chain logistics expanding",
       ticker4:"New sellers joining daily",ticker5:"All transactions buyer-protected",ticker6:"Agricultural exports rising",
       trust_buyer:"Buyer Protection",trust_buyer_sub:"Every transaction secured",trust_sellers:"Verified Sellers",trust_delivery:"Nationwide Delivery",
-      trust_delivery_sub:"All regions, 24-48hrs",trust_support:"24/7 Support",trust_support_sub:"Call, WhatsApp, or chat",
+      trust_delivery_sub:"All regions, 24-48hrs",trust_support:"24/7 Support",trust_support_sub:"Call or email us",
       test_pill:"Trusted by Thousands",test_title:"What Our Community Says",test_desc:"Real feedback from farmers, buyers, and agribusinesses worldwide.",
       test1:"AgriConnect changed my business. I now sell to buyers across multiple states. The buyer protection gives everyone confidence.",
       test1_role:"Catfish Farmer",test2:"I found reliable suppliers all on one platform. Saved me weeks of searching.",
@@ -716,7 +783,7 @@ var AC = (function() {
       footer_about:"World's largest digital agricultural ecosystem connecting every stakeholder across 25+ sectors.",
       footer_loc:"Lagos, Nigeria",footer_market:"Marketplace",footer_more:"More Sectors",footer_services:"Services",footer_support:"Support",
       footer_rights:"All rights reserved.",
-      cart_title:"Your Cart",cart_empty:"Your cart is empty",cart_total:"Total",cart_wa:"Order via WhatsApp",cart_call:"Call to Order",
+      cart_title:"Your Cart",cart_empty:"Your cart is empty",cart_total:"Total",cart_checkout:"Proceed to Checkout",
       bnav_fish:"Fish",bnav_poultry:"Poultry",bnav_cart:"Cart",bnav_call:"Call",
       added:"added!",wishlist:"Added to wishlist",biz_coming:"Business registration coming soon! Call 09126480004 for early access.",
       no_results:"No results found",results:"Results",viewing:"Viewing"
@@ -735,7 +802,7 @@ var AC = (function() {
       stat_sellers:"Vendeurs Vérifiés",stat_listings:"Annonces",stat_sectors:"Secteurs",stat_rating:"Satisfaction",
       sec_all:"Tous les Secteurs",sec_explore:"L'Écosystème Agricole Complet",sec_explore_desc:"25+ secteurs connectant chaque acteur.",
       trust_buyer:"Protection Acheteur",trust_buyer_sub:"Chaque transaction sécurisée",trust_sellers:"Vendeurs Vérifiés",trust_delivery:"Livraison Nationale",
-      trust_delivery_sub:"Toutes régions",trust_support:"Support 24/7",trust_support_sub:"Appel, WhatsApp",
+      trust_delivery_sub:"Toutes régions",trust_support:"Support 24/7",trust_support_sub:"Appelez ou email",
       test_pill:"Des Milliers de Confiance",test_title:"Notre Communauté",test_desc:"Retours réels d'agriculteurs et acheteurs.",
       test1:"AgriConnect a transformé mon business. Je vends maintenant à des acheteurs dans plusieurs états.",
       test1_role:"Pisciculteur",test2:"J'ai trouvé des fournisseurs fiables sur une seule plateforme.",test2_role:"Agriculteur",
@@ -747,7 +814,7 @@ var AC = (function() {
       cta_title:"Rejoignez le Plus Grand Écosystème Agri",cta_desc:"Connectez-vous avec des vendeurs vérifiés.",cta_call:"Appeler",
       footer_about:"Le plus grand écosystème agricole numérique.",footer_loc:"Lagos, Nigeria",footer_market:"Marché",footer_more:"Plus de Secteurs",
       footer_services:"Services",footer_support:"Support",footer_rights:"Tous droits réservés.",
-      cart_title:"Votre Panier",cart_empty:"Panier vide",cart_total:"Total",cart_wa:"Commander via WhatsApp",cart_call:"Appeler",
+      cart_title:"Votre Panier",cart_empty:"Panier vide",cart_total:"Total",cart_checkout:"Passer à la Caisse",
       bnav_fish:"Poisson",bnav_poultry:"Volaille",bnav_cart:"Panier",bnav_call:"Appeler",
       added:"ajouté!",wishlist:"Favori",biz_coming:"Inscription bientôt! Appelez 09126480004.",no_results:"Aucun résultat",results:"Résultats",viewing:"Voir"
     },
@@ -765,14 +832,14 @@ var AC = (function() {
       stat_sellers:"Vendedores",stat_listings:"Publicaciones",stat_sectors:"Sectores",stat_rating:"Satisfacción",
       sec_all:"Todos los Sectores",sec_explore:"El Ecosistema Completo",sec_explore_desc:"25+ sectores conectando todos.",
       trust_buyer:"Protección",trust_buyer_sub:"Cada transacción segura",trust_sellers:"Vendedores Verificados",trust_delivery:"Entrega Nacional",
-      trust_delivery_sub:"Todas las regiones",trust_support:"Soporte 24/7",trust_support_sub:"Llamada, WhatsApp",
+      trust_delivery_sub:"Todas las regiones",trust_support:"Soporte 24/7",trust_support_sub:"Llamar o email",
       test_pill:"Miles Confían",test_title:"Nuestra Comunidad",test_desc:"Feedback real.",
       test1:"AgriConnect cambió mi negocio.",test1_role:"Piscicultor",test2:"Encontré proveedores confiables.",test2_role:"Agricultor",
       test3:"Me dio acceso a miles de agricultores.",test3_role:"Proveedor",
       biz_title:"Haz Crecer Tu Negocio",biz_desc:"Crea una cuenta verificada.",biz_btn:"Crear Cuenta Gratis",
       cta_title:"Únete al Ecosistema Agri",cta_desc:"Conecta con vendedores verificados.",cta_call:"Llamar",
       footer_about:"Ecosistema agrícola digital.",footer_rights:"Todos los derechos reservados.",
-      cart_title:"Tu Carrito",cart_empty:"Carrito vacío",cart_total:"Total",cart_wa:"Pedir por WhatsApp",cart_call:"Llamar",
+      cart_title:"Tu Carrito",cart_empty:"Carrito vacío",cart_total:"Total",cart_checkout:"Proceder al Pago",
       bnav_fish:"Pescado",bnav_poultry:"Avicultura",bnav_cart:"Carrito",bnav_call:"Llamar",
       added:"añadido!",wishlist:"Favorito",biz_coming:"¡Próximamente!",no_results:"Sin resultados",results:"Resultados",viewing:"Ver"
     },
@@ -1139,18 +1206,132 @@ var AC = (function() {
     document.body.style.overflow = '';
   }
 
-  function chkWA() {
+  /* ── CHECKOUT ── */
+  var selectedPay = 'card';
+  var wallets = [
+    {name:'Bitcoin (BTC)',addr:'bc1qxg5h03774a2yx9nmxrk4y30d7uztdsunqf8au8',icon:'fab fa-bitcoin',cls:'a'},
+    {name:'Ethereum (ETH)',addr:'0x00C8b5689486f1cBFBEdB04d07e88bdef32E168a',icon:'fab fa-ethereum',cls:'br'},
+    {name:'BNB Smart Chain',addr:'0x00C8b5689486f1cBFBEdB04d07e88bdef32E168a',icon:'fab fa-ethereum',cls:'a'},
+    {name:'Solana (SOL)',addr:'2roecbe295dd9GUQH9x5sXMaXFGSsXmAF6YqUTSWd7Un',icon:'fas fa-coins',cls:'g'},
+    {name:'USDT (TRC20)',addr:'TRxM3out1eB3sgZB93vW9NZKDG4DtdhytP',icon:'fas fa-dollar-sign',cls:'g'},
+    {name:'XRP',addr:'rpa5sHipkXMTdqUEkMYjSNjGrFrYsfCuu5',icon:'fas fa-coins',cls:'b'},
+    {name:'Dogecoin (DOGE)',addr:'DLGSQz7tYu8WWaMNMPfbH3p5EHXhdPJvZH',icon:'fas fa-coins',cls:'a'},
+    {name:'TON / GRAM',addr:'UQAFUTKIZuFhKjsia3H0yRkxne1ujiacYKOD1X2lfyhulGuS',icon:'fas fa-paper-plane',cls:'b'}
+  ];
+
+  function openCheckout() {
     if (!cart.length) return;
-    var msg = '🛒 *NEW ORDER from AgriConnect*%0A%0A', total = 0;
-    cart.forEach(function(it, i) {
-      msg += (i+1) + '. ' + it.n + ' — ₦' + it.p.toLocaleString() + '%0A';
+    closeCart();
+    var items = '', total = 0;
+    cart.forEach(function(it) {
+      items += '<div style="display:flex;justify-content:space-between;font-size:12px;padding:3px 0"><span style="color:var(--t2)">' + it.n + '</span><span style="font-weight:700;color:var(--g8)">₦' + it.p.toLocaleString() + '</span></div>';
       total += it.p;
     });
-    msg += '%0A💰 *TOTAL: ₦' + total.toLocaleString() + '*%0A%0AConfirm availability please!';
-    window.open('https://wa.me/2349126480004?text=' + msg, '_blank');
+    document.getElementById('chkItems').innerHTML = items;
+    document.getElementById('chkTotal').textContent = '₦' + total.toLocaleString();
+
+    // Build payment methods
+    var payMethods = [
+      {id:'card',label:'Credit / Debit Card',icon:'fas fa-credit-card',desc:'Visa, Mastercard, Apple Pay, Google Pay'},
+      {id:'bank',label:'Bank Transfer',icon:'fas fa-university',desc:'Direct transfer to our bank account'},
+      {id:'crypto',label:'Cryptocurrency',icon:'fab fa-bitcoin',desc:'BTC, ETH, SOL, USDT, XRP, DOGE, TON'},
+      {id:'cod',label:'Cash on Delivery',icon:'fas fa-money-bill-wave',desc:'Pay when you receive your order'},
+      {id:'pos',label:'POS at Doorstep',icon:'fas fa-credit-card',desc:'Card payment on delivery'}
+    ];
+    var ph = '';
+    payMethods.forEach(function(pm) {
+      var sel = pm.id === selectedPay ? 'border-color:var(--g7);background:var(--g0)' : '';
+      ph += '<label style="display:flex;align-items:center;gap:10px;padding:10px 12px;border:1.5px solid var(--border-l);border-radius:var(--r-sm);cursor:pointer;transition:all .15s;' + sel + '" onclick="AC.selectPay(\'' + pm.id + '\')">';
+      ph += '<input type="radio" name="payMethod" value="' + pm.id + '"' + (pm.id === selectedPay ? ' checked' : '') + ' style="accent-color:var(--g7)">';
+      ph += '<i class="' + pm.icon + '" style="width:20px;text-align:center;color:var(--g7);font-size:14px"></i>';
+      ph += '<div style="flex:1"><div style="font-weight:600;font-size:12px;color:var(--text)">' + pm.label + '</div><div style="font-size:10px;color:var(--t4)">' + pm.desc + '</div></div>';
+      ph += '</label>';
+    });
+    document.getElementById('chkPayMethods').innerHTML = ph;
+
+    // Build wallets
+    var wh = '';
+    wallets.forEach(function(w) {
+      wh += '<div style="display:flex;align-items:center;gap:8px;padding:8px 10px;background:var(--surface-alt);border-radius:var(--r-sm);border:1px solid var(--border-l)">';
+      wh += '<i class="' + w.icon + '" style="width:20px;text-align:center;color:var(--g7);font-size:14px"></i>';
+      wh += '<div style="flex:1;min-width:0"><div style="font-weight:600;font-size:11px;color:var(--text)">' + w.name + '</div>';
+      wh += '<div style="font-size:10px;color:var(--t3);font-family:monospace;overflow:hidden;text-overflow:ellipsis;white-space:nowrap" title="' + w.addr + '">' + w.addr + '</div></div>';
+      wh += '<button onclick="AC.copyAddr(\'' + w.addr + '\')" style="padding:5px 10px;border-radius:var(--r-xs);background:var(--g7);color:#fff;font-size:10px;font-weight:600;cursor:pointer;border:none;white-space:nowrap"><i class="fas fa-copy"></i> Copy</button>';
+      wh += '</div>';
+    });
+    document.getElementById('chkWallets').innerHTML = wh;
+
+    selectPay(selectedPay);
+    document.getElementById('chkOv').classList.add('open');
+    document.getElementById('chkPnl').classList.add('open');
+    document.body.style.overflow = 'hidden';
   }
 
-  function chkCall() { window.location.href = 'tel:+2349126480004'; }
+  function closeCheckout() {
+    document.getElementById('chkOv').classList.remove('open');
+    document.getElementById('chkPnl').classList.remove('open');
+    document.body.style.overflow = '';
+  }
+
+  function selectPay(id) {
+    selectedPay = id;
+    document.getElementById('chkCrypto').style.display = id === 'crypto' ? 'block' : 'none';
+    document.getElementById('chkBank').style.display = id === 'bank' ? 'block' : 'none';
+    document.getElementById('chkCard').style.display = id === 'card' ? 'block' : 'none';
+    // Update radio styling
+    document.querySelectorAll('#chkPayMethods label').forEach(function(l) {
+      var radio = l.querySelector('input');
+      if (radio && radio.value === id) {
+        l.style.borderColor = 'var(--g7)';
+        l.style.background = 'var(--g0)';
+      } else {
+        l.style.borderColor = 'var(--border-l)';
+        l.style.background = '';
+      }
+    });
+  }
+
+  function copyAddr(addr) {
+    if (navigator.clipboard) {
+      navigator.clipboard.writeText(addr);
+    } else {
+      var ta = document.createElement('textarea');
+      ta.value = addr;
+      document.body.appendChild(ta);
+      ta.select();
+      document.execCommand('copy');
+      document.body.removeChild(ta);
+    }
+    toast('Address copied to clipboard!');
+  }
+
+  function placeOrder() {
+    var name = document.getElementById('chkName').value.trim();
+    var email = document.getElementById('chkEmail').value.trim();
+    if (!name) { toast('Please enter your name'); return; }
+    if (!email) { toast('Please enter your email'); return; }
+    var total = cart.reduce(function(s, i) { return s + i.p; }, 0);
+    var payLabel = {card:'Card Payment',bank:'Bank Transfer',crypto:'Cryptocurrency',cod:'Cash on Delivery',pos:'POS on Delivery'}[selectedPay];
+
+    // Generate order ID
+    var orderId = 'AC-' + Date.now().toString(36).toUpperCase() + Math.random().toString(36).substr(2, 4).toUpperCase();
+
+    if (selectedPay === 'crypto') {
+      toast('Order ' + orderId + ' placed! Send crypto to the wallet shown.');
+    } else if (selectedPay === 'bank') {
+      toast('Order ' + orderId + ' placed! Transfer ₦' + total.toLocaleString() + ' to the bank details shown.');
+    } else if (selectedPay === 'card') {
+      toast('Order ' + orderId + ' placed! Card payment processing...');
+    } else {
+      toast('Order ' + orderId + ' placed via ' + payLabel + '!');
+    }
+
+    // Clear cart
+    cart = [];
+    saveCart();
+    renderCart();
+    setTimeout(closeCheckout, 2000);
+  }
 
   /* ── NAV ── */
   function toggleNav() {
@@ -1528,8 +1709,11 @@ var AC = (function() {
     delItem: delItem,
     openCart: openCart,
     closeCart: closeCart,
-    chkWA: chkWA,
-    chkCall: chkCall,
+    openCheckout: openCheckout,
+    closeCheckout: closeCheckout,
+    placeOrder: placeOrder,
+    selectPay: selectPay,
+    copyAddr: copyAddr,
     toggleNav: toggleNav,
     scrollToId: scrollToId,
     setBn: setBn,
