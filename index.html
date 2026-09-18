@@ -1176,10 +1176,12 @@ var AC = (function() {
 
   function renderCart() {
     var c = cart.length, total = cart.reduce(function(s, i) { return s + i.p; }, 0);
-    document.getElementById('cartBadge').textContent = c;
+    var badge = document.getElementById('cartBadge');
+    if (badge) badge.textContent = c;
     var bn = document.getElementById('bnavB');
     if (bn) bn.textContent = c;
     var el = document.getElementById('cartList'), ft = document.getElementById('cartFoot');
+    if (!el || !ft) return;
     if (!c) {
       el.innerHTML = '<div class="cart-empty"><i class="fas fa-shopping-basket"></i><p>' + t('cart_empty') + '</p></div>';
       ft.style.display = 'none';
@@ -1191,18 +1193,23 @@ var AC = (function() {
     });
     el.innerHTML = h;
     ft.style.display = 'block';
-    document.getElementById('cartTotal').textContent = '₦' + total.toLocaleString();
+    var totalEl = document.getElementById('cartTotal');
+    if (totalEl) totalEl.textContent = '₦' + total.toLocaleString();
   }
 
   function openCart() {
-    document.getElementById('cartOv').classList.add('open');
-    document.getElementById('cartPnl').classList.add('open');
+    var ov = document.getElementById('cartOv');
+    var pnl = document.getElementById('cartPnl');
+    if (ov) ov.classList.add('open');
+    if (pnl) pnl.classList.add('open');
     document.body.style.overflow = 'hidden';
   }
 
   function closeCart() {
-    document.getElementById('cartOv').classList.remove('open');
-    document.getElementById('cartPnl').classList.remove('open');
+    var ov = document.getElementById('cartOv');
+    var pnl = document.getElementById('cartPnl');
+    if (ov) ov.classList.remove('open');
+    if (pnl) pnl.classList.remove('open');
     document.body.style.overflow = '';
   }
 
@@ -1227,8 +1234,10 @@ var AC = (function() {
       items += '<div style="display:flex;justify-content:space-between;font-size:12px;padding:3px 0"><span style="color:var(--t2)">' + it.n + '</span><span style="font-weight:700;color:var(--g8)">₦' + it.p.toLocaleString() + '</span></div>';
       total += it.p;
     });
-    document.getElementById('chkItems').innerHTML = items;
-    document.getElementById('chkTotal').textContent = '₦' + total.toLocaleString();
+    var chkItems = document.getElementById('chkItems');
+    var chkTotal = document.getElementById('chkTotal');
+    if (chkItems) chkItems.innerHTML = items;
+    if (chkTotal) chkTotal.textContent = '₦' + total.toLocaleString();
 
     // Build payment methods
     var payMethods = [
@@ -1247,7 +1256,8 @@ var AC = (function() {
       ph += '<div style="flex:1"><div style="font-weight:600;font-size:12px;color:var(--text)">' + pm.label + '</div><div style="font-size:10px;color:var(--t4)">' + pm.desc + '</div></div>';
       ph += '</label>';
     });
-    document.getElementById('chkPayMethods').innerHTML = ph;
+    var chkPayMethods = document.getElementById('chkPayMethods');
+    if (chkPayMethods) chkPayMethods.innerHTML = ph;
 
     // Build wallets
     var wh = '';
@@ -1259,25 +1269,33 @@ var AC = (function() {
       wh += '<button onclick="AC.copyAddr(\'' + w.addr + '\')" style="padding:5px 10px;border-radius:var(--r-xs);background:var(--g7);color:#fff;font-size:10px;font-weight:600;cursor:pointer;border:none;white-space:nowrap"><i class="fas fa-copy"></i> Copy</button>';
       wh += '</div>';
     });
-    document.getElementById('chkWallets').innerHTML = wh;
+    var chkWallets = document.getElementById('chkWallets');
+    if (chkWallets) chkWallets.innerHTML = wh;
 
     selectPay(selectedPay);
-    document.getElementById('chkOv').classList.add('open');
-    document.getElementById('chkPnl').classList.add('open');
+    var chkOv = document.getElementById('chkOv');
+    var chkPnl = document.getElementById('chkPnl');
+    if (chkOv) chkOv.classList.add('open');
+    if (chkPnl) chkPnl.classList.add('open');
     document.body.style.overflow = 'hidden';
   }
 
   function closeCheckout() {
-    document.getElementById('chkOv').classList.remove('open');
-    document.getElementById('chkPnl').classList.remove('open');
+    var chkOv = document.getElementById('chkOv');
+    var chkPnl = document.getElementById('chkPnl');
+    if (chkOv) chkOv.classList.remove('open');
+    if (chkPnl) chkPnl.classList.remove('open');
     document.body.style.overflow = '';
   }
 
   function selectPay(id) {
     selectedPay = id;
-    document.getElementById('chkCrypto').style.display = id === 'crypto' ? 'block' : 'none';
-    document.getElementById('chkBank').style.display = id === 'bank' ? 'block' : 'none';
-    document.getElementById('chkCard').style.display = id === 'card' ? 'block' : 'none';
+    var cryptoEl = document.getElementById('chkCrypto');
+    var bankEl = document.getElementById('chkBank');
+    var cardEl = document.getElementById('chkCard');
+    if (cryptoEl) cryptoEl.style.display = id === 'crypto' ? 'block' : 'none';
+    if (bankEl) bankEl.style.display = id === 'bank' ? 'block' : 'none';
+    if (cardEl) cardEl.style.display = id === 'card' ? 'block' : 'none';
     // Update radio styling
     document.querySelectorAll('#chkPayMethods label').forEach(function(l) {
       var radio = l.querySelector('input');
@@ -1306,8 +1324,10 @@ var AC = (function() {
   }
 
   function placeOrder() {
-    var name = document.getElementById('chkName').value.trim();
-    var email = document.getElementById('chkEmail').value.trim();
+    var nameEl = document.getElementById('chkName');
+    var emailEl = document.getElementById('chkEmail');
+    var name = nameEl ? nameEl.value.trim() : '';
+    var email = emailEl ? emailEl.value.trim() : '';
     if (!name) { toast('Please enter your name'); return; }
     if (!email) { toast('Please enter your email'); return; }
     var total = cart.reduce(function(s, i) { return s + i.p; }, 0);
@@ -1338,17 +1358,19 @@ var AC = (function() {
     var draw = document.getElementById('navDraw');
     var ov = document.getElementById('navOv');
     var btn = document.getElementById('menuBtn');
-    draw.classList.toggle('open');
-    ov.classList.toggle('open');
-    btn.classList.toggle('open');
-    document.body.style.overflow = draw.classList.contains('open') ? 'hidden' : '';
+    if (draw) draw.classList.toggle('open');
+    if (ov) ov.classList.toggle('open');
+    if (btn) btn.classList.toggle('open');
+    document.body.style.overflow = (draw && draw.classList.contains('open')) ? 'hidden' : '';
   }
 
   /* ── TOAST ── */
   var toastTimer;
   function toast(msg) {
     var el = document.getElementById('toast');
-    document.getElementById('toastMsg').textContent = msg;
+    var msgEl = document.getElementById('toastMsg');
+    if (!el || !msgEl) return;
+    msgEl.textContent = msg;
     el.classList.add('show');
     clearTimeout(toastTimer);
     toastTimer = setTimeout(function() { el.classList.remove('show'); }, 2500);
@@ -1356,6 +1378,7 @@ var AC = (function() {
 
   /* ── SCROLL ── */
   function scrollToId(id) {
+    if (!id) return;
     var el = document.getElementById(id);
     if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
   }
@@ -1580,6 +1603,7 @@ var AC = (function() {
     }, 4000);
     track.addEventListener('mouseenter', function() { clearInterval(autoTimer); });
     track.addEventListener('mouseleave', function() {
+      clearInterval(autoTimer);
       autoTimer = setInterval(function() {
         if (isDragging) return;
         pos += cardW;
@@ -1630,10 +1654,14 @@ var AC = (function() {
     m.t = Date.now();
     try { localStorage.setItem(MK, JSON.stringify(m)); } catch(e) {}
 
-    document.getElementById('hSellers').textContent = m.sellers.toLocaleString() + '+';
-    document.getElementById('hListings').textContent = m.listings.toLocaleString() + '+';
-    document.getElementById('hRating').textContent = m.rating + '/5';
-    document.getElementById('tSeller').textContent = m.sellers.toLocaleString() + '+ vetted businesses';
+    var hSellers = document.getElementById('hSellers');
+    var hListings = document.getElementById('hListings');
+    var hRating = document.getElementById('hRating');
+    var tSeller = document.getElementById('tSeller');
+    if (hSellers) hSellers.textContent = m.sellers.toLocaleString() + '+';
+    if (hListings) hListings.textContent = m.listings.toLocaleString() + '+';
+    if (hRating) hRating.textContent = m.rating + '/5';
+    if (tSeller) tSeller.textContent = m.sellers.toLocaleString() + '+ vetted businesses';
   }
 
   /* ── INTERSECTION OBSERVER ── */
@@ -1653,7 +1681,7 @@ var AC = (function() {
   /* ── INIT ── */
   function init() {
     // Loader
-    setTimeout(function() { document.getElementById('loader').classList.add('done'); }, 500);
+    setTimeout(function() { var loader = document.getElementById('loader'); if (loader) loader.classList.add('done'); }, 500);
 
     // Restore language
     try {
