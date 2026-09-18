@@ -375,43 +375,33 @@ input,select{font-family:inherit}
 .carousel-dot{width:8px;height:8px;border-radius:50%;background:var(--border);transition:all .3s var(--ease);cursor:pointer}
 .carousel-dot.active{background:var(--g7);width:24px;border-radius:4px}
 
-/* ═══ AI CHATBOT ═══ */
-.chatbot-fab{position:fixed;bottom:80px;right:80px;width:56px;height:56px;background:linear-gradient(135deg,#0284c7,#0369a1);color:#fff;border-radius:50%;display:grid;place-items:center;font-size:24px;box-shadow:0 4px 20px rgba(3,105,161,.4);z-index:997;cursor:pointer;transition:all .3s var(--ease);animation:pulse 3s infinite}
-.chatbot-fab:hover{transform:scale(1.1);box-shadow:0 6px 28px rgba(3,105,161,.5)}
-.chatbot-fab .badge-dot{position:absolute;top:-2px;right:-2px;width:14px;height:14px;background:var(--r6);border-radius:50%;border:2px solid #fff;animation:bounceIn .3s var(--ease-b)}
-@media(min-width:1024px){.chatbot-fab{bottom:20px;right:80px}}
-.chatbot-win{position:fixed;bottom:140px;right:20px;width:380px;max-width:calc(100vw - 40px);max-height:520px;background:var(--surface);border-radius:var(--r-lg);box-shadow:var(--sh-xl);z-index:3000;display:flex;flex-direction:column;overflow:hidden;transform:scale(0) translateY(20px);transform-origin:bottom right;opacity:0;visibility:hidden;transition:all .3s var(--ease-b)}
-.chatbot-win.open{transform:scale(1) translateY(0);opacity:1;visibility:visible}
-@media(max-width:480px){.chatbot-win{bottom:72px;right:10px;left:10px;width:auto;max-height:60vh}}
-.chatbot-header{background:linear-gradient(135deg,var(--g7),var(--g9));color:#fff;padding:14px 16px;display:flex;align-items:center;gap:10px}
-.chatbot-header-avatar{width:36px;height:36px;border-radius:50%;background:rgba(255,255,255,.15);display:grid;place-items:center;font-size:16px}
-.chatbot-header-info{flex:1}
-.chatbot-header-info h4{font-family:var(--fd);font-size:14px;font-weight:700}
-.chatbot-header-info p{font-size:10px;opacity:.7;display:flex;align-items:center;gap:4px}
-.chatbot-header-info p .online-dot{width:6px;height:6px;border-radius:50%;background:#4ade80;display:inline-block}
-.chatbot-header-close{width:28px;height:28px;border-radius:50%;display:grid;place-items:center;font-size:12px;color:rgba(255,255,255,.7);cursor:pointer;transition:all .15s}
-.chatbot-header-close:hover{background:rgba(255,255,255,.15);color:#fff}
-.chatbot-body{flex:1;overflow-y:auto;padding:14px;display:flex;flex-direction:column;gap:10px;background:var(--bg)}
-.chatbot-msg{max-width:85%;padding:10px 14px;border-radius:var(--r-md);font-size:13px;line-height:1.5;animation:fadeIn .2s var(--ease)}
-.chatbot-msg.bot{background:var(--surface);border:1px solid var(--border-l);color:var(--text);align-self:flex-start;border-bottom-left-radius:4px}
-.chatbot-msg.user{background:linear-gradient(135deg,var(--g7),var(--g8));color:#fff;align-self:flex-end;border-bottom-right-radius:4px}
-.chatbot-msg .msg-time{font-size:9px;opacity:.5;margin-top:4px;display:block}
-.chatbot-quick{display:flex;flex-wrap:wrap;gap:6px;padding:0 14px 10px;background:var(--bg)}
-.chatbot-quick-btn{padding:6px 12px;border-radius:var(--r-full);border:1.5px solid var(--border);background:var(--surface);font-size:11px;font-weight:600;color:var(--t2);cursor:pointer;transition:all .15s var(--ease);white-space:nowrap}
-.chatbot-quick-btn:hover{border-color:var(--g6);color:var(--g7);background:var(--g0)}
-.chatbot-footer{padding:10px 14px;border-top:1px solid var(--border-l);background:var(--surface);display:flex;gap:8px;align-items:center}
-.chatbot-input{flex:1;padding:9px 14px;border:1.5px solid var(--border);border-radius:var(--r-full);font-size:13px;background:var(--surface-alt);color:var(--text);outline:none;transition:all .2s var(--ease)}
-.chatbot-input:focus{border-color:var(--g6);background:#fff}
-.chatbot-send{width:36px;height:36px;border-radius:50%;background:linear-gradient(135deg,var(--g7),var(--g8));color:#fff;display:grid;place-items:center;font-size:14px;cursor:pointer;transition:all .2s var(--ease);flex-shrink:0;border:none}
-.chatbot-send:hover{transform:scale(1.05)}
-.chatbot-typing{display:flex;gap:4px;padding:10px 14px;background:var(--surface);border:1px solid var(--border-l);border-radius:var(--r-md);align-self:flex-start;border-bottom-left-radius:4px;max-width:60px}
-.chatbot-typing span{width:6px;height:6px;border-radius:50%;background:var(--t4);animation:typingDot 1.4s infinite both}
-.chatbot-typing span:nth-child(2){animation-delay:.2s}
-.chatbot-typing span:nth-child(3){animation-delay:.4s}
-@keyframes typingDot{0%,80%,100%{transform:scale(0);opacity:.4}40%{transform:scale(1);opacity:1}}
-.chatbot-wa-link{display:inline-flex;align-items:center;gap:5px;padding:6px 12px;background:#25D366;color:#fff;border-radius:var(--r-full);font-size:11px;font-weight:600;cursor:pointer;transition:all .15s;text-decoration:none;margin-top:6px}
-.chatbot-wa-link:hover{background:#1ebe5d;transform:translateY(-1px)}
-</style>
+
+/* ═══ PRODUCT DETAIL MODAL ═══ */
+.prod-modal-ov{position:fixed;inset:0;background:var(--ov);z-index:5000;opacity:0;visibility:hidden;transition:all .25s var(--ease);backdrop-filter:blur(3px)}
+.prod-modal-ov.open{opacity:1;visibility:visible}
+.prod-modal{position:fixed;top:50%;left:50%;transform:translate(-50%,-50%) scale(.9);width:90%;max-width:600px;max-height:90vh;background:var(--surface);border-radius:var(--r-lg);box-shadow:var(--sh-xl);z-index:5100;overflow:hidden;opacity:0;visibility:hidden;transition:all .3s var(--ease-b)}
+.prod-modal.open{transform:translate(-50%,-50%) scale(1);opacity:1;visibility:visible}
+.prod-modal-img{width:100%;aspect-ratio:16/9;object-fit:cover}
+.prod-modal-body{padding:24px;overflow-y:auto;max-height:60vh}
+.prod-modal-cat{font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:1.5px;color:var(--g7);margin-bottom:8px}
+.prod-modal-title{font-family:var(--fd);font-size:22px;font-weight:800;color:var(--text);line-height:1.3;margin-bottom:12px}
+.prod-modal-price{font-family:var(--fd);font-size:28px;font-weight:800;color:var(--g9);margin-bottom:16px}
+.prod-modal-price .old{font-size:18px}
+.prod-modal-specs{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:16px}
+.prod-modal-spec{padding:6px 14px;background:var(--g0);color:var(--g8);border-radius:var(--r-full);font-size:12px;font-weight:600}
+.prod-modal-seller{display:flex;align-items:center;gap:12px;padding:16px;background:var(--surface-alt);border-radius:var(--r-md);margin-bottom:20px}
+.prod-modal-seller-avatar{width:40px;height:40px;border-radius:50%;background:linear-gradient(135deg,var(--g1),var(--g0));display:grid;place-items:center;font-size:16px;font-weight:800;color:var(--g7)}
+.prod-modal-seller-name{font-weight:700;font-size:14px;color:var(--text)}
+.prod-modal-seller-verified{font-size:11px;color:var(--g7)}
+.prod-modal-btns{display:flex;gap:10px}
+.prod-modal-btns button{flex:1;padding:14px;border-radius:var(--r-sm);font-weight:700;font-size:14px;cursor:pointer;border:none;transition:all .2s var(--ease)}
+.prod-modal-btn-add{background:linear-gradient(135deg,var(--g7),var(--g8));color:#fff}
+.prod-modal-btn-add:hover{transform:translateY(-2px);box-shadow:0 4px 16px rgba(3,105,161,.35)}
+.prod-modal-btn-call{background:transparent;color:var(--g7);border:2px solid var(--g7)!important}
+.prod-modal-btn-call:hover{background:var(--g0)}
+.prod-modal-close{position:absolute;top:12px;right:12px;width:36px;height:36px;border-radius:50%;background:rgba(0,0,0,.5);color:#fff;display:grid;place-items:center;font-size:16px;cursor:pointer;z-index:10;transition:all .2s}
+.prod-modal-close:hover{background:rgba(0,0,0,.7)}
+</style
 </head>
 <body>
 
@@ -424,6 +414,7 @@ input,select{font-family:inherit}
     <select class="lang-sel" id="langSel" aria-label="Language" onchange="changeLang(this.value)">
       <option value="en">EN</option><option value="fr">FR</option><option value="es">ES</option><option value="pt">PT</option><option value="ar">العربية</option><option value="zh">中文</option><option value="hi">हिंदी</option><option value="sw">SW</option><option value="yo">Yorùbá</option><option value="ig">Igbo</option><option value="ha">Hausa</option><option value="de">DE</option><option value="it">IT</option><option value="nl">NL</option><option value="ja">日本語</option><option value="ko">한국어</option><option value="tr">TR</option><option value="id">ID</option><option value="vi">VI</option><option value="th">TH</option><option value="ru">RU</option>
     </select>
+    <div class="auth-user-badge" id="authBadge" onclick="AC.showUserMenu()"><span class="auth-avatar" id="authBadgeAvatar">U</span><span id="authBadgeName">Account</span></div>
     <button class="btn-cart" onclick="openCart()" aria-label="Cart"><i class="fas fa-shopping-bag"></i> <span data-i18n="cart">Cart</span> <span class="cart-badge" id="cartBadge">0</span></button>
     <button class="btn-menu" id="menuBtn" onclick="toggleNav()" aria-label="Menu"><span></span><span></span><span></span></button>
   </div>
@@ -475,7 +466,7 @@ input,select{font-family:inherit}
     <p data-i18n="hero_desc">Connect with farmers, buyers, suppliers, processors, investors, transporters, and veterinarians across 25+ agricultural sectors — from aquaculture to apiculture, dairy to drones, forestry to food processing.</p>
     <div class="hero-btns">
       <a class="btn-h btn-h-g" onclick="AC.scrollToId('sectors')"><i class="fas fa-th-large"></i> <span data-i18n="hero_explore">Explore Marketplace</span></a>
-      <a class="btn-h btn-h-ghost" onclick="AC.scrollToId('biz')"><i class="fas fa-user-plus"></i> <span data-i18n="hero_create">Create Business Account</span></a>
+      <a class="btn-h btn-h-ghost" onclick="AC.openAuth()"><i class="fas fa-user-plus"></i> <span data-i18n="hero_create">Create Business Account</span></a>
     </div>
     <div class="hero-stats">
       <div class="h-stat"><div class="h-stat-val" id="hSellers">0</div><div class="h-stat-lbl" data-i18n="stat_sellers">Verified Sellers</div></div>
@@ -522,7 +513,7 @@ input,select{font-family:inherit}
     <div class="biz-feat"><i class="fas fa-users"></i><h4 data-i18n="biz_feat3_title">Direct Buyer Access</h4><p data-i18n="biz_feat3_desc">Connect directly with farmers, processors, retailers, and bulk buyers.</p></div>
     <div class="biz-feat"><i class="fas fa-chart-line"></i><h4 data-i18n="biz_feat4_title">Sales Dashboard</h4><p data-i18n="biz_feat4_desc">Track orders, revenue, and customer analytics in real-time.</p></div>
   </div>
-  <button class="btn-biz" onclick="AC.toast('Business registration coming soon! Call 09126480004 for early access.')"><i class="fas fa-user-plus"></i> <span data-i18n="biz_btn">Create Free Business Account</span></button>
+  <button class="btn-biz" onclick="AC.openAuth()"><i class="fas fa-user-plus"></i> <span data-i18n="biz_btn">Create Free Business Account</span></button>
 </div>
 
 <div class="trust reveal">
@@ -1483,7 +1474,7 @@ var AC = (function() {
       h += '<div class="sector reveal-sc" style="--i:' + i + '"' + click + '>';
       h += '<div class="sector-icon ' + s.cls + '"><i class="fas ' + s.icon + '"></i></div>';
       h += '<div class="sector-name">' + s.name + '</div>';
-      h += '<div class="sector-count" id="sc' + i + '">' + (s.base + Math.floor(Math.random()*50)).toLocaleString() + '+ listings</div>';
+      h += '<div class="sector-count" id="sc' + i + '">' + s.base.toLocaleString() + '+ listings</div>';
       h += '</div>';
     });
     grid.innerHTML = h;
@@ -1539,8 +1530,8 @@ var AC = (function() {
         var specClass = ['spec-g','spec-b','spec-a','spec-r'];
         var specs = (p.specs || []).map(function(s, si) { return '<span class="spec ' + (specClass[si % 4]) + '">' + s + '</span>'; }).join('');
         var oldPrice = p.old ? '<span class="old">₦' + p.old.toLocaleString() + '</span>' : '';
-        var btnClass = ['btn-add-g','btn-add-b','btn-add-n'][Math.floor(Math.random()*3)];
-        h += '<div class="pcard reveal-sc" style="--i:' + i + '">';
+        var btnClass = 'btn-add-g';
+        h += '<div class="pcard reveal-sc" style="--i:' + i + ';cursor:pointer" onclick="AC.openProdModal(products.indexOf(p))">';
         h += '<div class="pcard-img"><img src="' + p.img + '" alt="' + p.n + '" loading="lazy">';
         if (tagLabel) h += '<div class="pcard-tag ' + tagClass + '">' + tagLabel + '</div>';
         h += '<button class="pcard-fav" onclick="AC.toggleFav(this)"><i class="far fa-heart"></i></button></div>';
@@ -1693,25 +1684,14 @@ var AC = (function() {
 
   /* ── METRICS ── */
   function initMetrics() {
-    var MK = 'ac_metrics';
-    var m = null;
-    try { m = JSON.parse(localStorage.getItem(MK)); if (m && Date.now() - m.t > 864e5) m = null; } catch(e) { m = null; }
-    if (!m) {
-      m = { sellers: 12400 + Math.floor(Math.random()*300), listings: 48000 + Math.floor(Math.random()*800), rating: (4.7 + Math.random()*0.2).toFixed(1) };
-    }
-    m.sellers += Math.floor(Math.random()*3) + 1;
-    m.listings += Math.floor(Math.random()*8) + 1;
-    m.t = Date.now();
-    try { localStorage.setItem(MK, JSON.stringify(m)); } catch(e) {}
-
     var hSellers = document.getElementById('hSellers');
     var hListings = document.getElementById('hListings');
     var hRating = document.getElementById('hRating');
     var tSeller = document.getElementById('tSeller');
-    if (hSellers) hSellers.textContent = m.sellers.toLocaleString() + '+';
-    if (hListings) hListings.textContent = m.listings.toLocaleString() + '+';
-    if (hRating) hRating.textContent = m.rating + '/5';
-    if (tSeller) tSeller.textContent = m.sellers.toLocaleString() + '+ vetted businesses';
+    if (hSellers) hSellers.textContent = '12,547+';
+    if (hListings) hListings.textContent = '48,236+';
+    if (hRating) hRating.textContent = '4.8/5';
+    if (tSeller) tSeller.textContent = '12,547+ vetted businesses';
   }
 
   /* ── INTERSECTION OBSERVER ── */
@@ -1781,6 +1761,173 @@ var AC = (function() {
     init();
   }
 
+
+  /* ── PRODUCT DETAIL MODAL ── */
+  function openProdModal(idx) {
+    var p = products[idx];
+    if (!p) return;
+    var img = document.getElementById('prodModalImg');
+    var cat = document.getElementById('prodModalCat');
+    var title = document.getElementById('prodModalTitle');
+    var price = document.getElementById('prodModalPrice');
+    var specs = document.getElementById('prodModalSpecs');
+    var avatar = document.getElementById('prodModalSellerAvatar');
+    var sname = document.getElementById('prodModalSellerName');
+    var addBtn = document.getElementById('prodModalAddBtn');
+    if (img) img.src = p.img;
+    if (img) img.alt = p.n;
+    if (cat) cat.textContent = p.c;
+    if (title) title.textContent = p.n;
+    if (price) {
+      var html = '₦' + p.p.toLocaleString();
+      if (p.u) html += ' <span style="font-size:14px;color:var(--t4);font-weight:500">' + p.u + '</span>';
+      if (p.old) html += ' <span class="old">₦' + p.old.toLocaleString() + '</span>';
+      price.innerHTML = html;
+    }
+    if (specs) {
+      var specClass = ['spec-g','spec-b','spec-a','spec-r'];
+      var sh = '';
+      (p.specs || []).forEach(function(s, i) {
+        sh += '<span class="prod-modal-spec">' + s + '</span>';
+      });
+      specs.innerHTML = sh;
+    }
+    if (avatar) avatar.textContent = p.sv;
+    if (sname) sname.textContent = p.seller;
+    if (addBtn) {
+      addBtn.onclick = function() {
+        addToCart(p.n, p.p, addBtn);
+        closeProdModal();
+      };
+    }
+    document.getElementById('prodModalOv').classList.add('open');
+    document.getElementById('prodModal').classList.add('open');
+    document.body.style.overflow = 'hidden';
+  }
+
+  function closeProdModal() {
+    var ov = document.getElementById('prodModalOv');
+    var modal = document.getElementById('prodModal');
+    if (ov) ov.classList.remove('open');
+    if (modal) modal.classList.remove('open');
+    document.body.style.overflow = '';
+  }
+
+  /* ── AUTH SYSTEM ── */
+  var authMode = 'register';
+  var currentUser = null;
+  try { currentUser = JSON.parse(localStorage.getItem('ac_user')); } catch(e) {}
+
+  function openAuth() {
+    document.getElementById('authModalOv').classList.add('open');
+    document.getElementById('authModal').classList.add('open');
+    document.body.style.overflow = 'hidden';
+    updateAuthUI();
+  }
+
+  function closeAuth() {
+    document.getElementById('authModalOv').classList.remove('open');
+    document.getElementById('authModal').classList.remove('open');
+    document.body.style.overflow = '';
+  }
+
+  function toggleAuthMode() {
+    authMode = authMode === 'register' ? 'login' : 'register';
+    updateAuthUI();
+  }
+
+  function updateAuthUI() {
+    var regFields = document.getElementById('authRegFields');
+    var loginFields = document.getElementById('authLoginFields');
+    var title = document.getElementById('authTitle');
+    var subtitle = document.getElementById('authSubtitle');
+    var btn = document.getElementById('authBtn');
+    var toggle = document.getElementById('authToggle');
+    if (authMode === 'register') {
+      if (regFields) regFields.style.display = 'block';
+      if (loginFields) loginFields.style.display = 'none';
+      if (title) title.textContent = 'Create Account';
+      if (subtitle) subtitle.textContent = 'Join AgriConnect — Premium Agricultural Marketplace';
+      if (btn) btn.innerHTML = '<i class="fas fa-user-plus"></i> Create Premium Account';
+      if (toggle) toggle.innerHTML = 'Already have an account? <a onclick="AC.toggleAuthMode()">Sign In</a>';
+    } else {
+      if (regFields) regFields.style.display = 'none';
+      if (loginFields) loginFields.style.display = 'block';
+      if (title) title.textContent = 'Welcome Back';
+      if (subtitle) subtitle.textContent = 'Sign in to your AgriConnect account';
+      if (btn) btn.innerHTML = '<i class="fas fa-sign-in-alt"></i> Sign In';
+      if (toggle) toggle.innerHTML = 'Don\'t have an account? <a onclick="AC.toggleAuthMode()">Create One</a>';
+    }
+  }
+
+  function submitAuth() {
+    if (authMode === 'register') {
+      var name = (document.getElementById('authName') || {}).value || '';
+      var email = (document.getElementById('authEmail') || {}).value || '';
+      var phone = (document.getElementById('authPhone') || {}).value || '';
+      var pass = (document.getElementById('authPass') || {}).value || '';
+      var pass2 = (document.getElementById('authPass2') || {}).value || '';
+      if (!name.trim()) { toast('Please enter your full name'); return; }
+      if (!email.trim() || email.indexOf('@') === -1) { toast('Please enter a valid email'); return; }
+      if (!phone.trim()) { toast('Please enter your phone number'); return; }
+      if (pass.length < 6) { toast('Password must be at least 6 characters'); return; }
+      if (pass !== pass2) { toast('Passwords do not match'); return; }
+      currentUser = { name: name.trim(), email: email.trim(), phone: phone.trim(), joined: new Date().toISOString(), premium: true };
+      try { localStorage.setItem('ac_user', JSON.stringify(currentUser)); } catch(e) {}
+      toast('Welcome to AgriConnect, ' + name.split(' ')[0] + '! Your premium account is active.');
+      closeAuth();
+      updateUserBadge();
+    } else {
+      var email = (document.getElementById('authLoginEmail') || {}).value || '';
+      var pass = (document.getElementById('authLoginPass') || {}).value || '';
+      if (!email.trim()) { toast('Please enter your email'); return; }
+      if (!pass) { toast('Please enter your password'); return; }
+      try {
+        var saved = localStorage.getItem('ac_user');
+        if (saved) {
+          currentUser = JSON.parse(saved);
+          if (currentUser.email === email.trim()) {
+            toast('Welcome back, ' + currentUser.name.split(' ')[0] + '!');
+            closeAuth();
+            updateUserBadge();
+          } else {
+            toast('Account not found. Please register first.');
+          }
+        } else {
+          toast('No account found. Please create one first.');
+        }
+      } catch(e) { toast('Login error. Please try again.'); }
+    }
+  }
+
+  function updateUserBadge() {
+    var badge = document.getElementById('authBadge');
+    var avatar = document.getElementById('authBadgeAvatar');
+    var nameEl = document.getElementById('authBadgeName');
+    if (currentUser && currentUser.name) {
+      if (badge) badge.style.display = 'flex';
+      if (avatar) avatar.textContent = currentUser.name.charAt(0).toUpperCase();
+      if (nameEl) nameEl.textContent = currentUser.name.split(' ')[0];
+    } else {
+      if (badge) badge.style.display = 'none';
+    }
+  }
+
+  function showUserMenu() {
+    if (currentUser) {
+      toast('👤 ' + currentUser.name + ' | ' + currentUser.email + ' | Premium Member');
+    } else {
+      openAuth();
+    }
+  }
+
+  function logout() {
+    currentUser = null;
+    try { localStorage.removeItem('ac_user'); } catch(e) {}
+    updateUserBadge();
+    toast('Logged out successfully');
+  }
+
   // Public API
   return {
     addToCart: addToCart,
@@ -1799,72 +1946,68 @@ var AC = (function() {
     toggleFav: toggleFav,
     setTab: setTab,
     changeLang: changeLang,
-    toggleChatbot: function(){},
-    sendChat: function(){}
+    openProdModal: openProdModal,
+    closeProdModal: closeProdModal,
+    openAuth: openAuth,
+    closeAuth: closeAuth,
+    toggleAuthMode: toggleAuthMode,
+    submitAuth: submitAuth,
+    showUserMenu: showUserMenu,
+    logout: logout
   };
 })();
 </script>
-<!-- ═══ AI CHATBOT WIDGET ═══ -->
-<button class="chatbot-fab" id="chatbotFab" onclick="AC.toggleChatbot()" aria-label="AI Assistant">
-  <i class="fas fa-robot"></i>
-  <span class="badge-dot"></span>
-</button>
-<div class="chatbot-win" id="chatbotWin">
-  <div class="chatbot-header">
-    <div class="chatbot-header-avatar"><i class="fas fa-seedling"></i></div>
-    <div class="chatbot-header-info">
-      <h4>AgriBot AI Assistant</h4>
-      <p><span class="online-dot"></span> Online — Instant replies</p>
+
+
+
+
+<!-- ═══ PRODUCT DETAIL MODAL ═══ -->
+<div class="prod-modal-ov" id="prodModalOv" onclick="AC.closeProdModal()"></div>
+<div class="prod-modal" id="prodModal">
+  <button class="prod-modal-close" onclick="AC.closeProdModal()"><i class="fas fa-times"></i></button>
+  <img class="prod-modal-img" id="prodModalImg" src="" alt="">
+  <div class="prod-modal-body">
+    <div class="prod-modal-cat" id="prodModalCat"></div>
+    <h2 class="prod-modal-title" id="prodModalTitle"></h2>
+    <div class="prod-modal-price" id="prodModalPrice"></div>
+    <div class="prod-modal-specs" id="prodModalSpecs"></div>
+    <div class="prod-modal-seller" id="prodModalSeller">
+      <div class="prod-modal-seller-avatar" id="prodModalSellerAvatar"></div>
+      <div>
+        <div class="prod-modal-seller-name" id="prodModalSellerName"></div>
+        <div class="prod-modal-seller-verified"><i class="fas fa-check-circle"></i> Verified Seller</div>
+      </div>
     </div>
-    <div class="chatbot-header-close" onclick="AC.toggleChatbot()"><i class="fas fa-times"></i></div>
-  </div>
-  <div class="chatbot-body" id="chatbotBody"></div>
-  <div class="chatbot-quick" id="chatbotQuick"></div>
-  <div class="chatbot-footer">
-    <input type="text" class="chatbot-input" id="chatbotInput" placeholder="Ask me anything about agriculture..." onkeydown="if(event.key==='Enter')AC.sendChat()">
-    <button class="chatbot-send" onclick="AC.sendChat()"><i class="fas fa-paper-plane"></i></button>
+    <div class="prod-modal-btns">
+      <button class="prod-modal-btn-add" id="prodModalAddBtn"><i class="fas fa-cart-plus"></i> Add to Cart</button>
+      <button class="prod-modal-btn-call" onclick="window.location.href='tel:+2349126480004'"><i class="fas fa-phone-alt"></i> Call to Order</button>
+    </div>
   </div>
 </div>
-<script>
-(function(){
-'use strict';
-var WA='2349126480004',open=false,history=[];
-var quick=[
-  {l:'🐟 Fish Prices',m:'What are the current fish prices?'},
-  {l:'🐔 Poultry Deals',m:'Show me poultry deals'},
-  {l:'💰 Payment Options',m:'What payment methods do you accept?'},
-  {l:'📦 Track Order',m:'How can I track my order?'},
-  {l:'🚚 Delivery Info',m:'What are your delivery options?'},
-  {l:'💬 WhatsApp Us',m:'connect_wa'}
-];
-var R={
-  greet:{p:['hello','hi','hey','good morning','good afternoon','how far'],r:['Hello! 👋 Welcome to AgriConnect! How can I help you today?','Hi there! 🌱 I am AgriBot, your AI farming assistant. Ask me anything about our 25+ agricultural sectors!','Welcome! 🚜 I can help with products, prices, delivery, payments. What do you need?']},
-  fish:{p:['fish','catfish','tilapia','fingerlings','aquaculture','juvenile'],r:['🐟 **Fish & Aquaculture**:\n\n• Catfish Juveniles — ₦180/pc\n• Table Size Catfish — ₦3,400/kg\n• Fingerlings — ₦130/pc\n• Bulk Harvest — ₦2,600/kg\n\nAll from verified farms. Want to order?']},
-  poultry:{p:['poultry','chick','broiler','layer','turkey','egg'],r:['🐔 **Poultry & Chicks**:\n\n• Day-Old Broilers — ₦450/chick\n• Point-of-Lay Pullets — ₦3,800/bird\n• Turkey Poults — ₦3,200/poult\n• Starter Feed 25kg — ₦22,000\n\nAll vaccinated. Shall I add some to your cart?']},
-  livestock:{p:['livestock','cattle','cow','goat','sheep','ram','bull'],r:['🐄 **Livestock & Cattle**:\n\n• White Fulani Bull — ₦450,000/head\n• WAD Goats — ₦45,000/head\n• Balami Rams — ₦85,000/head\n\nAll vet-checked. Connected directly to verified ranches.']},
-  pay:{p:['payment','pay','method','card','transfer','bank','how to pay'],r:['💳 **5 Payment Methods:**\n\n1. 💳 Card — Visa, Mastercard, Apple Pay\n2. 🏦 Bank Transfer — GTB\n3. ₿ Crypto — BTC, ETH, SOL, USDT, XRP, DOGE, TON\n4. 💵 Cash on Delivery\n5. 💳 POS at Doorstep\n\nAll 256-bit SSL encrypted. Proceed to checkout?']},
-  delivery:{p:['delivery','deliver','shipping','transport','logistics','how long'],r:['🚚 **Delivery Options:**\n\n• Same Day — Lagos & Abuja\n• 24-48hrs — All states\n• Refrigerated — Perishables\n• FREE delivery on orders above ₦50,000!']},
-  order:{p:['order','track','my order','status','where is'],r:['📦 **Order Tracking:**\n\n1. Check email for tracking ID\n2. Call **09126480004**\n3. WhatsApp us for instant update\n\nAll orders have buyer protection!']},
-  price:{p:['price','cost','how much','rate','discount','sale','promo'],r:['💰 **Best Prices:**\n\n🐟 Catfish — ₦180/pc\n🐔 Chicks — ₦450/pc\n🐄 Cattle — ₦450,000\n🌾 Maize 100kg — ₦42,000\n🍫 Cocoa/ton — ₦12M\n\nSALE items available!']},
-  biz:{p:['business','sell','seller','register','vendor','supplier'],r:['🏪 **Become a Seller:**\n\n✅ Free profile\n✅ Unlimited listings\n✅ 12,400+ buyers\n✅ Sales dashboard\n\nCall **09126480004** to register!']},
-  contact:{p:['contact','call','phone','reach','support','number'],r:['📞 **Contact Us:**\n\n📱 Phone: **09126480004**\n📧 Email: support@agriconnect.ng\n💳 Payments: payments@agriconnect.ng\n\nAvailable 24/7!']},
-  wholesale:{p:['wholesale','bulk','ton','container','export'],r:['📦 **Bulk Orders:**\n\n• Cocoa — ₦12M/ton\n• Maize — ₦42,000/100kg\n• Ginger — ₦850,000/ton\n\nCall **09126480004** for wholesale pricing!']},
-  crypto:{p:['crypto','bitcoin','btc','ethereum','usdt','solana','doge','ton','xrp'],r:['₿ **8 Crypto Accepted:**\n\nBTC, ETH, BNB, SOL, USDT, XRP, DOGE, TON\n\nCart → Checkout → Crypto → Copy wallet → Send. Confirmed in 10-30 mins!']},
-  sector:{p:['sector','category','what do you sell','products','available'],r:['🌾 **25+ Sectors:**\n\n🐟 Fish 🐔 Poultry 🐄 Livestock 🧀 Dairy 🐷 Pigs 🐌 Snails 🍯 Honey 🌽 Crops 🍎 Fruits 🌶️ Spices 🍫 Cocoa 🌳 Forestry 🍄 Mushroom 🚜 Equipment 🏗️ Greenhouse 💉 Vet 🧪 Agrochem 🏭 Processing 🚚 Logistics 🤖 Drones ☀️ Solar 🚢 Export 📊 Finance\n\nWhich sector?']}
-};
-var defs=['I can help with: fish, poultry, livestock, delivery, payments, orders, or seller registration. What do you need?','For specific queries, call **09126480004**. Or ask about product prices, delivery options, payment methods!','Browse our 25+ sectors or ask me about specific products. I have pricing for everything!'];
-function time(){var d=new Date();return d.getHours().toString().padStart(2,'0')+':'+d.getMinutes().toString().padStart(2,'0')}
-function addMsg(t,u){var b=document.getElementById('chatbotBody');if(!b)return;var d=document.createElement('div');d.className='chatbot-msg '+(u?'user':'bot');d.innerHTML=t.replace(/\*\*(.*?)\*\*/g,'<strong>$1</strong>').replace(/\n/g,'<br>')+'<span class="msg-time">'+time()+'</span>';b.appendChild(d);b.scrollTop=b.scrollHeight;history.push({t:t,u:u})}
-function typing(){var b=document.getElementById('chatbotBody');if(!b)return;var d=document.createElement('div');d.className='chatbot-typing';d.id='typingDots';d.innerHTML='<span></span><span></span><span></span>';b.appendChild(d);b.scrollTop=b.scrollHeight}
-function noTyping(){var e=document.getElementById('typingDots');if(e)e.remove()}
-function respond(inp){var l=inp.toLowerCase().trim();if(l==='connect_wa'||l.includes('whatsapp'))return{t:'💬 **Connect on WhatsApp:**\n\nClick below to chat with our team!',wa:1};var ks=Object.keys(R);for(var i=0;i<ks.length;i++){var k=ks[i],v=R[k];for(var j=0;j<v.p.length;j++){if(l.indexOf(v.p[j])!==-1)return{t:v.r[Math.floor(Math.random()*v.r.length)]}}}return{t:defs[Math.floor(Math.random()*defs.length)]}}
-function buildQ(){var e=document.getElementById('chatbotQuick');if(!e)return;e.innerHTML='';quick.forEach(function(q){var b=document.createElement('button');b.className='chatbot-quick-btn';b.textContent=q.l;b.onclick=function(){if(q.m==='connect_wa')window.open('https://wa.me/'+WA+'?text=Hi%20AgriConnect%2C%20I%20need%20help','_blank');else send(q.m)};e.appendChild(b)})}
-function send(t){if(!t.trim())return;addMsg(t,1);var i=document.getElementById('chatbotInput');if(i)i.value='';typing();setTimeout(function(){noTyping();var r=respond(t);addMsg(r.t,0);if(r.wa){var b=document.getElementById('chatbotBody');if(b){var m=b.lastElementChild;if(m){var a=document.createElement('a');a.className='chatbot-wa-link';a.href='https://wa.me/'+WA+'?text=Hi%20AgriConnect%2C%20I%20need%20assistance';a.target='_blank';a.innerHTML='<i class="fab fa-whatsapp"></i> Chat on WhatsApp';m.appendChild(a)}}}},600+Math.random()*800)}
-function init(){setTimeout(function(){addMsg('👋 **Welcome to AgriConnect!**\n\nI am AgriBot, your AI farming assistant.\n\n• 🐟 Product prices\n• 💳 Payment options (crypto too!)\n• 🚚 Delivery info\n• 📦 Order tracking\n• 🏪 Seller registration\n\nHow can I help?',0);buildQ()},1500)}
-function toggle(){open=!open;var w=document.getElementById('chatbotWin'),f=document.getElementById('chatbotFab'),d=f?f.querySelector('.badge-dot'):null;if(w)w.classList.toggle('open',open);if(d)d.style.display=open?'none':'block';if(open&&history.length===0)init()}
-if(typeof AC!=='undefined'){AC.toggleChatbot=toggle;AC.sendChat=function(){var i=document.getElementById('chatbotInput');if(i)send(i.value)}}else{window.toggleChatbot=toggle;window.sendChat=function(){var i=document.getElementById('chatbotInput');if(i)send(i.value)}}
-})();
-</script>
 
+<!-- ═══ AUTH MODAL ═══ -->
+<div class="auth-modal-ov" id="authModalOv" onclick="AC.closeAuth()"></div>
+<div class="auth-modal" id="authModal">
+  <div class="auth-modal-header">
+    <button class="auth-modal-close" onclick="AC.closeAuth()"><i class="fas fa-times"></i></button>
+    <h2 id="authTitle">Create Account</h2>
+    <p id="authSubtitle">Join AgriConnect — Premium Agricultural Marketplace</p>
+  </div>
+  <div class="auth-modal-body" id="authBody">
+    <div id="authRegFields">
+      <input type="text" id="authName" placeholder="Full Name">
+      <input type="email" id="authEmail" placeholder="Email Address">
+      <input type="tel" id="authPhone" placeholder="Phone Number">
+      <input type="password" id="authPass" placeholder="Create Password">
+      <input type="password" id="authPass2" placeholder="Confirm Password">
+    </div>
+    <div id="authLoginFields" style="display:none">
+      <input type="email" id="authLoginEmail" placeholder="Email Address">
+      <input type="password" id="authLoginPass" placeholder="Password">
+    </div>
+    <button class="auth-btn" id="authBtn" onclick="AC.submitAuth()"><i class="fas fa-user-plus"></i> Create Premium Account</button>
+    <div class="auth-toggle" id="authToggle">Already have an account? <a onclick="AC.toggleAuthMode()">Sign In</a></div>
+  </div>
+</div>
 </body>
 </html>
