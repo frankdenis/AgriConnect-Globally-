@@ -404,6 +404,8 @@ input,select{font-family:inherit}
     <a class="nav-l" onclick="AC.scrollToId('solar');AC.toggleNav()"><i class="fas fa-solar-panel"></i> <span data-i18n="nav_solar">Solar Energy</span></a>
     <a class="nav-l" onclick="AC.scrollToId('export');AC.toggleNav()"><i class="fas fa-ship"></i> Agricultural Export</a>
     <a class="nav-l" onclick="AC.scrollToId('finance');AC.toggleNav()"><i class="fas fa-chart-line"></i> Agri Finance</a>
+    <a class="nav-l" onclick="AC.scrollToId('payments');AC.toggleNav()"><i class="fas fa-credit-card"></i> Payment Methods</a>
+    <a class="nav-l" onclick="AC.scrollToId('crypto');AC.toggleNav()"><i class="fab fa-bitcoin"></i> Crypto Payments</a>
     <a class="nav-l" onclick="AC.scrollToId('biz');AC.toggleNav()"><i class="fas fa-building"></i> <span data-i18n="nav_biz">Business Account</span></a>
     <a class="nav-l" onclick="AC.scrollToId('reviews');AC.toggleNav()"><i class="fas fa-star"></i> <span data-i18n="nav_reviews">Reviews</span></a>
     <a class="nav-l" onclick="AC.scrollToId('contact');AC.toggleNav()"><i class="fas fa-phone-alt"></i> <span data-i18n="nav_contact">Contact</span></a>
@@ -477,6 +479,136 @@ input,select{font-family:inherit}
 </div>
 </div>
 
+<!-- ═══ PAYMENT METHODS ═══ -->
+<section class="carousel-section reveal" id="payments">
+  <div class="carousel-header">
+    <div>
+      <h2>Secure <em style="font-style:normal;color:var(--g7)">Payment Methods</em></h2>
+      <p>All transactions are encrypted, buyer-protected, and support multiple payment options.</p>
+    </div>
+  </div>
+  <div style="max-width:1320px;margin:0 auto;padding:0 20px">
+    <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:16px">
+      <div class="biz-feat" style="background:var(--surface);border:1px solid var(--border-l);border-radius:var(--r-lg);overflow:hidden">
+        <img src="img/payment1.jpg" alt="Credit cards" loading="lazy" style="width:100%;height:140px;object-fit:cover">
+        <div style="padding:16px">
+          <div style="display:flex;gap:10px;margin-bottom:10px;flex-wrap:wrap">
+            <span style="padding:4px 10px;background:var(--g0);color:var(--g8);border-radius:var(--r-full);font-size:10px;font-weight:700"><i class="fab fa-cc-visa"></i> Visa</span>
+            <span style="padding:4px 10px;background:var(--br1);color:var(--br7);border-radius:var(--r-full);font-size:10px;font-weight:700"><i class="fab fa-cc-mastercard"></i> Mastercard</span>
+            <span style="padding:4px 10px;background:var(--b1);color:var(--b6);border-radius:var(--r-full);font-size:10px;font-weight:700"><i class="fab fa-cc-apple-pay"></i> Apple Pay</span>
+            <span style="padding:4px 10px;background:var(--a0);color:var(--a6);border-radius:var(--r-full);font-size:10px;font-weight:700"><i class="fab fa-google-pay"></i> Google Pay</span>
+          </div>
+          <h4 style="font-family:var(--fd);font-size:14px;font-weight:700;color:var(--text);margin-bottom:4px">Card & Mobile Payments</h4>
+          <p style="font-size:12px;color:var(--t3);line-height:1.6">Pay securely with Visa, Mastercard, Apple Pay, Google Pay, and all major cards. Instant processing.</p>
+        </div>
+      </div>
+      <div class="biz-feat" style="background:var(--surface);border:1px solid var(--border-l);border-radius:var(--r-lg);overflow:hidden">
+        <img src="img/payment2.jpg" alt="Mobile banking" loading="lazy" style="width:100%;height:140px;object-fit:cover">
+        <div style="padding:16px">
+          <div style="display:flex;gap:10px;margin-bottom:10px;flex-wrap:wrap">
+            <span style="padding:4px 10px;background:var(--g0);color:var(--g8);border-radius:var(--r-full);font-size:10px;font-weight:700"><i class="fas fa-university"></i> Bank Transfer</span>
+            <span style="padding:4px 10px;background:var(--a0);color:var(--a6);border-radius:var(--r-full);font-size:10px;font-weight:700"><i class="fas fa-mobile-alt"></i> USSD</span>
+            <span style="padding:4px 10px;background:var(--b1);color:var(--b6);border-radius:var(--r-full);font-size:10px;font-weight:700"><i class="fas fa-wallet"></i> Mobile Money</span>
+          </div>
+          <h4 style="font-family:var(--fd);font-size:14px;font-weight:700;color:var(--text);margin-bottom:4px">Bank & Mobile Money</h4>
+          <p style="font-size:12px;color:var(--t3);line-height:1.6">Direct bank transfers, USSD codes, mobile money (Opay, PalmPay, Kuda), and all Nigerian fintech wallets.</p>
+        </div>
+      </div>
+      <div class="biz-feat" style="background:var(--surface);border:1px solid var(--border-l);border-radius:var(--r-lg);overflow:hidden">
+        <img src="img/pos1.jpg" alt="POS terminal" loading="lazy" style="width:100%;height:140px;object-fit:cover">
+        <div style="padding:16px">
+          <div style="display:flex;gap:10px;margin-bottom:10px;flex-wrap:wrap">
+            <span style="padding:4px 10px;background:var(--g0);color:var(--g8);border-radius:var(--r-full);font-size:10px;font-weight:700"><i class="fas fa-money-bill-wave"></i> Cash on Delivery</span>
+            <span style="padding:4px 10px;background:var(--a0);color:var(--a6);border-radius:var(--r-full);font-size:10px;font-weight:700"><i class="fas fa-credit-card"></i> POS</span>
+            <span style="padding:4px 10px;background:var(--b1);color:var(--b6);border-radius:var(--r-full);font-size:10px;font-weight:700"><i class="fas fa-hand-holding-usd"></i> Escrow</span>
+          </div>
+          <h4 style="font-family:var(--fd);font-size:14px;font-weight:700;color:var(--text);margin-bottom:4px">COD & Escrow Protection</h4>
+          <p style="font-size:12px;color:var(--t3);line-height:1.6">Cash on delivery, POS at doorstep, and secure escrow payments for high-value agricultural transactions.</p>
+        </div>
+      </div>
+      <div class="biz-feat" style="background:var(--surface);border:1px solid var(--border-l);border-radius:var(--r-lg);overflow:hidden">
+        <img src="img/crypto1.jpg" alt="Cryptocurrency" loading="lazy" style="width:100%;height:140px;object-fit:cover">
+        <div style="padding:16px">
+          <div style="display:flex;gap:10px;margin-bottom:10px;flex-wrap:wrap">
+            <span style="padding:4px 10px;background:var(--a0);color:var(--a6);border-radius:var(--r-full);font-size:10px;font-weight:700"><i class="fab fa-bitcoin"></i> Bitcoin</span>
+            <span style="padding:4px 10px;background:var(--br1);color:var(--br7);border-radius:var(--r-full);font-size:10px;font-weight:700"><i class="fab fa-ethereum"></i> Ethereum</span>
+            <span style="padding:4px 10px;background:var(--g0);color:var(--g8);border-radius:var(--r-full);font-size:10px;font-weight:700"><i class="fas fa-dollar-sign"></i> USDT</span>
+            <span style="padding:4px 10px;background:var(--b1);color:var(--b6);border-radius:var(--r-full);font-size:10px;font-weight:700"><i class="fas fa-coins"></i> USDC</span>
+          </div>
+          <h4 style="font-family:var(--fd);font-size:14px;font-weight:700;color:var(--text);margin-bottom:4px">Cryptocurrency Payments</h4>
+          <p style="font-size:12px;color:var(--t3);line-height:1.6">Accept Bitcoin, Ethereum, USDT, USDC for international trade. Fast, borderless, and low-fee transactions.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ CRYPTO PRICE GRAPHICS ═══ -->
+<section class="reveal" id="crypto" style="padding:48px 20px;background:var(--surface)">
+  <div class="sec-head" style="padding-top:0"><div class="sec-pill"><i class="fab fa-bitcoin"></i> Crypto Payments</div><h2 class="sec-title">Trade with Cryptocurrency</h2><p class="sec-desc">Buy and sell agricultural products using Bitcoin, Ethereum, and stablecoins.</p></div>
+  <div style="max-width:1320px;margin:0 auto;display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:16px">
+    <div style="border-radius:var(--r-lg);overflow:hidden;border:1px solid var(--border-l);background:var(--surface)">
+      <img src="img/crypto1.jpg" alt="Bitcoin trading chart" loading="lazy" style="width:100%;height:200px;object-fit:cover">
+      <div style="padding:16px">
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px">
+          <div style="display:flex;align-items:center;gap:8px">
+            <span style="width:28px;height:28px;border-radius:50%;background:var(--a0);display:grid;place-items:center;font-size:14px;color:var(--a6)"><i class="fab fa-bitcoin"></i></span>
+            <div><div style="font-family:var(--fd);font-weight:700;font-size:14px;color:var(--text)">Bitcoin (BTC)</div><div style="font-size:10px;color:var(--t4)">+2.4% today</div></div>
+          </div>
+          <div style="text-align:right"><div style="font-family:var(--fd);font-weight:800;font-size:16px;color:var(--g8)">$67,432</div><div style="font-size:10px;color:var(--g6)">▲ $1,580</div></div>
+        </div>
+        <div style="display:flex;gap:4px;margin-bottom:10px">
+          <span style="flex:1;height:4px;background:var(--g5);border-radius:2px"></span>
+          <span style="flex:1;height:4px;background:var(--g5);border-radius:2px"></span>
+          <span style="flex:1;height:4px;background:var(--g1);border-radius:2px"></span>
+          <span style="flex:1;height:4px;background:var(--g5);border-radius:2px"></span>
+          <span style="flex:1;height:4px;background:var(--g5);border-radius:2px"></span>
+          <span style="flex:1;height:4px;background:var(--g0);border-radius:2px"></span>
+        </div>
+        <button style="width:100%;padding:10px;border-radius:var(--r-sm);background:linear-gradient(135deg,var(--g7),var(--g8));color:#fff;font-weight:700;font-size:12px;cursor:pointer;border:none;text-transform:uppercase;letter-spacing:.5px" onclick="AC.toast('BTC payments coming soon!')"><i class="fab fa-bitcoin"></i> Pay with Bitcoin</button>
+      </div>
+    </div>
+    <div style="border-radius:var(--r-lg);overflow:hidden;border:1px solid var(--border-l);background:var(--surface)">
+      <img src="img/crypto2.jpg" alt="Ethereum trading" loading="lazy" style="width:100%;height:200px;object-fit:cover">
+      <div style="padding:16px">
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px">
+          <div style="display:flex;align-items:center;gap:8px">
+            <span style="width:28px;height:28px;border-radius:50%;background:var(--br1);display:grid;place-items:center;font-size:14px;color:var(--br7)"><i class="fab fa-ethereum"></i></span>
+            <div><div style="font-family:var(--fd);font-weight:700;font-size:14px;color:var(--text)">Ethereum (ETH)</div><div style="font-size:10px;color:var(--t4)">+1.8% today</div></div>
+          </div>
+          <div style="text-align:right"><div style="font-family:var(--fd);font-weight:800;font-size:16px;color:var(--g8)">$3,521</div><div style="font-size:10px;color:var(--g6)">▲ $62</div></div>
+        </div>
+        <div style="display:flex;gap:4px;margin-bottom:10px">
+          <span style="flex:1;height:4px;background:var(--g5);border-radius:2px"></span>
+          <span style="flex:1;height:4px;background:var(--g1);border-radius:2px"></span>
+          <span style="flex:1;height:4px;background:var(--g5);border-radius:2px"></span>
+          <span style="flex:1;height:4px;background:var(--g5);border-radius:2px"></span>
+          <span style="flex:1;height:4px;background:var(--g0);border-radius:2px"></span>
+          <span style="flex:1;height:4px;background:var(--g5);border-radius:2px"></span>
+        </div>
+        <button style="width:100%;padding:10px;border-radius:var(--r-sm);background:linear-gradient(135deg,var(--br7),#3b82f6);color:#fff;font-weight:700;font-size:12px;cursor:pointer;border:none;text-transform:uppercase;letter-spacing:.5px" onclick="AC.toast('ETH payments coming soon!')"><i class="fab fa-ethereum"></i> Pay with Ethereum</button>
+      </div>
+    </div>
+    <div style="border-radius:var(--r-lg);overflow:hidden;border:1px solid var(--border-l);background:var(--surface)">
+      <div style="height:200px;background:linear-gradient(135deg,#0a1e35,#0c4a6e);display:flex;align-items:center;justify-content:center">
+        <div style="text-align:center;color:#fff">
+          <div style="font-size:48px;margin-bottom:8px">₮</div>
+          <div style="font-family:var(--fd);font-size:20px;font-weight:800">USDT / USDC</div>
+          <div style="font-size:12px;opacity:.7">Stablecoins — 1:1 USD</div>
+        </div>
+      </div>
+      <div style="padding:16px">
+        <div style="display:flex;gap:10px;flex-wrap:wrap;margin-bottom:10px">
+          <span style="padding:5px 12px;background:var(--g0);color:var(--g8);border-radius:var(--r-full);font-size:11px;font-weight:600"><i class="fas fa-dollar-sign"></i> USDT (Tether)</span>
+          <span style="padding:5px 12px;background:var(--b1);color:var(--b6);border-radius:var(--r-full);font-size:11px;font-weight:600"><i class="fas fa-coins"></i> USDC (Circle)</span>
+        </div>
+        <p style="font-size:12px;color:var(--t3);line-height:1.6;margin-bottom:10px">Stablecoins pegged 1:1 to USD. Ideal for international agricultural trade — no volatility, instant settlement, low fees.</p>
+        <button style="width:100%;padding:10px;border-radius:var(--r-sm);background:linear-gradient(135deg,#0891b2,#06b6d4);color:#fff;font-weight:700;font-size:12px;cursor:pointer;border:none;text-transform:uppercase;letter-spacing:.5px" onclick="AC.toast('Stablecoin payments coming soon!')"><i class="fas fa-dollar-sign"></i> Pay with Stablecoins</button>
+      </div>
+    </div>
+  </div>
+</section>
+
 <div class="tests" id="reviews">
 <div class="sec-head reveal"><div class="sec-pill"><i class="fas fa-star"></i> <span data-i18n="test_pill">Trusted by Thousands</span></div><h2 class="sec-title" data-i18n="test_title">What Our Community Says</h2><p class="sec-desc" data-i18n="test_desc">Real feedback from farmers, buyers, and agribusinesses worldwide.</p></div>
 <div class="test-grid">
@@ -503,6 +635,7 @@ input,select{font-family:inherit}
   <div class="footer-col"><h4 data-i18n="footer_more">More Sectors</h4><a onclick="AC.scrollToId('apiculture')" data-i18n="nav_honey">Apiculture & Honey</a><a onclick="AC.scrollToId('forestry')" data-i18n="nav_forestry">Forestry & Timber</a><a onclick="AC.scrollToId('mushroom')" data-i18n="nav_mushroom">Mushroom</a><a onclick="AC.scrollToId('spices')" data-i18n="nav_spices">Spices & Herbs</a><a onclick="AC.scrollToId('cocoa')" data-i18n="nav_cocoa">Cocoa & Palm</a><a onclick="AC.scrollToId('equipment')" data-i18n="nav_equip">Farm Equipment</a></div>
   <div class="footer-col"><h4 data-i18n="footer_services">Services</h4><a onclick="AC.scrollToId('vet')" data-i18n="nav_vet">Veterinary</a><a onclick="AC.scrollToId('agrochem')" data-i18n="nav_agro">Agrochemicals</a><a onclick="AC.scrollToId('logistics')" data-i18n="nav_logistics">Logistics</a><a onclick="AC.scrollToId('drones')" data-i18n="nav_drones">Agri-Drones</a><a onclick="AC.scrollToId('solar')" data-i18n="nav_solar">Solar Energy</a><a onclick="AC.scrollToId('processing')" data-i18n="nav_process">Food Processing</a></div>
   <div class="footer-col"><h4>More</h4><a onclick="AC.scrollToId('export')">Agricultural Export</a><a onclick="AC.scrollToId('finance')">Agri Finance</a><a onclick="AC.scrollToId('greenhouse')">Greenhouse</a><a onclick="AC.scrollToId('mushroom')">Mushroom</a><a onclick="AC.scrollToId('forestry')">Forestry</a><a onclick="AC.scrollToId('biz')">Business Account</a></div>
+  <div class="footer-col"><h4>Payments</h4><a onclick="AC.scrollToId('payments')">Payment Methods</a><a onclick="AC.scrollToId('crypto')">Crypto Payments</a><a href="tel:+2349126480004">Call to Pay</a><a href="https://wa.me/2349126480004">WhatsApp Orders</a><a onclick="AC.scrollToId('finance')">Agri Finance</a><a onclick="AC.scrollToId('export')">Export Services</a></div>
   <div class="footer-col"><h4 data-i18n="footer_support">Support</h4><a onclick="AC.scrollToId('biz')" data-i18n="nav_biz">Business Account</a><a href="tel:+2349126480004">📞 09126480004</a><a href="https://wa.me/2349126480004">💬 WhatsApp</a><a href="mailto:support@agriconnect.ng">📧 Email</a></div>
 </div>
 <div class="footer-bottom">
